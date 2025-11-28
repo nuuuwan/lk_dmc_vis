@@ -2,18 +2,18 @@ import os
 import unittest
 from dataclasses import asdict
 
-from lk_dmc import RiverWaterLevelData
+from lk_dmc import RiverWaterLevelDataTable
 
 
 class TestCase(unittest.TestCase):
     def test_list_from_pdf(self):
         pdf_path = os.path.join(
-            "tests", "inputs", "test_river_water_level_data.pdf"
+            "tests", "inputs", "test_river_water_level_data_table.pdf"
         )
-        rwld_list = RiverWaterLevelData.list_from_pdf(pdf_path)
-        self.assertEqual(len(rwld_list), 33)
+        t = RiverWaterLevelDataTable.from_pdf(pdf_path)
+        self.assertEqual(len(t), 33)
 
-        rwld = rwld_list[0]
+        rwld = t.d_list[0]
         self.assertEqual(
             asdict(rwld),
             {

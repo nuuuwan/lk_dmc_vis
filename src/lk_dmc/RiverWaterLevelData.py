@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
 
-import camelot
 from utils import Log
 
 from lk_dmc.GaugingStation import GaugingStation
@@ -70,25 +69,3 @@ class RiverWaterLevelData:
         )
 
         return rwld, river_basin
-
-    @classmethod
-    def list_from_df(cls, df) -> list["RiverWaterLevelData"]:
-        d_list = []
-        current_river_basin = None
-
-        for idx in range(2, len(df)):
-            row = df.iloc[idx]
-            rwld, current_river_basin = cls.from_df_row(
-                row, current_river_basin
-            )
-            if rwld:
-                d_list.append(rwld)
-
-        return d_list
-
-    @classmethod
-    def list_from_pdf(cls, pdf_path: str) -> list["RiverWaterLevelData"]:
-        tables = camelot.read_pdf(pdf_path)
-        assert len(tables) > 0, f"No tables found in PDF: {pdf_path}"
-        df = tables[0].df
-        return cls.list_from_df(df)
