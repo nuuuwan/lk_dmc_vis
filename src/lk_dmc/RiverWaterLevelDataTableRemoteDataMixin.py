@@ -47,7 +47,6 @@ class RiverWaterLevelDataTableRemoteDataMixin:
 
         json_path = os.path.join("data", "jsons", f"{doc_id}.json")
         if os.path.exists(json_path):
-            log.debug(f"{json_path} Exists.")
             return cls.from_json(json_path)
 
         pdf_path = os.path.join("data", "pdfs", f"{doc_id}.pdf")
@@ -73,3 +72,9 @@ class RiverWaterLevelDataTableRemoteDataMixin:
             rwld_table = cls.from_url_pdf(url_pdf)
             rwld_table_list.append(rwld_table)
         return rwld_table_list
+
+    @classmethod
+    def latest(cls):
+        rwld_table_list = cls.list_latest()
+        assert rwld_table_list, "No RiverWaterLevelDataTable found"
+        return rwld_table_list[0]
