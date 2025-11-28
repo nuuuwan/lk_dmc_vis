@@ -24,6 +24,7 @@ class RiverWaterLevelData:
 
     def validate(self):
         assert self.gauging_station, "Gauging Station is None"
+        self.gauging_station.validate()
         assert self.time_str, "Time string is empty"
         assert (
             isinstance(self.time_ut, int) and self.time_ut > 0

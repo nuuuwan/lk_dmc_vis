@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 
 
@@ -22,5 +23,15 @@ class RiverBasin:
         basin_name = parts[0].strip()
         assert basin_name, "River Basin name is empty"
         basin_code = parts[1].split(")")[0].strip()
+        basin_code = re.sub(r"\s+", " ", basin_code)
         RiverBasin.__validate_code__(basin_code)
         return RiverBasin(code=basin_code, name=basin_name)
+
+    @classmethod
+    def from_dict(cls, d):
+        return cls(code=d["river_basin_code"], name=d["river_basin_name"])
+
+    def __eq__(self, value):
+        if not isinstance(value, RiverBasin):
+            return False
+        return self.code == value.code and self.name == value.name

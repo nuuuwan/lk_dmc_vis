@@ -13,3 +13,8 @@ class WaterLevel:
         if unit == "ft":
             val = val * 0.3048
         return cls(val)
+
+    def __eq__(self, value):
+        if not isinstance(value, WaterLevel):
+            return False
+        return abs(self.m - value.m) < 1e-6
