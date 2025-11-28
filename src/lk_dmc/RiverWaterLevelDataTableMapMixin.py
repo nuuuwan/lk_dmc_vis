@@ -47,8 +47,7 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
+                GaugingStation.from_name_safe(name) or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
@@ -93,7 +92,7 @@ class RiverWaterLevelDataTableMapMixin:
             )
             ax.text(
                 lng + 0.03,
-                lat,
+                lat + 0.03,
                 location.name,
                 fontsize=4,
                 color="grey",
@@ -125,7 +124,7 @@ class RiverWaterLevelDataTableMapMixin:
         )
         ax.text(
             lng + 0.03,
-            lat,
+            lat + 0.03,
             station.name,
             fontsize=5,
             color="black",
