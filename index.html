@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Sri Lanka 🇱🇰 - Flood Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1200px;
+            width: 100%;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+            color: #555;
+        }
+        
+        .info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .info a:hover {
+            text-decoration: underline;
+        }
+        
+        .last-updated {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sri Lanka 🇱🇰 - Flood Map</h1>
+        <p class="subtitle">River water levels across gauging stations in Sri Lanka</p>
+        
+        <div class="map-container">
+            <img src="" alt="Sri Lanka Flood Map" id="flood-map">
+        </div>
+        
+        <div class="info">
+            <p>Data from <a href="https://www.dmc.gov.lk/index.php" target="_blank">@dmc_lk</a></p>
+            <p>Updated whenever new information is released by the DMC, usually every 3 hours.</p>
+            <p class="last-updated">Last updated: <span id="last-updated">Loading...</span></p>
+        </div>
+    </div>
+    
+    <script>
+        // Prevent image caching by adding timestamp and random parameter
+        const img = document.getElementById('flood-map');
+        const timestamp = new Date().getTime();
+        const random = Math.random().toString(36).substring(7);
+        // Use both timestamp and random to ensure unique URL every time
+        img.src = `images/map.png?t=${timestamp}&r=${random}`;
+        
+        // Force reload by setting cache control
+        img.setAttribute('loading', 'eager');
+        
+        // Update last updated time
+        document.getElementById('last-updated').textContent = new Date().toLocaleString();
+        
+        // Handle image load errors
+        img.onerror = function() {
+            this.alt = 'Map image not found. Please ensure the image is generated.';
+            console.error('Failed to load map image');
+        };
+        
+        // Force reload on page visibility change (when user switches tabs back)
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) {
+                const newTimestamp = new Date().getTime();
+                const newRandom = Math.random().toString(36).substring(7);
+                img.src = `images/map.png?t=${newTimestamp}&r=${newRandom}`;
+            }
+        });
+    </script>
+</body>
+</html>
+
