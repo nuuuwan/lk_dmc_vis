@@ -168,6 +168,9 @@ class RiverWaterLevelDataTableMapMixin:
     def draw(self):
         fig, ax = plt.subplots(figsize=(16, 16))
 
+        font_path = os.path.join("fonts", "Ubuntu-Regular.ttf")
+        plt.rcParams["font.family"] = font_path
+
         self.__draw_map__(ax)
         self.__draw_rivers__(ax)
         self.__draw_locations__(ax)
