@@ -3,6 +3,7 @@
 
 from lk_dmc.AbstractTable import AbstractTable
 from lk_dmc.GaugingStation import GaugingStation
+from lk_dmc.Location import Location
 from lk_dmc.River import River
 from lk_dmc.RiverBasin import RiverBasin
 from lk_dmc.RiverWaterLevelData import RiverWaterLevelData

@@ -16,7 +16,6 @@ class GaugingStation(AbstractTable):
 
     @property
     def river(self):
-
         return River.from_name(self.river_name)
 
     @classmethod

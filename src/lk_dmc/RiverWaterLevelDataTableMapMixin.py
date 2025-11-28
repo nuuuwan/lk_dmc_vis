@@ -24,10 +24,13 @@ class RiverWaterLevelDataTableMapMixin:
         station = rwld.gauging_station
         lat, lng = station.lat_lng
         color = "green"
+
         if rwld.current_water_level >= station.major_flood_level:
             color = "red"
+
         elif rwld.current_water_level >= station.minor_flood_level:
             color = "orange"
+
         elif rwld.current_water_level >= station.alert_level:
             color = "yellow"
 
