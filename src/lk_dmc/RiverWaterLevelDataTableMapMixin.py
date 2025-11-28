@@ -17,10 +17,10 @@ log = Log("RiverWaterLevelDataTableMapMixin")
 class RiverWaterLevelDataTableMapMixin:
     LEVEL_TO_COLOR = {
         0: "grey",
-        1: "green",
-        2: "yellow",
-        3: "orange",
-        4: "red",
+        1: (0, 0.65, 0),
+        2: (1, 0.33, 0),
+        3: (1, 0.65, 0),
+        4: (1, 0, 0),
     }
 
     LOCATION_MARKER_SHAPE = "s"
@@ -56,8 +56,7 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
+                GaugingStation.from_name_safe(name) or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
