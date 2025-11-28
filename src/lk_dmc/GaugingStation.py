@@ -18,6 +18,8 @@ class GaugingStation:
     @classmethod
     def from_df_row(cls, row, river) -> "GaugingStation":
         name = row[2].strip()
+        if "(" in name:
+            name = name.split("(")[0].strip()
         unit = row[3].strip()
         alert_level = row[4].strip()
         minor_flood_level = row[5].strip()
