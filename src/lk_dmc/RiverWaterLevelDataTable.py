@@ -4,12 +4,10 @@ import camelot
 from utils import JSONFile, Log
 
 from lk_dmc.RiverWaterLevelData import RiverWaterLevelData
-from lk_dmc.RiverWaterLevelDataTableMapMixin import (
-    RiverWaterLevelDataTableMapMixin,
-)
-from lk_dmc.RiverWaterLevelDataTableRemoteDataMixin import (
-    RiverWaterLevelDataTableRemoteDataMixin,
-)
+from lk_dmc.RiverWaterLevelDataTableMapMixin import \
+    RiverWaterLevelDataTableMapMixin
+from lk_dmc.RiverWaterLevelDataTableRemoteDataMixin import \
+    RiverWaterLevelDataTableRemoteDataMixin
 
 log = Log("RiverWaterLevelDataTable")
 
