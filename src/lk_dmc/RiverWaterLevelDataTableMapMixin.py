@@ -27,9 +27,7 @@ class RiverWaterLevelDataTableMapMixin:
     LOCATION_MARKER_SIZE = 3
     STATION_MARKER_SHAPE = "o"
     STATION_MARKER_SIZE = LOCATION_MARKER_SIZE * 2
-    RIVER_WIDTH = LOCATION_MARKER_SIZE / 2
-    LABEL_X_OFFSET = 0.03
-    LABEL_Y_OFFSET = 0.0
+    RIVER_WIDTH = LOCATION_MARKER_SIZE // 1.5
 
     def __draw_map__(self, ax):
         district_ents = Ent.list_from_type(EntType.DISTRICT)
@@ -102,12 +100,12 @@ class RiverWaterLevelDataTableMapMixin:
                 color="grey",
             )
             ax.text(
-                lng + self.LABEL_X_OFFSET,
-                lat + self.LABEL_Y_OFFSET,
+                lng + self.LOCATION_MARKER_SIZE / 200,
+                lat,
                 location.name,
                 horizontalalignment="left",
                 verticalalignment="center",
-                fontsize=3,
+                fontsize=self.LOCATION_MARKER_SIZE,
                 color="black",
             )
 
@@ -128,20 +126,25 @@ class RiverWaterLevelDataTableMapMixin:
         level = self.__get_station_level__(rwld)
         color = self.LEVEL_TO_COLOR[level]
 
+        # draw white-filled marker with colored edge (no connecting line)
         ax.plot(
             lng,
             lat,
             marker=self.STATION_MARKER_SHAPE,
             markersize=self.STATION_MARKER_SIZE,
-            color=color,
+            markerfacecolor="white",
+            markeredgecolor=color,
+            markeredgewidth=self.STATION_MARKER_SIZE // 3,
+            linestyle="",
+            zorder=5,
         )
         ax.text(
-            lng + self.LABEL_X_OFFSET,
-            lat + self.LABEL_Y_OFFSET,
+            lng + self.STATION_MARKER_SIZE / 200,
+            lat,
             station.name,
             horizontalalignment="left",
             verticalalignment="center",
-            fontsize=5,
+            fontsize=self.STATION_MARKER_SIZE,
             color="black",
         )
 
@@ -170,7 +173,9 @@ class RiverWaterLevelDataTableMapMixin:
                 [0],
                 marker=marker_style,
                 color="w",
-                markerfacecolor=color,
+                markerfacecolor="white",
+                markeredgecolor=color,
+                markeredgewidth=markersize // 3,
                 markersize=markersize,
                 label=label,
             )
