@@ -28,6 +28,7 @@ class RiverWaterLevelDataTableMapMixin:
     STATION_MARKER_SHAPE = "o"
     STATION_MARKER_SIZE = LOCATION_MARKER_SIZE * 2
     RIVER_WIDTH = LOCATION_MARKER_SIZE // 1.5
+    MIN_DISTANCE_FOR_LABEL = 0.004
 
     def __draw_map__(self, ax):
         district_ents = Ent.list_from_type(EntType.DISTRICT)
@@ -73,6 +74,16 @@ class RiverWaterLevelDataTableMapMixin:
 
                 dx = x2 - x1
                 dy = y2 - y1
+                if i == n_locations - 2:
+                    ax.text(
+                        (x1 + x2) / 2,
+                        (y1 + y2) / 2,
+                        river.name,
+                        horizontalalignment="center",
+                        verticalalignment="center",
+                        fontsize=self.RIVER_WIDTH * 1.5,
+                        color="black",
+                    )
 
                 dmin = min(abs(dx), abs(dy))
                 xmid1 = x1 + dmin * dx / abs(dx) / 2
