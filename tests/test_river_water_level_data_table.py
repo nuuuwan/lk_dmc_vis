@@ -32,7 +32,7 @@ class TestCase(unittest.TestCase):
 
     def test_to_json(self):
         pdf_path = os.path.join(
-            "tests", "inputs", "test_river_water_level_data_table.pdf"
+            "tests", "inputs", "2025-11-28-15-30-water-level.pdf"
         )
         t = RiverWaterLevelDataTable.from_pdf(pdf_path)
 

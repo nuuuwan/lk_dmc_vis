@@ -174,25 +174,31 @@ class RiverWaterLevelDataTableMapMixin:
         self.__draw_stations__(ax)
 
         self.__draw_legend__(ax)
-        plt.title("Sri Lanka - Flood Map", fontsize=32)
         fig.text(
             0.5,
-            0.1,
-            "Data source: http://dmc.gov.lk",
+            0.85,
+            "Sri Lanka - Flood Map",
             ha="center",
-            fontsize=8,
+            fontsize=16,
             color="black",
-            alpha=0.7,
         )
         time_str = TimeFormat.TIME.format(Time(self.time_updated_ut))
         fig.text(
             0.5,
-            0.85,
+            0.825,
             f"As of {time_str}",
             ha="center",
-            fontsize=16,
+            fontsize=12,
             color="black",
-            alpha=0.7,
+        )
+
+        fig.text(
+            0.5,
+            0.8,
+            "Data source: http://dmc.gov.lk",
+            ha="center",
+            fontsize=8,
+            color="black",
         )
 
         ax.set_axis_off()

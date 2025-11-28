@@ -40,7 +40,7 @@ class RiverWaterLevelDataTable(
     @classmethod
     def from_pdf(cls, pdf_path: str) -> "RiverWaterLevelDataTable":
         doc_id = pdf_path.split("/")[-1][:-4]
-        assert len(doc_id) == 28
+        assert len(doc_id) == 28, f"Unexpected doc_id length: {doc_id}"
         tables = camelot.read_pdf(pdf_path)
         assert len(tables) > 0, f"No tables found in PDF: {pdf_path}"
         df = tables[0].df

@@ -1,1 +1,3 @@
-# lk_dmc_vis
+# Sri Lanka 🇱🇰 - Flood Map
+
+![images/map.png](images/map.png)
