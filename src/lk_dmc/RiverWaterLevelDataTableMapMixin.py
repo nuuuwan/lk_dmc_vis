@@ -18,7 +18,7 @@ class RiverWaterLevelDataTableMapMixin:
     LEVEL_TO_COLOR = {
         0: "grey",
         1: (0, 0.5, 0),
-        2: (0.75, 0.75, 0),
+        2: (1, 0.75, 0),
         3: (1, 0.5, 0),
         4: (1, 0, 0),
     }
@@ -37,7 +37,7 @@ class RiverWaterLevelDataTableMapMixin:
             geo = ent.geo()
             geo.plot(
                 ax=ax,
-                color=(0.95, 0.95, 0.95),
+                color=(0.95, 1.0, 1.0),
                 edgecolor=(0.75, 0.75, 0.75),
                 linewidth=0.5,
                 alpha=1.0,
@@ -56,8 +56,7 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
+                GaugingStation.from_name_safe(name) or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
