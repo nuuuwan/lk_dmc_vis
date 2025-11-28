@@ -1,34 +1,40 @@
 river_basin_name,river_basin_code,river_name,gauging_station_name,alert_level_m,minor_flood_level_m,major_flood_level_m,time_str,time_ut,current_water_level_m,remarks,rising_or_falling,rainfall_mm
-Kelani Ganga,RB 01,Kelani Ganga,Nagalagam Street,1.2192,1.524,2.1336,28/11/2025 06:00,1764289800,1.6459200000000003,Minor Flood,Rising,0
-Kelani Ganga,RB 01,Kelani Ganga,Hanwella,7,8,10,28/11/2025 06:00,1764289800,8.02,Minor Flood,Rising,138.2
-Kelani Ganga,RB 01,Kelani Ganga,Glencourse,15,16.5,19,28/11/2025 06:00,1764289800,18.25,Minor Flood,Rising,180.9
-Kelani Ganga,RB 01,Kelani Ganga,Kithulgala,3,4,6,28/11/2025 06:00,1764289800,5.3,Minor Flood,Falling,248.2
-Kelani Ganga,RB 01,Gurugoda Oya,Holombuwa,3,3.4,5,28/11/2025 06:00,1764289800,7.27,Major Flood,,168.5
-Kelani Ganga,RB 01,Seethawaka Ganga,Deraniyagala,4.8,5.8,6.4,28/11/2025 06:00,1764289800,7.25,Major Flood,Falling,263.9
-Kelani Ganga,RB 01,Kehelgamu Oya,Norwood,1.5,3,4.5,28/11/2025 06:00,1764289800,2.88,Alert,Falling,186.4
-Kalu Ganga,RB 03,Kalu Ganga,Putupaula,3,4,5,28/11/2025 06:00,1764289800,2.11,Normal,,26.1
-Kalu Ganga,RB 03,Kalu Ganga,Ellagawa,10,10.7,12.2,28/11/2025 06:00,1764289800,9.5,Normal,,174.9
-Kalu Ganga,RB 03,Kalu Ganga,Rathnapura,5.2,7.5,9.5,28/11/2025 06:00,1764289800,8.11,Minor Flood,Rising,165.7
-Kalu Ganga,RB 03,Maguru Ganga,Magura,4,6,7.5,28/11/2025 06:00,1764289800,4.43,Alert,Rising,137.8
-Kalu Ganga,RB 03,Kuda Ganga,Kalawellawa (Millakanda),5,6.5,8,28/11/2025 06:00,1764289800,6.04,Alert,Rising,113.3
-Gin Ganga,RB 09,Gin Ganga,Baddegama,3.5,4,5,28/11/2025 06:00,1764289800,3.01,Normal,,11.8
-Gin Ganga,RB 09,Gin Ganga,Thawalama,4,6,7.5,28/11/2025 06:00,1764289800,3.2,Normal,,32.2
-Nilwala Ganga,RB 12,Nilwala Ganga,Thalgahagoda,1.4,1.7,2.8,28/11/2025 06:00,1764289800,1.7,Minor Flood,,4.6
-Nilwala Ganga,RB 12,Nilwala Ganga,Panadugama,5,6,7.5,28/11/2025 06:00,1764289800,5.02,Alert,Falling,10.6
-Nilwala Ganga,RB 12,Nilwala Ganga,Pitabeddara,4,5,6.5,28/11/2025 06:00,1764289800,1.85,Normal,,23.9
-Nilwala Ganga,RB 12,Urubokka Ganga,Urawa,2.5,4,6,28/11/2025 06:00,1764289800,1.44,Normal,,33.4
-Walawe Ganga,RB 18,Walawe Ganga,Moraketiya,3,5,7,28/11/2025 06:00,1764289800,4.31,Alert,Rising,41.4
-Kirindi Oya,RB 22,Kirindi Oya,Thanamalwila,4,5,5.5,28/11/2025 06:00,1764289800,4.72,Alert,Falling,36.2
-Kirindi Oya,RB 22,Kirindi Oya,Wellawaya,4.4,5.4,5.9,28/11/2025 06:00,1764289800,2.19,Normal,,53.2
-Kirindi Oya,RB 22,Kuda Oya,Kuda Oya,6.9,8.4,8.8,28/11/2025 06:00,1764289800,4.67,Normal,,33.9
-Menik Ganga (RB,26,Menik Ganga,Katharagama,4,4.6,6.5,28/11/2025 06:00,1764289800,7.45,Major Flood,Falling,28.1
-Kumbukkan Oya,RB 31,Kumbukkan Oya,Nakkala,5,6,7.5,28/11/2025 06:00,1764289800,4,Normal,,91.3
-Heda Oya,RB 36,Heda Oya,Siyambalanduwa,4.5,6,7,28/11/2025 06:00,1764289800,3.22,Normal,,38.6
-Mahaweli Ganga,RB 60,Mahaweli Ganga,Peradeniya,5,7,9,28/11/2025 06:00,1764289800,14.8,Major Flood,Rising,240.2
-Mahaweli Ganga,RB 60,Mahaweli Ganga,Nawalapitiya,3.5,5,6,28/11/2025 06:00,1764289800,5.7,Minor Flood,Falling,221.9
-Yan Oya,RB 67,Yan Oya,Horowpothana,6,7.5,10.5,28/11/2025 06:00,1764289800,8.23,Minor Flood,Rising,258.6
-Malwathu Oya,RB 90,Malwathu Oya,Thanthirimale,5,6.8,7.8,28/11/2025 06:00,1764289800,9.49,Major Flood,Rising,324.1
-Deduru Oya,RB 99,Deduru Oya,Moragaswewa,4.75,6,7,28/11/2025 06:00,1764289800,8.33,Major Flood,Rising,82.6
-Maha Oya,RB 102,Maha Oya,Badalgama,5,6.2,9.6,28/11/2025 06:00,1764289800,9.5,Minor Flood,Rising,130.8
-Maha Oya,RB 102,Maha Oya,Giriulla,5.5,6.5,7.5,28/11/2025 06:00,1764289800,10.04,Major Flood,Rising,119
-Attanagalu Oya,RB 103,Attanagalu Oya,Dunamale,3.3,4.4,5.5,28/11/2025 06:00,1764289800,4.92,Minor Flood,Rising,137.7
+Kelani Ganga,RB 01,Kelani Ganga,Nagalagam Street,1.2192,1.524,2.1336,2025-11-28 06:00:00,1764289800,1.6459200000000003,Minor Flood,Rising,0.0
+Kelani Ganga,RB 01,Kelani Ganga,Hanwella,7.0,8.0,10.0,2025-11-28 06:00:00,1764289800,8.02,Minor Flood,Rising,138.2
+Kelani Ganga,RB 01,Kelani Ganga,Glencourse,15.0,16.5,19.0,2025-11-28 06:00:00,1764289800,18.25,Minor Flood,Rising,180.9
+Kelani Ganga,RB 01,Kelani Ganga,Kithulgala,3.0,4.0,6.0,2025-11-28 06:00:00,1764289800,5.3,Minor Flood,Falling,248.2
+Kelani Ganga,RB 01,Gurugoda Oya,Holombuwa,3.0,3.4,5.0,2025-11-28 06:00:00,1764289800,7.27,Major Flood,,168.5
+Kelani Ganga,RB 01,Seethawaka Ganga,Deraniyagala,4.8,5.8,6.4,2025-11-28 06:00:00,1764289800,7.25,Major Flood,Falling,263.9
+Kelani Ganga,RB 01,Kehelgamu Oya,Norwood,1.5,3.0,4.5,2025-11-28 06:00:00,1764289800,2.88,Alert,Falling,186.4
+Kalu Ganga,RB 03,Kalu Ganga,Putupaula,3.0,4.0,5.0,2025-11-28 06:00:00,1764289800,2.11,Normal,,26.1
+Kalu Ganga,RB 03,Kalu Ganga,Ellagawa,10.0,10.7,12.2,2025-11-28 06:00:00,1764289800,9.5,Normal,,174.9
+Kalu Ganga,RB 03,Kalu Ganga,Rathnapura,5.2,7.5,9.5,2025-11-28 06:00:00,1764289800,8.11,Minor Flood,Rising,165.7
+Kalu Ganga,RB 03,Maguru Ganga,Magura,4.0,6.0,7.5,2025-11-28 06:00:00,1764289800,4.43,Alert,Rising,137.8
+Kalu Ganga,RB 03,Kuda Ganga,Kalawellawa (Millakanda),5.0,6.5,8.0,2025-11-28 06:00:00,1764289800,6.04,Alert,Rising,113.3
+Gin Ganga,RB 09,Gin Ganga,Baddegama,3.5,4.0,5.0,2025-11-28 06:00:00,1764289800,3.01,Normal,,11.8
+Gin Ganga,RB 09,Gin Ganga,Thawalama,4.0,6.0,7.5,2025-11-28 06:00:00,1764289800,3.2,Normal,,32.2
+Nilwala Ganga,RB 12,Nilwala Ganga,Thalgahagoda,1.4,1.7,2.8,2025-11-28 06:00:00,1764289800,1.7,Minor Flood,,4.6
+Nilwala Ganga,RB 12,Nilwala Ganga,Panadugama,5.0,6.0,7.5,2025-11-28 06:00:00,1764289800,5.02,Alert,Falling,10.6
+Nilwala Ganga,RB 12,Nilwala Ganga,Pitabeddara,4.0,5.0,6.5,2025-11-28 06:00:00,1764289800,1.85,Normal,,23.9
+Nilwala Ganga,RB 12,Urubokka Ganga,Urawa,2.5,4.0,6.0,2025-11-28 06:00:00,1764289800,1.44,Normal,,33.4
+Walawe Ganga,RB 18,Walawe Ganga,Moraketiya,3.0,5.0,7.0,2025-11-28 06:00:00,1764289800,4.31,Alert,Rising,41.4
+Kirindi Oya,RB 22,Kirindi Oya,Thanamalwila,4.0,5.0,5.5,2025-11-28 06:00:00,1764289800,4.72,Alert,Falling,36.2
+Kirindi Oya,RB 22,Kirindi Oya,Wellawaya,4.4,5.4,5.9,2025-11-28 06:00:00,1764289800,2.19,Normal,,53.2
+Kirindi Oya,RB 22,Kuda Oya,Kuda Oya,6.9,8.4,8.8,2025-11-28 06:00:00,1764289800,4.67,Normal,,33.9
+Menik Ganga (RB,26,Menik Ganga,Katharagama,4.0,4.6,6.5,2025-11-28 06:00:00,1764289800,7.45,Major Flood,Falling,28.1
+Kumbukkan Oya,RB 31,Kumbukkan Oya,Nakkala,5.0,6.0,7.5,2025-11-28 06:00:00,1764289800,4.0,Normal,,91.3
+Heda Oya,RB 36,Heda Oya,Siyambalanduwa,4.5,6.0,7.0,2025-11-28 06:00:00,1764289800,3.22,Normal,,38.6
+Maduru Oya,RB 54,Maduru Oya,Padiyathalawa,4.0,4.5,6.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Mahaweli Ganga,RB 60,Mahaweli Ganga,Manampitiya,3.0,4.3,6.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Mahaweli Ganga,RB 60,Mahaweli Ganga,Weraganthota,5.0,6.0,8.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Mahaweli Ganga,RB 60,Mahaweli Ganga,Peradeniya,5.0,7.0,9.0,2025-11-28 06:00:00,1764289800,14.8,Major Flood,Rising,240.2
+Mahaweli Ganga,RB 60,Mahaweli Ganga,Nawalapitiya,3.5,5.0,6.0,2025-11-28 06:00:00,1764289800,5.7,Minor Flood,Falling,221.9
+Mahaweli Ganga,RB 60,Badulu Oya,Thaldena,3.0,4.0,5.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Yan Oya,RB 67,Yan Oya,Horowpothana,6.0,7.5,10.5,2025-11-28 06:00:00,1764289800,8.23,Minor Flood,Rising,258.6
+Maa Oya (RB 69)  Mukunu Oya,,,Yaka Wewa,4.0,5.0,6.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Malwathu Oya,RB 90,Malwathu Oya,Thanthirimale,5.0,6.8,7.8,2025-11-28 06:00:00,1764289800,9.49,Major Flood,Rising,324.1
+Mee Oya,RB 95,Mee Oya,Galgamuwa,4.84,5.94,8.0,2025-11-28 06:00:00,1764289800,0.0,,,0.0
+Deduru Oya,RB 99,Deduru Oya,Moragaswewa,4.75,6.0,7.0,2025-11-28 06:00:00,1764289800,8.33,Major Flood,Rising,82.6
+Maha Oya,RB 102,Maha Oya,Badalgama,5.0,6.2,9.6,2025-11-28 06:00:00,1764289800,9.5,Minor Flood,Rising,130.8
+Maha Oya,RB 102,Maha Oya,Giriulla,5.5,6.5,7.5,2025-11-28 06:00:00,1764289800,10.04,Major Flood,Rising,119.0
+Attanagalu Oya,RB 103,Attanagalu Oya,Dunamale,3.3,4.4,5.5,2025-11-28 06:00:00,1764289800,4.92,Minor Flood,Rising,137.7

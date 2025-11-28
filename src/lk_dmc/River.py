@@ -10,5 +10,6 @@ class River:
 
     @classmethod
     def from_df_row(cls, df_row, river_basin) -> "River":
-        river_name = df_row[1].strip()
+        river_name = df_row[1].strip() or df_row[0].split(")")[1].strip()
+        assert river_name, "River name is empty"
         return cls(name=river_name, river_basin=river_basin)
