@@ -18,6 +18,10 @@ class RiverWaterLevelDataTable(
 ):
     d_list: list[RiverWaterLevelData]
 
+    @property
+    def time_updated_ut(self) -> int:
+        return max(rwld.time_ut for rwld in self.d_list)
+
     @classmethod
     def from_df(cls, df) -> "RiverWaterLevelDataTable":
         d_list = []

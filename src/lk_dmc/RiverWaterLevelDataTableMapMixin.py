@@ -3,9 +3,7 @@ import os
 import matplotlib.pyplot as plt
 from gig import Ent, EntType
 from matplotlib.lines import Line2D
-
-# Patch is no longer used; legend uses Line2D markers
-from utils import Log
+from utils import Log, Time, TimeFormat
 
 from lk_dmc.GaugingStation import GaugingStation
 from lk_dmc.Location import Location
@@ -47,7 +45,8 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name) or Location.from_name(name)
+                GaugingStation.from_name_safe(name)
+                or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
@@ -167,7 +166,7 @@ class RiverWaterLevelDataTableMapMixin:
         ax.legend(handles=legend_handles, loc="upper right", fontsize=8)
 
     def draw(self):
-        fig, ax = plt.subplots(figsize=(9, 16))
+        fig, ax = plt.subplots(figsize=(16, 16))
 
         self.__draw_map__(ax)
         self.__draw_rivers__(ax)
@@ -175,7 +174,27 @@ class RiverWaterLevelDataTableMapMixin:
         self.__draw_stations__(ax)
 
         self.__draw_legend__(ax)
-        plt.title("Sri Lanka - Flood Map")
+        plt.title("Sri Lanka - Flood Map", fontsize=32)
+        fig.text(
+            0.5,
+            0.1,
+            "Data source: http://dmc.gov.lk",
+            ha="center",
+            fontsize=8,
+            color="black",
+            alpha=0.7,
+        )
+        time_str = TimeFormat.TIME.format(Time(self.time_updated_ut))
+        fig.text(
+            0.5,
+            0.85,
+            f"As of {time_str}",
+            ha="center",
+            fontsize=16,
+            color="black",
+            alpha=0.7,
+        )
+
         ax.set_axis_off()
         for spine in ax.spines.values():
             spine.set_visible(False)
