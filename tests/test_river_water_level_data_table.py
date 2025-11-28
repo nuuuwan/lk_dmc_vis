@@ -61,3 +61,8 @@ class TestCase(unittest.TestCase):
                 actual_content = actual_file.read()
                 expected_content = expected_file.read()
                 self.assertEqual(actual_content, expected_content)
+
+    @unittest.skip("slow")
+    def test_list_latest(self):
+        t_list = RiverWaterLevelDataTable.list_latest()
+        self.assertGreaterEqual(len(t_list), 1)

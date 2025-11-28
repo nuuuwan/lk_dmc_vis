@@ -7,7 +7,7 @@ class WaterLevel:
 
     @classmethod
     def from_str(cls, s, unit: str) -> "WaterLevel":
-        if s in ("-", "N.A."):
+        if s in ("-", "N.A.", "NA"):
             return cls(0.0)
         val = float(s)
         if unit == "ft":

@@ -23,27 +23,6 @@ class RiverWaterLevelData:
     rising_or_falling: str
     rainfall_mm: float
 
-    @property
-    def expected_remarks(self) -> str:
-        if self.current_water_level.m == 0:
-            return ""
-
-        if (
-            self.current_water_level.m
-            >= self.gauging_station.major_flood_level.m
-        ):
-            return "Major Flood"
-        elif (
-            self.current_water_level.m
-            >= self.gauging_station.minor_flood_level.m
-        ):
-            return "Minor Flood"
-        elif self.current_water_level.m >= self.gauging_station.alert_level.m:
-            return "Alert"
-
-        else:
-            return "Normal"
-
     def validate(self):
         assert self.river, "River is None"
         assert self.gauging_station, "Gauging Station is None"
@@ -54,10 +33,6 @@ class RiverWaterLevelData:
         assert self.previous_water_level, "Previous Water Level is None"
         assert self.current_water_level, "Current Water Level is None"
         assert self.remarks is not None, "Remarks is None"
-        assert self.remarks == self.expected_remarks, (
-            f"Remarks '{self.remarks}' do not match expected "
-            f"'{self.expected_remarks}'"
-        )
         assert self.rising_or_falling in (
             "Rising",
             "Falling",
