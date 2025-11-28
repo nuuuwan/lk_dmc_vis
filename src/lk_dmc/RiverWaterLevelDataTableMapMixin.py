@@ -23,15 +23,24 @@ class RiverWaterLevelDataTableMapMixin:
         4: "red",
     }
 
+    LOCATION_MARKER_SHAPE = "s"
+    LOCATION_MARKER_SIZE = 4
+    STATION_MARKER_SHAPE = "o"
+    STATION_MARKER_SIZE = LOCATION_MARKER_SIZE * 2
+    RIVER_WIDTH = LOCATION_MARKER_SIZE / 2
+    LABEL_X_OFFSET = 0.03
+    LABEL_Y_OFFSET = 0.0
+
     def __draw_map__(self, ax):
         district_ents = Ent.list_from_type(EntType.DISTRICT)
         for ent in district_ents:
             geo = ent.geo()
             geo.plot(
                 ax=ax,
-                color=(0.9, 0.9, 0.9),
+                color=(0.95, 0.95, 0.95),
                 edgecolor=(0.75, 0.75, 0.75),
                 linewidth=0.5,
+                alpha=1.0,
             )
 
     def get_station_to_level_map(self):
@@ -47,7 +56,8 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name) or Location.from_name(name)
+                GaugingStation.from_name_safe(name)
+                or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
@@ -68,15 +78,17 @@ class RiverWaterLevelDataTableMapMixin:
                 dy = y2 - y1
 
                 dmin = min(abs(dx), abs(dy))
-                xmid = x1 + dmin * dx / abs(dx)
-                ymid = y1 + dmin * dy / abs(dy)
+                xmid1 = x1 + dmin * dx / abs(dx) / 2
+                ymid1 = y1 + dmin * dy / abs(dy) / 2
+                xmid2 = x2 - dmin * dx / abs(dx) / 2
+                ymid2 = y2 - dmin * dy / abs(dy) / 2
 
                 ax.plot(
-                    [x1, xmid, x2],
-                    [y1, ymid, y2],
+                    [x1, xmid1, xmid2, x2],
+                    [y1, ymid1, ymid2, y2],
                     color=color,
-                    linewidth=2,
-                    alpha=0.7,
+                    linewidth=self.RIVER_WIDTH,
+                    alpha=0.75,
                 )
 
     def __draw_locations__(self, ax):
@@ -86,16 +98,18 @@ class RiverWaterLevelDataTableMapMixin:
             ax.plot(
                 lng,
                 lat,
-                marker="s",
-                markersize=5,
+                marker=self.LOCATION_MARKER_SHAPE,
+                markersize=self.LOCATION_MARKER_SIZE,
                 color="grey",
             )
             ax.text(
-                lng + 0.03,
-                lat + 0.03,
+                lng + self.LABEL_X_OFFSET,
+                lat + self.LABEL_Y_OFFSET,
                 location.name,
-                fontsize=4,
-                color="grey",
+                horizontalalignment="left",
+                verticalalignment="center",
+                fontsize=3,
+                color="black",
             )
 
     def __get_station_level__(self, rwld):
@@ -118,14 +132,16 @@ class RiverWaterLevelDataTableMapMixin:
         ax.plot(
             lng,
             lat,
-            marker="o",
-            markersize=10,
+            marker=self.STATION_MARKER_SHAPE,
+            markersize=self.STATION_MARKER_SIZE,
             color=color,
         )
         ax.text(
-            lng + 0.03,
-            lat + 0.03,
+            lng + self.LABEL_X_OFFSET,
+            lat + self.LABEL_Y_OFFSET,
             station.name,
+            horizontalalignment="left",
+            verticalalignment="center",
             fontsize=5,
             color="black",
         )
@@ -145,11 +161,11 @@ class RiverWaterLevelDataTableMapMixin:
             ("grey", "Square = Other Location"),
         ]:
             if "Square" in label:
-                markersize = 5
-                marker_style = "s"
+                markersize = self.LOCATION_MARKER_SIZE
+                marker_style = self.LOCATION_MARKER_SHAPE
             else:
-                markersize = 10
-                marker_style = "o"
+                markersize = self.STATION_MARKER_SIZE
+                marker_style = self.STATION_MARKER_SHAPE
             handle = Line2D(
                 [0],
                 [0],
@@ -188,26 +204,29 @@ class RiverWaterLevelDataTableMapMixin:
             0.5,
             0.85,
             "Sri Lanka - Flood Map",
-            ha="center",
             fontsize=16,
             color="black",
+            horizontalalignment="center",
+            verticalalignment="center",
         )
         time_str = TimeFormat.TIME.format(Time(self.time_updated_ut))
         fig.text(
             0.5,
             0.825,
             f"As of {time_str}",
-            ha="center",
             fontsize=12,
             color="black",
+            horizontalalignment="center",
+            verticalalignment="center",
         )
         fig.text(
             0.5,
             0.8,
             "Data source: http://dmc.gov.lk",
-            ha="center",
             fontsize=8,
             color="black",
+            horizontalalignment="center",
+            verticalalignment="center",
         )
 
         ax.set_axis_off()
