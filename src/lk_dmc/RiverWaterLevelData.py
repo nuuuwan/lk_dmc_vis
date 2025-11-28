@@ -69,3 +69,20 @@ class RiverWaterLevelData:
         )
 
         return rwld, river_basin
+
+    def to_dict_flat(self) -> dict:
+        return dict(
+            river_basin_name=self.river.river_basin.name,
+            river_basin_code=self.river.river_basin.code,
+            river_name=self.river.name,
+            gauging_station_name=self.gauging_station.name,
+            alert_level_m=self.gauging_station.alert_level_m,
+            minor_flood_level_m=self.gauging_station.minor_flood_level_m,
+            major_flood_level_m=self.gauging_station.major_flood_level_m,
+            time_str=self.time_str,
+            time_ut=self.time_ut,
+            current_water_level_m=self.current_water_level_m,
+            remarks=self.remarks,
+            rising_or_falling=self.rising_or_falling,
+            rainfall_mm=self.rainfall_mm,
+        )

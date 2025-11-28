@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import camelot
+import pandas as pd
 
 from lk_dmc.RiverWaterLevelData import RiverWaterLevelData
 
@@ -33,3 +34,11 @@ class RiverWaterLevelDataTable:
 
     def __len__(self):
         return len(self.d_list)
+
+    def to_csv(self, csv_path: str):
+
+        data = []
+        for rwld in self.d_list:
+            data.append(rwld.to_dict_flat())
+        df = pd.DataFrame(data)
+        df.to_csv(csv_path, index=False)

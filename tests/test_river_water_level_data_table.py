@@ -35,3 +35,26 @@ class TestCase(unittest.TestCase):
                 "rainfall_mm": 0.0,
             },
         )
+
+    def test_to_csv(self):
+        pdf_path = os.path.join(
+            "tests", "inputs", "test_river_water_level_data_table.pdf"
+        )
+        t = RiverWaterLevelDataTable.from_pdf(pdf_path)
+
+        actual_csv_path = os.path.join(
+            "tests", "outputs", "test_river_water_level_data_table.csv"
+        )
+        expected_csv_path = os.path.join(
+            "tests",
+            "inputs",
+            "test_river_water_level_data_table.csv",
+        )
+        t.to_csv(actual_csv_path)
+
+        self.assertTrue(os.path.exists(actual_csv_path))
+        with open(actual_csv_path, "r") as actual_file:
+            with open(expected_csv_path, "r") as expected_file:
+                actual_content = actual_file.read()
+                expected_content = expected_file.read()
+                self.assertEqual(actual_content, expected_content)
