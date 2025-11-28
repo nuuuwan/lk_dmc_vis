@@ -61,6 +61,8 @@ class RiverWaterLevelDataTableRemoteDataMixin:
             log.debug(f"{pdf_path} Exists.")
 
         rwld = cls.from_pdf(pdf_path)
+        if not rwld:
+            return None
         rwld.to_json(json_path)
         return rwld
 
@@ -70,7 +72,8 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         rwld_table_list = []
         for url_pdf in url_pdf_list:
             rwld_table = cls.from_url_pdf(url_pdf)
-            rwld_table_list.append(rwld_table)
+            if not rwld_table:
+                rwld_table_list.append(rwld_table)
         return rwld_table_list
 
     @classmethod

@@ -4,10 +4,12 @@ import camelot
 from utils import JSONFile, Log
 
 from lk_dmc.RiverWaterLevelData import RiverWaterLevelData
-from lk_dmc.RiverWaterLevelDataTableMapMixin import \
-    RiverWaterLevelDataTableMapMixin
-from lk_dmc.RiverWaterLevelDataTableRemoteDataMixin import \
-    RiverWaterLevelDataTableRemoteDataMixin
+from lk_dmc.RiverWaterLevelDataTableMapMixin import (
+    RiverWaterLevelDataTableMapMixin,
+)
+from lk_dmc.RiverWaterLevelDataTableRemoteDataMixin import (
+    RiverWaterLevelDataTableRemoteDataMixin,
+)
 
 log = Log("RiverWaterLevelDataTable")
 
@@ -42,7 +44,8 @@ class RiverWaterLevelDataTable(
         doc_id = pdf_path.split("/")[-1][:-4]
         assert len(doc_id) == 28, f"Unexpected doc_id length: {doc_id}"
         tables = camelot.read_pdf(pdf_path)
-        assert len(tables) > 0, f"No tables found in PDF: {pdf_path}"
+        if len(tables) == 0:
+            return None
         df = tables[0].df
         return cls.from_df(df, doc_id)
 
