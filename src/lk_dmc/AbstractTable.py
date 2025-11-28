@@ -23,7 +23,9 @@ class AbstractTable:
 
     @classmethod
     def get_json_path(cls):
-        return os.path.join("data", "static", f"{cls.get_file_prefix()}s.json")
+        return os.path.join(
+            "data", "static", f"{cls.get_file_prefix()}s.json"
+        )
 
     @classmethod
     def get_json_file(cls):
