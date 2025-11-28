@@ -1,0 +1,48 @@
+name: pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "⬇️ Checkout"
+        uses: actions/checkout@v4
+        with:
+          ref: "main"
+          token: "${{ secrets.REPO_DATA_TOKEN }}"
+
+      - name: "🐍 Set up Python"
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: "🐍 Install dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install build
+
+      - name: "⚙️ Run pipeline"
+        run: |
+          export PYTHONPATH="$PYTHONPATH:./src"
+
+          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
+          python workflows/pipeline.py
+
+      - name: "⬆️ Push"
+        run: |
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "🤖 [pipeline.yml] $(date '+%Y-%m-%d-%H%M')"
+          git pull origin main --rebase
+          git push origin main
