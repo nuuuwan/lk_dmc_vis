@@ -1,0 +1,1220 @@
+{
+  "d_list": [
+    {
+      "gauging_station": {
+        "name": "Nagalagam Street",
+        "river": {
+          "name": "Kelani Ganga",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 1.2192
+        },
+        "minor_flood_level": {
+          "m": 1.524
+        },
+        "major_flood_level": {
+          "m": 2.1336
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 0.54864
+      },
+      "current_water_level": {
+        "m": 0.57912
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station": {
+        "name": "Hanwella",
+        "river": {
+          "name": "Kelani Ganga",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 7.0
+        },
+        "minor_flood_level": {
+          "m": 8.0
+        },
+        "major_flood_level": {
+          "m": 10.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 2.17
+      },
+      "current_water_level": {
+        "m": 2.22
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 29.7
+    },
+    {
+      "gauging_station": {
+        "name": "Glencourse",
+        "river": {
+          "name": "Kelani Ganga",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 15.0
+        },
+        "minor_flood_level": {
+          "m": 16.5
+        },
+        "major_flood_level": {
+          "m": 19.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 10.35
+      },
+      "current_water_level": {
+        "m": 10.45
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 16.1
+    },
+    {
+      "gauging_station": {
+        "name": "Kithulgala",
+        "river": {
+          "name": "Kelani Ganga",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 4.0
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.85
+      },
+      "current_water_level": {
+        "m": 1.8
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 9.3
+    },
+    {
+      "gauging_station": {
+        "name": "Holombuwa",
+        "river": {
+          "name": "Gurugoda Oya",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 3.4
+        },
+        "major_flood_level": {
+          "m": 5.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.68
+      },
+      "current_water_level": {
+        "m": 3.38
+      },
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 44.0
+    },
+    {
+      "gauging_station": {
+        "name": "Deraniyagala",
+        "river": {
+          "name": "Seethawaka Ganga",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 4.8
+        },
+        "minor_flood_level": {
+          "m": 5.8
+        },
+        "major_flood_level": {
+          "m": 6.4
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 0.89
+      },
+      "current_water_level": {
+        "m": 0.87
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 7.8
+    },
+    {
+      "gauging_station": {
+        "name": "Norwood",
+        "river": {
+          "name": "Kehelgamu Oya",
+          "river_basin": {
+            "code": "RB 01",
+            "name": "Kelani Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 1.5
+        },
+        "minor_flood_level": {
+          "m": 3.0
+        },
+        "major_flood_level": {
+          "m": 4.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.88
+      },
+      "current_water_level": {
+        "m": 1.81
+      },
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 49.9
+    },
+    {
+      "gauging_station": {
+        "name": "Putupaula",
+        "river": {
+          "name": "Kalu Ganga",
+          "river_basin": {
+            "code": "RB 03",
+            "name": "Kalu Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 4.0
+        },
+        "major_flood_level": {
+          "m": 5.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 2.4
+      },
+      "current_water_level": {
+        "m": 2.4
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 13.7
+    },
+    {
+      "gauging_station": {
+        "name": "Ellagawa",
+        "river": {
+          "name": "Kalu Ganga",
+          "river_basin": {
+            "code": "RB 03",
+            "name": "Kalu Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 10.0
+        },
+        "minor_flood_level": {
+          "m": 10.7
+        },
+        "major_flood_level": {
+          "m": 12.2
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 6.34
+      },
+      "current_water_level": {
+        "m": 6.29
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 5.4
+    },
+    {
+      "gauging_station": {
+        "name": "Rathnapura",
+        "river": {
+          "name": "Kalu Ganga",
+          "river_basin": {
+            "code": "RB 03",
+            "name": "Kalu Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 5.2
+        },
+        "minor_flood_level": {
+          "m": 7.5
+        },
+        "major_flood_level": {
+          "m": 9.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.14
+      },
+      "current_water_level": {
+        "m": 3.23
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 12.9
+    },
+    {
+      "gauging_station": {
+        "name": "Magura",
+        "river": {
+          "name": "Maguru Ganga",
+          "river_basin": {
+            "code": "RB 03",
+            "name": "Kalu Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.6
+      },
+      "current_water_level": {
+        "m": 3.67
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 15.8
+    },
+    {
+      "gauging_station": {
+        "name": "Kalawellawa",
+        "river": {
+          "name": "Kuda Ganga",
+          "river_basin": {
+            "code": "RB 03",
+            "name": "Kalu Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.5
+        },
+        "major_flood_level": {
+          "m": 8.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 6.78
+      },
+      "current_water_level": {
+        "m": 6.75
+      },
+      "remarks": "Minor Flood",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 28.6
+    },
+    {
+      "gauging_station": {
+        "name": "Baddegama",
+        "river": {
+          "name": "Gin Ganga",
+          "river_basin": {
+            "code": "RB 09",
+            "name": "Gin Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.5
+        },
+        "minor_flood_level": {
+          "m": 4.0
+        },
+        "major_flood_level": {
+          "m": 5.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 4.3
+      },
+      "current_water_level": {
+        "m": 4.3
+      },
+      "remarks": "Minor Flood",
+      "rising_or_falling": "",
+      "rainfall_mm": 1.0
+    },
+    {
+      "gauging_station": {
+        "name": "Thawalama",
+        "river": {
+          "name": "Gin Ganga",
+          "river_basin": {
+            "code": "RB 09",
+            "name": "Gin Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 2.33
+      },
+      "current_water_level": {
+        "m": 2.36
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 2.3
+    },
+    {
+      "gauging_station": {
+        "name": "Thalgahagoda",
+        "river": {
+          "name": "Nilwala Ganga",
+          "river_basin": {
+            "code": "RB 12",
+            "name": "Nilwala Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 1.4
+        },
+        "minor_flood_level": {
+          "m": 1.7
+        },
+        "major_flood_level": {
+          "m": 2.8
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.68
+      },
+      "current_water_level": {
+        "m": 1.67
+      },
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 58.6
+    },
+    {
+      "gauging_station": {
+        "name": "Panadugama",
+        "river": {
+          "name": "Nilwala Ganga",
+          "river_basin": {
+            "code": "RB 12",
+            "name": "Nilwala Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 5.05
+      },
+      "current_water_level": {
+        "m": 4.99
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 8.2
+    },
+    {
+      "gauging_station": {
+        "name": "Pitabeddara",
+        "river": {
+          "name": "Nilwala Ganga",
+          "river_basin": {
+            "code": "RB 12",
+            "name": "Nilwala Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 5.0
+        },
+        "major_flood_level": {
+          "m": 6.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.31
+      },
+      "current_water_level": {
+        "m": 1.29
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station": {
+        "name": "Urawa",
+        "river": {
+          "name": "Urubokka Ganga",
+          "river_basin": {
+            "code": "RB 12",
+            "name": "Nilwala Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 2.5
+        },
+        "minor_flood_level": {
+          "m": 4.0
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.08
+      },
+      "current_water_level": {
+        "m": 1.09
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 1.5
+    },
+    {
+      "gauging_station": {
+        "name": "Moraketiya",
+        "river": {
+          "name": "Walawe Ganga",
+          "river_basin": {
+            "code": "RB 18",
+            "name": "Walawe Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 5.0
+        },
+        "major_flood_level": {
+          "m": 7.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.28
+      },
+      "current_water_level": {
+        "m": 1.28
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 11.6
+    },
+    {
+      "gauging_station": {
+        "name": "Thanamalwila",
+        "river": {
+          "name": "Kirindi Oya",
+          "river_basin": {
+            "code": "RB 22",
+            "name": "Kirindi Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 5.0
+        },
+        "major_flood_level": {
+          "m": 5.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.8
+      },
+      "current_water_level": {
+        "m": 3.59
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 32.8
+    },
+    {
+      "gauging_station": {
+        "name": "Wellawaya",
+        "river": {
+          "name": "Kirindi Oya",
+          "river_basin": {
+            "code": "RB 22",
+            "name": "Kirindi Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.4
+        },
+        "minor_flood_level": {
+          "m": 5.4
+        },
+        "major_flood_level": {
+          "m": 5.9
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 2.3
+      },
+      "current_water_level": {
+        "m": 2.04
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 86.8
+    },
+    {
+      "gauging_station": {
+        "name": "Kuda Oya",
+        "river": {
+          "name": "Kuda Oya",
+          "river_basin": {
+            "code": "RB 22",
+            "name": "Kirindi Oya"
+          }
+        },
+        "alert_level": {
+          "m": 6.9
+        },
+        "minor_flood_level": {
+          "m": 8.4
+        },
+        "major_flood_level": {
+          "m": 8.8
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.69
+      },
+      "current_water_level": {
+        "m": 3.52
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 13.7
+    },
+    {
+      "gauging_station": {
+        "name": "Katharagama",
+        "river": {
+          "name": "Menik Ganga",
+          "river_basin": {
+            "code": "RB 26",
+            "name": "Menik Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 4.6
+        },
+        "major_flood_level": {
+          "m": 6.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 0.23
+      },
+      "current_water_level": {
+        "m": 0.23
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 17.7
+    },
+    {
+      "gauging_station": {
+        "name": "Nakkala",
+        "river": {
+          "name": "Kumbukkan Oya",
+          "river_basin": {
+            "code": "RB 31",
+            "name": "Kumbukkan Oya"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.9
+      },
+      "current_water_level": {
+        "m": 1.89
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 20.2
+    },
+    {
+      "gauging_station": {
+        "name": "Siyambalanduwa",
+        "river": {
+          "name": "Heda Oya",
+          "river_basin": {
+            "code": "RB 36",
+            "name": "Heda Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.5
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 2.2
+      },
+      "current_water_level": {
+        "m": 2.15
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 67.1
+    },
+    {
+      "gauging_station": {
+        "name": "Padiyathalawa",
+        "river": {
+          "name": "Maduru Oya",
+          "river_basin": {
+            "code": "RB 54",
+            "name": "Maduru Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 4.5
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.08
+      },
+      "current_water_level": {
+        "m": 1.06
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 17.8
+    },
+    {
+      "gauging_station": {
+        "name": "Manampitiya",
+        "river": {
+          "name": "Mahaweli Ganga",
+          "river_basin": {
+            "code": "RB 60",
+            "name": "Mahaweli Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 4.3
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.41
+      },
+      "current_water_level": {
+        "m": 1.35
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 12.3
+    },
+    {
+      "gauging_station": {
+        "name": "Weraganthota",
+        "river": {
+          "name": "Mahaweli Ganga",
+          "river_basin": {
+            "code": "RB 60",
+            "name": "Mahaweli Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 8.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": -2.3
+      },
+      "current_water_level": {
+        "m": -2.1
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 7.2
+    },
+    {
+      "gauging_station": {
+        "name": "Peradeniya",
+        "river": {
+          "name": "Mahaweli Ganga",
+          "river_basin": {
+            "code": "RB 60",
+            "name": "Mahaweli Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 7.0
+        },
+        "major_flood_level": {
+          "m": 9.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.9
+      },
+      "current_water_level": {
+        "m": 4.05
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 38.0
+    },
+    {
+      "gauging_station": {
+        "name": "Nawalapitiya",
+        "river": {
+          "name": "Mahaweli Ganga",
+          "river_basin": {
+            "code": "RB 60",
+            "name": "Mahaweli Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.5
+        },
+        "minor_flood_level": {
+          "m": 5.0
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.95
+      },
+      "current_water_level": {
+        "m": 1.91
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 33.0
+    },
+    {
+      "gauging_station": {
+        "name": "Thaldena",
+        "river": {
+          "name": "Badulu Oya",
+          "river_basin": {
+            "code": "RB 60",
+            "name": "Mahaweli Ganga"
+          }
+        },
+        "alert_level": {
+          "m": 3.0
+        },
+        "minor_flood_level": {
+          "m": 4.0
+        },
+        "major_flood_level": {
+          "m": 5.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.21
+      },
+      "current_water_level": {
+        "m": 1.2
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 38.1
+    },
+    {
+      "gauging_station": {
+        "name": "Horowpothana",
+        "river": {
+          "name": "Yan Oya",
+          "river_basin": {
+            "code": "RB 67",
+            "name": "Yan Oya"
+          }
+        },
+        "alert_level": {
+          "m": 6.0
+        },
+        "minor_flood_level": {
+          "m": 7.5
+        },
+        "major_flood_level": {
+          "m": 10.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 3.43
+      },
+      "current_water_level": {
+        "m": 3.53
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 29.4
+    },
+    {
+      "gauging_station": {
+        "name": "Yaka Wewa",
+        "river": {
+          "name": "Mukunu Oya",
+          "river_basin": {
+            "code": "RB 69",
+            "name": "Maa Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.0
+        },
+        "minor_flood_level": {
+          "m": 5.0
+        },
+        "major_flood_level": {
+          "m": 6.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.2
+      },
+      "current_water_level": {
+        "m": 1.2
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 17.9
+    },
+    {
+      "gauging_station": {
+        "name": "Thanthirimale",
+        "river": {
+          "name": "Malwathu Oya",
+          "river_basin": {
+            "code": "RB 90",
+            "name": "Malwathu Oya"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.8
+        },
+        "major_flood_level": {
+          "m": 7.8
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 1.75
+      },
+      "current_water_level": {
+        "m": 1.75
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 18.2
+    },
+    {
+      "gauging_station": {
+        "name": "Moragaswewa",
+        "river": {
+          "name": "Deduru Oya",
+          "river_basin": {
+            "code": "RB 99",
+            "name": "Deduru Oya"
+          }
+        },
+        "alert_level": {
+          "m": 4.75
+        },
+        "minor_flood_level": {
+          "m": 6.0
+        },
+        "major_flood_level": {
+          "m": 7.0
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 5.99
+      },
+      "current_water_level": {
+        "m": 6.0
+      },
+      "remarks": "Minor Flood",
+      "rising_or_falling": "Rising",
+      "rainfall_mm": 7.9
+    },
+    {
+      "gauging_station": {
+        "name": "Badalgama",
+        "river": {
+          "name": "Maha Oya",
+          "river_basin": {
+            "code": "RB 102",
+            "name": "Maha Oya"
+          }
+        },
+        "alert_level": {
+          "m": 5.0
+        },
+        "minor_flood_level": {
+          "m": 6.2
+        },
+        "major_flood_level": {
+          "m": 9.6
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 4.1
+      },
+      "current_water_level": {
+        "m": 4.33
+      },
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 13.8
+    },
+    {
+      "gauging_station": {
+        "name": "Giriulla",
+        "river": {
+          "name": "Maha Oya",
+          "river_basin": {
+            "code": "RB 102",
+            "name": "Maha Oya"
+          }
+        },
+        "alert_level": {
+          "m": 5.5
+        },
+        "minor_flood_level": {
+          "m": 6.5
+        },
+        "major_flood_level": {
+          "m": 7.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 5.4
+      },
+      "current_water_level": {
+        "m": 5.7
+      },
+      "remarks": "Alert",
+      "rising_or_falling": "Rising",
+      "rainfall_mm": 99.2
+    },
+    {
+      "gauging_station": {
+        "name": "Dunamale",
+        "river": {
+          "name": "Attanagalu Oya",
+          "river_basin": {
+            "code": "RB 103",
+            "name": "Attanagalu Oya"
+          }
+        },
+        "alert_level": {
+          "m": 3.3
+        },
+        "minor_flood_level": {
+          "m": 4.4
+        },
+        "major_flood_level": {
+          "m": 5.5
+        }
+      },
+      "time_str": "2025-11-28 06:00:00",
+      "time_ut": 1764289800,
+      "previous_water_level": {
+        "m": 4.7
+      },
+      "current_water_level": {
+        "m": 4.7
+      },
+      "remarks": "Minor Flood",
+      "rising_or_falling": "",
+      "rainfall_mm": 43.4
+    }
+  ]
+}

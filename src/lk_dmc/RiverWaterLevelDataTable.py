@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 
 import camelot
-import pandas as pd
-from utils import Log
+from utils import JSONFile, Log
 
 from lk_dmc.RiverWaterLevelData import RiverWaterLevelData
 from lk_dmc.RiverWaterLevelDataTableMapMixin import \
@@ -44,9 +43,13 @@ class RiverWaterLevelDataTable(
     def __len__(self):
         return len(self.d_list)
 
-    def to_csv(self, csv_path: str):
-        data = []
-        for rwld in self.d_list:
-            data.append(rwld.to_dict_flat())
-        df = pd.DataFrame(data)
-        df.to_csv(csv_path, index=False)
+    def to_json(self, json_path: str):
+        json_file = JSONFile(json_path)
+        json_file.write(asdict(self))
+        log.info(f"Wrote {json_file}")
+
+    @classmethod
+    def from_json(cls, json_path: str) -> "RiverWaterLevelDataTable":
+        json_file = JSONFile(json_path)
+        data = json_file.read()
+        return cls(**data)

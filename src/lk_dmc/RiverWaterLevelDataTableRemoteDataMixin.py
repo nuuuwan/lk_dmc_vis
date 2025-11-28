@@ -44,6 +44,12 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         parts = url_pdf.split("/")
         assert parts[-1] == "doc.pdf", f"Invalid PDF URL: {url_pdf}"
         doc_id = parts[-2]
+
+        json_path = os.path.join("data", "jsons", f"{doc_id}.json")
+        if os.path.exists(json_path):
+            log.debug(f"{json_path} Exists.")
+            return cls.from_json(json_path)
+
         pdf_path = os.path.join("data", "pdfs", f"{doc_id}.pdf")
         if not os.path.exists(pdf_path):
             response = requests.get(url_pdf, timeout=30)
@@ -54,7 +60,10 @@ class RiverWaterLevelDataTableRemoteDataMixin:
 
         else:
             log.debug(f"{pdf_path} Exists.")
-        return cls.from_pdf(pdf_path)
+
+        rwld = cls.from_pdf(pdf_path)
+        rwld.to_json(json_path)
+        return rwld
 
     @classmethod
     def list_latest(cls):
@@ -63,6 +72,4 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         for url_pdf in url_pdf_list:
             rwld_table = cls.from_url_pdf(url_pdf)
             rwld_table_list.append(rwld_table)
-        latest = rwld_table_list[-1]
-        latest.to_csv(os.path.join("data", "latest.csv"))
         return rwld_table_list

@@ -45,8 +45,12 @@ class GaugingStation:
             name=d["name"],
             river=River.from_dict(d),
             alert_level=WaterLevel.from_str(d["alert_level"], "m"),
-            minor_flood_level=WaterLevel.from_str(d["minor_flood_level"], "m"),
-            major_flood_level=WaterLevel.from_str(d["major_flood_level"], "m"),
+            minor_flood_level=WaterLevel.from_str(
+                d["minor_flood_level"], "m"
+            ),
+            major_flood_level=WaterLevel.from_str(
+                d["major_flood_level"], "m"
+            ),
         )
 
     @classmethod
