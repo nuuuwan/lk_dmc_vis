@@ -24,7 +24,7 @@ class RiverWaterLevelDataTableMapMixin:
     }
 
     LOCATION_MARKER_SHAPE = "s"
-    LOCATION_MARKER_SIZE = 4
+    LOCATION_MARKER_SIZE = 3
     STATION_MARKER_SHAPE = "o"
     STATION_MARKER_SIZE = LOCATION_MARKER_SIZE * 2
     RIVER_WIDTH = LOCATION_MARKER_SIZE / 2
@@ -56,8 +56,7 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
+                GaugingStation.from_name_safe(name) or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
