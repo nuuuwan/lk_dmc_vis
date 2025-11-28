@@ -47,7 +47,8 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name) or Location.from_name(name)
+                GaugingStation.from_name_safe(name)
+                or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
