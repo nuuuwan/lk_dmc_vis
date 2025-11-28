@@ -24,7 +24,6 @@ class RiverWaterLevelData:
 
     def validate(self):
         assert self.gauging_station, "Gauging Station is None"
-        self.gauging_station.validate()
         assert self.time_str, "Time string is empty"
         assert (
             isinstance(self.time_ut, int) and self.time_ut > 0
@@ -78,23 +77,23 @@ class RiverWaterLevelData:
             rainfall_mm=rainfall_mm,
         )
         rwld.validate()
-
         return rwld, river_basin
 
-    def to_dict_flat(self) -> dict:
-        return dict(
-            river_basin_name=self.gauging_station.river.river_basin.name,
-            river_basin_code=self.gauging_station.river.river_basin.code,
-            river_name=self.gauging_station.river.name,
-            gauging_station_name=self.gauging_station.name,
-            alert_level_m=self.gauging_station.alert_level.m,
-            minor_flood_level_m=self.gauging_station.minor_flood_level.m,
-            major_flood_level_m=self.gauging_station.major_flood_level.m,
-            time_str=self.time_str,
-            time_ut=self.time_ut,
-            previous_water_level_m=self.previous_water_level.m,
-            current_water_level_m=self.current_water_level.m,
-            remarks=self.remarks,
-            rising_or_falling=self.rising_or_falling,
-            rainfall_mm=self.rainfall_mm,
+    @classmethod
+    def from_dict(cls, d):
+        gauging_station = GaugingStation.from_dict(d["gauging_station"])
+        previous_water_level = WaterLevel.from_dict(d["previous_water_level"])
+        current_water_level = WaterLevel.from_dict(d["current_water_level"])
+
+        rwld = cls(
+            gauging_station=gauging_station,
+            time_str=d["time_str"],
+            time_ut=d["time_ut"],
+            previous_water_level=previous_water_level,
+            current_water_level=current_water_level,
+            remarks=d["remarks"],
+            rising_or_falling=d["rising_or_falling"],
+            rainfall_mm=d["rainfall_mm"],
         )
+        rwld.validate()
+        return rwld

@@ -14,9 +14,11 @@ class GaugingStation:
     alert_level: WaterLevel
     minor_flood_level: WaterLevel
     major_flood_level: WaterLevel
+    lat_lng: tuple[float, float]
+    district_id: str
 
     @classmethod
-    def from_df_row(cls, row, river) -> "GaugingStation":
+    def from_df_row(cls, row, e_river) -> "GaugingStation":
         name = row[2].strip()
         if "(" in name:
             name = name.split("(")[0].strip()
@@ -25,13 +27,20 @@ class GaugingStation:
         minor_flood_level = row[5].strip()
         major_flood_level = row[6].strip()
 
-        return cls(
-            name=name,
-            river=river,
-            alert_level=WaterLevel.from_str(alert_level, unit),
-            minor_flood_level=WaterLevel.from_str(minor_flood_level, unit),
-            major_flood_level=WaterLevel.from_str(major_flood_level, unit),
-        )
+        e_alert_level = WaterLevel.from_str(alert_level, unit)
+        e_minor_flood_level = WaterLevel.from_str(minor_flood_level, unit)
+        e_major_flood_level = WaterLevel.from_str(major_flood_level, unit)
+
+        gs = GaugingStation.from_name(name)
+        assert gs.river == e_river, "River mismatch"
+        assert gs.alert_level == e_alert_level, "Alert level mismatch"
+        assert (
+            gs.minor_flood_level == e_minor_flood_level
+        ), "Minor flood level mismatch"
+        assert (
+            gs.major_flood_level == e_major_flood_level
+        ), "Major flood level mismatch"
+        return gs
 
     @classmethod
     def __get_d_list__(cls):
@@ -40,23 +49,21 @@ class GaugingStation:
         ).read()
 
     @classmethod
-    def from_d(cls, d):
+    def from_dict(cls, d):
         return cls(
             name=d["name"],
-            river=River.from_dict(d),
-            alert_level=WaterLevel.from_str(d["alert_level"], "m"),
-            minor_flood_level=WaterLevel.from_str(
-                d["minor_flood_level"], "m"
-            ),
-            major_flood_level=WaterLevel.from_str(
-                d["major_flood_level"], "m"
-            ),
+            river=River.from_dict(d["river"]),
+            alert_level=WaterLevel.from_dict(d["alert_level"]),
+            minor_flood_level=WaterLevel.from_dict(d["minor_flood_level"]),
+            major_flood_level=WaterLevel.from_dict(d["major_flood_level"]),
+            lat_lng=tuple(d["lat_lng"]),
+            district_id=d["district_id"],
         )
 
     @classmethod
     def list_all(cls):
         d_list = cls.__get_d_list__()
-        return [cls.from_d(d) for d in d_list]
+        return [cls.from_dict(d) for d in d_list]
 
     @classmethod
     def from_name(cls, name):
@@ -70,23 +77,3 @@ class GaugingStation:
         if not isinstance(other, GaugingStation):
             return False
         return asdict(self) == asdict(other)
-
-    def validate(self):
-        gauging_station_from_name = GaugingStation.from_name(self.name)
-        assert (
-            self.name == gauging_station_from_name.name
-        ), f"{self.name} != {gauging_station_from_name.name}"
-        assert (
-            self.river == gauging_station_from_name.river
-        ), f"{self.river} != {gauging_station_from_name.river}"
-        assert (
-            self.alert_level == gauging_station_from_name.alert_level
-        ), "Alert Level does not match"
-        assert (
-            self.minor_flood_level
-            == gauging_station_from_name.minor_flood_level
-        ), "Minor Flood Level does not match"
-        assert (
-            self.major_flood_level
-            == gauging_station_from_name.major_flood_level
-        ), "Major Flood Level does not match"

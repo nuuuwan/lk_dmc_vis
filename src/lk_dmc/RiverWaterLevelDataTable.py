@@ -49,7 +49,13 @@ class RiverWaterLevelDataTable(
         log.info(f"Wrote {json_file}")
 
     @classmethod
+    def from_dict(cls, d):
+        return cls(
+            d_list=[RiverWaterLevelData.from_dict(d) for d in d["d_list"]]
+        )
+
+    @classmethod
     def from_json(cls, json_path: str) -> "RiverWaterLevelDataTable":
         json_file = JSONFile(json_path)
         data = json_file.read()
-        return cls(**data)
+        return cls.from_dict(data)

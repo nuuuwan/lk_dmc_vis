@@ -1,431 +1,487 @@
 [
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Kelani Ganga",
+    "river": {
+      "name": "Kelani Ganga",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Nagalagam Street",
     "district_id": "LK-11;LK-12",
-    "latLng": [6.96027242132317, 79.87858326530204],
-    "alert_level": 1.2192,
-    "minor_flood_level": 1.524,
-    "major_flood_level": 2.1336
+    "lat_lng": [6.96027242132317, 79.87858326530204],
+    "alert_level": {"m": 1.2192},
+    "minor_flood_level": {"m": 1.524},
+    "major_flood_level": {"m": 2.1336}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Kelani Ganga",
+    "river": {
+      "name": "Kelani Ganga",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Hanwella",
     "district_id": "LK-11",
-    "latLng": [6.910489028063102, 80.08133984391833],
-    "alert_level": 7.0,
-    "minor_flood_level": 8.0,
-    "major_flood_level": 10.0
+    "lat_lng": [6.910489028063102, 80.08133984391833],
+    "alert_level": {"m": 7.0},
+    "minor_flood_level": {"m": 8.0},
+    "major_flood_level": {"m": 10.0}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Kelani Ganga",
+    "river": {
+      "name": "Kelani Ganga",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Glencourse",
     "district_id": "LK-11;LK-12;LK-92",
-    "latLng": [6.975736673046383, 80.18660711562987],
-    "alert_level": 15.0,
-    "minor_flood_level": 16.5,
-    "major_flood_level": 19.0
+    "lat_lng": [6.975736673046383, 80.18660711562987],
+    "alert_level": {"m": 15.0},
+    "minor_flood_level": {"m": 16.5},
+    "major_flood_level": {"m": 19.0}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Kelani Ganga",
+    "river": {
+      "name": "Kelani Ganga",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Kithulgala",
     "district_id": "LK-92",
-    "latLng": [6.985283769517581, 80.42544930669654],
-    "alert_level": 3.0,
-    "minor_flood_level": 4.0,
-    "major_flood_level": 6.0
+    "lat_lng": [6.985283769517581, 80.42544930669654],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 4.0},
+    "major_flood_level": {"m": 6.0}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Gurugoda Oya",
+    "river": {
+      "name": "Gurugoda Oya",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Holombuwa",
     "district_id": "LK-92",
-    "latLng": [7.18861230041471, 80.27381001159266],
-    "alert_level": 3.0,
-    "minor_flood_level": 3.4,
-    "major_flood_level": 5.0
+    "lat_lng": [7.18861230041471, 80.27381001159266],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 3.4},
+    "major_flood_level": {"m": 5.0}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Seethawaka Ganga",
+    "river": {
+      "name": "Seethawaka Ganga",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Deraniyagala",
     "district_id": "LK-92",
-    "latLng": [6.925762947059961, 80.33922404112188],
-    "alert_level": 4.8,
-    "minor_flood_level": 5.8,
-    "major_flood_level": 6.4
+    "lat_lng": [6.925762947059961, 80.33922404112188],
+    "alert_level": {"m": 4.8},
+    "minor_flood_level": {"m": 5.8},
+    "major_flood_level": {"m": 6.4}
   },
   {
-    "river_basin_name": "Kelani Ganga",
-    "river_basin_code": "RB 01",
-    "river_name": "Kehelgamu Oya",
+    "river": {
+      "name": "Kehelgamu Oya",
+      "river_basin": {"name": "Kelani Ganga", "code": "RB 01"}
+    },
     "name": "Norwood",
     "district_id": "LK-23",
-    "latLng": [6.839557267884663, 80.61239609102284],
-    "alert_level": 1.5,
-    "minor_flood_level": 3.0,
-    "major_flood_level": 4.5
+    "lat_lng": [6.839557267884663, 80.61239609102284],
+    "alert_level": {"m": 1.5},
+    "minor_flood_level": {"m": 3.0},
+    "major_flood_level": {"m": 4.5}
   },
+
   {
-    "river_basin_name": "Kalu Ganga",
-    "river_basin_code": "RB 03",
-    "river_name": "Kalu Ganga",
+    "river": {
+      "name": "Kalu Ganga",
+      "river_basin": {"name": "Kalu Ganga", "code": "RB 03"}
+    },
     "name": "Putupaula",
     "district_id": "LK-13",
-    "latLng": [6.611561688998894, 80.05974948036196],
-    "alert_level": 3.0,
-    "minor_flood_level": 4.0,
-    "major_flood_level": 5.0
+    "lat_lng": [6.611561688998894, 80.05974948036196],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 4.0},
+    "major_flood_level": {"m": 5.0}
   },
   {
-    "river_basin_name": "Kalu Ganga",
-    "river_basin_code": "RB 03",
-    "river_name": "Kalu Ganga",
+    "river": {
+      "name": "Kalu Ganga",
+      "river_basin": {"name": "Kalu Ganga", "code": "RB 03"}
+    },
     "name": "Ellagawa",
     "district_id": "LK-91;LK-13",
-    "latLng": [6.730399127799353, 80.21307042256922],
-    "alert_level": 10.0,
-    "minor_flood_level": 10.7,
-    "major_flood_level": 12.2
+    "lat_lng": [6.730399127799353, 80.21307042256922],
+    "alert_level": {"m": 10.0},
+    "minor_flood_level": {"m": 10.7},
+    "major_flood_level": {"m": 12.2}
   },
   {
-    "river_basin_name": "Kalu Ganga",
-    "river_basin_code": "RB 03",
-    "river_name": "Kalu Ganga",
+    "river": {
+      "name": "Kalu Ganga",
+      "river_basin": {"name": "Kalu Ganga", "code": "RB 03"}
+    },
     "name": "Rathnapura",
     "district_id": "LK-91",
-    "latLng": [6.689859893761882, 80.38027645749384],
-    "alert_level": 5.2,
-    "minor_flood_level": 7.5,
-    "major_flood_level": 9.5
+    "lat_lng": [6.689859893761882, 80.38027645749384],
+    "alert_level": {"m": 5.2},
+    "minor_flood_level": {"m": 7.5},
+    "major_flood_level": {"m": 9.5}
   },
   {
-    "river_basin_name": "Kalu Ganga",
-    "river_basin_code": "RB 03",
-    "river_name": "Maguru Ganga",
+    "river": {
+      "name": "Maguru Ganga",
+      "river_basin": {"name": "Kalu Ganga", "code": "RB 03"}
+    },
     "name": "Magura",
     "district_id": "LK-13",
-    "latLng": [6.513716270509724, 80.24399187228877],
-    "alert_level": 4.0,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.5
+    "lat_lng": [6.513716270509724, 80.24399187228877],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.5}
   },
   {
-    "river_basin_name": "Kalu Ganga",
-    "river_basin_code": "RB 03",
-    "river_name": "Kuda Ganga",
+    "river": {
+      "name": "Kuda Ganga",
+      "river_basin": {"name": "Kalu Ganga", "code": "RB 03"}
+    },
     "name": "Kalawellawa",
     "district_id": "LK-13",
-    "latLng": [6.6315078194386246, 80.16073462916866],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.5,
-    "major_flood_level": 8.0
+    "lat_lng": [6.6315078194386246, 80.16073462916866],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.5},
+    "major_flood_level": {"m": 8.0}
   },
+
   {
-    "river_basin_name": "Gin Ganga",
-    "river_basin_code": "RB 09",
-    "river_name": "Gin Ganga",
+    "river": {
+      "name": "Gin Ganga",
+      "river_basin": {"name": "Gin Ganga", "code": "RB 09"}
+    },
     "name": "Baddegama",
     "district_id": "LK-31",
-    "latLng": [6.177477311875031, 80.18051836126706],
-    "alert_level": 3.5,
-    "minor_flood_level": 4.0,
-    "major_flood_level": 5.0
+    "lat_lng": [6.177477311875031, 80.18051836126706],
+    "alert_level": {"m": 3.5},
+    "minor_flood_level": {"m": 4.0},
+    "major_flood_level": {"m": 5.0}
   },
   {
-    "river_basin_name": "Gin Ganga",
-    "river_basin_code": "RB 09",
-    "river_name": "Gin Ganga",
+    "river": {
+      "name": "Gin Ganga",
+      "river_basin": {"name": "Gin Ganga", "code": "RB 09"}
+    },
     "name": "Thawalama",
     "district_id": "LK-31;LK-13",
-    "latLng": [6.342938049010117, 80.33185946143057],
-    "alert_level": 4.0,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.5
+    "lat_lng": [6.342938049010117, 80.33185946143057],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.5}
   },
+
   {
-    "river_basin_name": "Nilwala Ganga",
-    "river_basin_code": "RB 12",
-    "river_name": "Nilwala Ganga",
+    "river": {
+      "name": "Nilwala Ganga",
+      "river_basin": {"name": "Nilwala Ganga", "code": "RB 12"}
+    },
     "name": "Thalgahagoda",
     "district_id": "LK-32",
-    "latLng": [6.012329836481981, 80.5347970941782],
-    "alert_level": 1.4,
-    "minor_flood_level": 1.7,
-    "major_flood_level": 2.8
+    "lat_lng": [6.012329836481981, 80.5347970941782],
+    "alert_level": {"m": 1.4},
+    "minor_flood_level": {"m": 1.7},
+    "major_flood_level": {"m": 2.8}
   },
   {
-    "river_basin_name": "Nilwala Ganga",
-    "river_basin_code": "RB 12",
-    "river_name": "Nilwala Ganga",
+    "river": {
+      "name": "Nilwala Ganga",
+      "river_basin": {"name": "Nilwala Ganga", "code": "RB 12"}
+    },
     "name": "Panadugama",
     "district_id": "LK-32",
-    "latLng": [6.1100549018149115, 80.48065133051018],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.5
+    "lat_lng": [6.1100549018149115, 80.48065133051018],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.5}
   },
   {
-    "river_basin_name": "Nilwala Ganga",
-    "river_basin_code": "RB 12",
-    "river_name": "Nilwala Ganga",
+    "river": {
+      "name": "Nilwala Ganga",
+      "river_basin": {"name": "Nilwala Ganga", "code": "RB 12"}
+    },
     "name": "Pitabeddara",
     "district_id": "LK-32",
-    "latLng": [6.20712968715078, 80.45044348808202],
-    "alert_level": 4.0,
-    "minor_flood_level": 5.0,
-    "major_flood_level": 6.5
+    "lat_lng": [6.20712968715078, 80.45044348808202],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 5.0},
+    "major_flood_level": {"m": 6.5}
   },
   {
-    "river_basin_name": "Nilwala Ganga",
-    "river_basin_code": "RB 12",
-    "river_name": "Urubokka Ganga",
+    "river": {
+      "name": "Urubokka Ganga",
+      "river_basin": {"name": "Nilwala Ganga", "code": "RB 12"}
+    },
     "name": "Urawa",
     "district_id": "LK-32",
-    "latLng": [6.236507396306039, 80.56633784106945],
-    "alert_level": 2.5,
-    "minor_flood_level": 4.0,
-    "major_flood_level": 6.0
+    "lat_lng": [6.236507396306039, 80.56633784106945],
+    "alert_level": {"m": 2.5},
+    "minor_flood_level": {"m": 4.0},
+    "major_flood_level": {"m": 6.0}
   },
+
   {
-    "river_basin_name": "Walawe Ganga",
-    "river_basin_code": "RB 18",
-    "river_name": "Walawe Ganga",
+    "river": {
+      "name": "Walawe Ganga",
+      "river_basin": {"name": "Walawe Ganga", "code": "RB 18"}
+    },
     "name": "Moraketiya",
     "district_id": "LK-91;LK-82",
-    "latLng": [6.3450504078771, 80.90195373048093],
-    "alert_level": 3.0,
-    "minor_flood_level": 5.0,
-    "major_flood_level": 7.0
+    "lat_lng": [6.3450504078771, 80.90195373048093],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 5.0},
+    "major_flood_level": {"m": 7.0}
   },
+
   {
-    "river_basin_name": "Kirindi Oya",
-    "river_basin_code": "RB 22",
-    "river_name": "Kirindi Oya",
+    "river": {
+      "name": "Kirindi Oya",
+      "river_basin": {"name": "Kirindi Oya", "code": "RB 22"}
+    },
     "name": "Thanamalwila",
     "district_id": "LK-82",
-    "latLng": [6.44280954004885, 81.13889314602751],
-    "alert_level": 4.0,
-    "minor_flood_level": 5.0,
-    "major_flood_level": 5.5
+    "lat_lng": [6.44280954004885, 81.13889314602751],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 5.0},
+    "major_flood_level": {"m": 5.5}
   },
   {
-    "river_basin_name": "Kirindi Oya",
-    "river_basin_code": "RB 22",
-    "river_name": "Kirindi Oya",
+    "river": {
+      "name": "Kirindi Oya",
+      "river_basin": {"name": "Kirindi Oya", "code": "RB 22"}
+    },
     "name": "Wellawaya",
     "district_id": "LK-82",
-    "latLng": [6.733186416118142, 81.10987205932976],
-    "alert_level": 4.4,
-    "minor_flood_level": 5.4,
-    "major_flood_level": 5.9
+    "lat_lng": [6.733186416118142, 81.10987205932976],
+    "alert_level": {"m": 4.4},
+    "minor_flood_level": {"m": 5.4},
+    "major_flood_level": {"m": 5.9}
   },
   {
-    "river_basin_name": "Kirindi Oya",
-    "river_basin_code": "RB 22",
-    "river_name": "Kuda Oya",
+    "river": {
+      "name": "Kuda Oya",
+      "river_basin": {"name": "Kirindi Oya", "code": "RB 22"}
+    },
     "name": "Kuda Oya",
     "district_id": "LK-82",
-    "latLng": [6.531299778512797, 81.11931312403397],
-    "alert_level": 6.9,
-    "minor_flood_level": 8.4,
-    "major_flood_level": 8.8
+    "lat_lng": [6.531299778512797, 81.11931312403397],
+    "alert_level": {"m": 6.9},
+    "minor_flood_level": {"m": 8.4},
+    "major_flood_level": {"m": 8.8}
   },
+
   {
-    "river_basin_name": "Menik Ganga",
-    "river_basin_code": "RB 26",
-    "river_name": "Menik Ganga",
+    "river": {
+      "name": "Menik Ganga",
+      "river_basin": {"name": "Menik Ganga", "code": "RB 26"}
+    },
     "name": "Katharagama",
     "district_id": "LK-82",
-    "latLng": [6.418350424146931, 81.33162402101244],
-    "alert_level": 4.0,
-    "minor_flood_level": 4.6,
-    "major_flood_level": 6.5
+    "lat_lng": [6.418350424146931, 81.33162402101244],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 4.6},
+    "major_flood_level": {"m": 6.5}
   },
+
   {
-    "river_basin_name": "Kumbukkan Oya",
-    "river_basin_code": "RB 31",
-    "river_name": "Kumbukkan Oya",
+    "river": {
+      "name": "Kumbukkan Oya",
+      "river_basin": {"name": "Kumbukkan Oya", "code": "RB 31"}
+    },
     "name": "Nakkala",
     "district_id": "LK-82",
-    "latLng": [6.890291115719028, 81.29789316071579],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.5
+    "lat_lng": [6.890291115719028, 81.29789316071579],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.5}
   },
+
   {
-    "river_basin_name": "Heda Oya",
-    "river_basin_code": "RB 36",
-    "river_name": "Heda Oya",
+    "river": {
+      "name": "Heda Oya",
+      "river_basin": {"name": "Heda Oya", "code": "RB 36"}
+    },
     "name": "Siyambalanduwa",
     "district_id": "LK-82",
-    "latLng": [6.905508688496518, 81.54537666124355],
-    "alert_level": 4.5,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.0
+    "lat_lng": [6.905508688496518, 81.54537666124355],
+    "alert_level": {"m": 4.5},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.0}
   },
+
   {
-    "river_basin_name": "Maduru Oya",
-    "river_basin_code": "RB 54",
-    "river_name": "Maduru Oya",
+    "river": {
+      "name": "Maduru Oya",
+      "river_basin": {"name": "Maduru Oya", "code": "RB 54"}
+    },
     "name": "Padiyathalawa",
     "district_id": "LK-81;LK-52",
-    "latLng": [7.3827145879708445, 81.19476999029227],
-    "alert_level": 4.0,
-    "minor_flood_level": 4.5,
-    "major_flood_level": 6.0
+    "lat_lng": [7.3827145879708445, 81.19476999029227],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 4.5},
+    "major_flood_level": {"m": 6.0}
   },
+
   {
-    "river_basin_name": "Mahaweli Ganga",
-    "river_basin_code": "RB 60",
-    "river_name": "Mahaweli Ganga",
+    "river": {
+      "name": "Mahaweli Ganga",
+      "river_basin": {"name": "Mahaweli Ganga", "code": "RB 60"}
+    },
     "name": "Manampitiya",
     "district_id": "LK-72",
-    "latLng": [7.913305747028369, 81.08904162459265],
-    "alert_level": 3.0,
-    "minor_flood_level": 4.3,
-    "major_flood_level": 6.0
+    "lat_lng": [7.913305747028369, 81.08904162459265],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 4.3},
+    "major_flood_level": {"m": 6.0}
   },
   {
-    "river_basin_name": "Mahaweli Ganga",
-    "river_basin_code": "RB 60",
-    "river_name": "Mahaweli Ganga",
+    "river": {
+      "name": "Mahaweli Ganga",
+      "river_basin": {"name": "Mahaweli Ganga", "code": "RB 60"}
+    },
     "name": "Weraganthota",
     "district_id": "LK-21;LK-81",
-    "latLng": [7.329958849723429, 80.98789578050872],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 8.0
+    "lat_lng": [7.329958849723429, 80.98789578050872],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 8.0}
   },
   {
-    "river_basin_name": "Mahaweli Ganga",
-    "river_basin_code": "RB 60",
-    "river_name": "Mahaweli Ganga",
+    "river": {
+      "name": "Mahaweli Ganga",
+      "river_basin": {"name": "Mahaweli Ganga", "code": "RB 60"}
+    },
     "name": "Peradeniya",
     "district_id": "LK-21",
-    "latLng": [7.2641705575045075, 80.5936236622826],
-    "alert_level": 5.0,
-    "minor_flood_level": 7.0,
-    "major_flood_level": 9.0
+    "lat_lng": [7.2641705575045075, 80.5936236622826],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 7.0},
+    "major_flood_level": {"m": 9.0}
   },
   {
-    "river_basin_name": "Mahaweli Ganga",
-    "river_basin_code": "RB 60",
-    "river_name": "Mahaweli Ganga",
+    "river": {
+      "name": "Mahaweli Ganga",
+      "river_basin": {"name": "Mahaweli Ganga", "code": "RB 60"}
+    },
     "name": "Nawalapitiya",
     "district_id": "LK-21",
-    "latLng": [7.046038718801128, 80.52624731051829],
-    "alert_level": 3.5,
-    "minor_flood_level": 5.0,
-    "major_flood_level": 6.0
+    "lat_lng": [7.046038718801128, 80.52624731051829],
+    "alert_level": {"m": 3.5},
+    "minor_flood_level": {"m": 5.0},
+    "major_flood_level": {"m": 6.0}
   },
   {
-    "river_basin_name": "Mahaweli Ganga",
-    "river_basin_code": "RB 60",
-    "river_name": "Badulu Oya",
+    "river": {
+      "name": "Badulu Oya",
+      "river_basin": {"name": "Mahaweli Ganga", "code": "RB 60"}
+    },
     "name": "Thaldena",
     "district_id": "LK-81",
-    "latLng": [7.092702894310825, 81.04865409851845],
-    "alert_level": 3.0,
-    "minor_flood_level": 4.0,
-    "major_flood_level": 5.0
+    "lat_lng": [7.092702894310825, 81.04865409851845],
+    "alert_level": {"m": 3.0},
+    "minor_flood_level": {"m": 4.0},
+    "major_flood_level": {"m": 5.0}
   },
+
   {
-    "river_basin_name": "Yan Oya",
-    "river_basin_code": "RB 67",
-    "river_name": "Yan Oya",
+    "river": {
+      "name": "Yan Oya",
+      "river_basin": {"name": "Yan Oya", "code": "RB 67"}
+    },
     "name": "Horowpothana",
     "district_id": "LK-71",
-    "latLng": [8.577144224946247, 80.88120305584708],
-    "alert_level": 6.0,
-    "minor_flood_level": 7.5,
-    "major_flood_level": 10.5
+    "lat_lng": [8.577144224946247, 80.88120305584708],
+    "alert_level": {"m": 6.0},
+    "minor_flood_level": {"m": 7.5},
+    "major_flood_level": {"m": 10.5}
   },
+
   {
-    "river_basin_name": "Maa Oya",
-    "river_basin_code": "RB 69",
-    "river_name": "Mukunu Oya",
+    "river": {
+      "name": "Mukunu Oya",
+      "river_basin": {"name": "Maa Oya", "code": "RB 69"}
+    },
     "name": "Yaka Wewa",
     "district_id": "LK-61",
-    "latLng": [8.726531670464757, 80.67505377972024],
-    "alert_level": 4.0,
-    "minor_flood_level": 5.0,
-    "major_flood_level": 6.0
+    "lat_lng": [8.726531670464757, 80.67505377972024],
+    "alert_level": {"m": 4.0},
+    "minor_flood_level": {"m": 5.0},
+    "major_flood_level": {"m": 6.0}
   },
+
   {
-    "river_basin_name": "Malwathu Oya",
-    "river_basin_code": "RB 90",
-    "river_name": "Malwathu Oya",
+    "river": {
+      "name": "Malwathu Oya",
+      "river_basin": {"name": "Malwathu Oya", "code": "RB 90"}
+    },
     "name": "Thanthirimale",
     "district_id": "LK-71;LK-43",
-    "latLng": [8.580763249784683, 80.28400551575419],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.8,
-    "major_flood_level": 7.8
+    "lat_lng": [8.580763249784683, 80.28400551575419],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.8},
+    "major_flood_level": {"m": 7.8}
   },
+
   {
-    "river_basin_name": "Mee Oya",
-    "river_basin_code": "RB 95",
-    "river_name": "Mee Oya",
+    "river": {
+      "name": "Mee Oya",
+      "river_basin": {"name": "Mee Oya", "code": "RB 95"}
+    },
     "name": "Galgamuwa",
     "district_id": "LK-61",
-    "latLng": [7.968417972307392, 80.26139261952191],
-    "alert_level": 4.84,
-    "minor_flood_level": 5.94,
-    "major_flood_level": 8.0
+    "lat_lng": [7.968417972307392, 80.26139261952191],
+    "alert_level": {"m": 4.84},
+    "minor_flood_level": {"m": 5.94},
+    "major_flood_level": {"m": 8.0}
   },
+
   {
-    "river_basin_name": "Deduru Oya",
-    "river_basin_code": "RB 99",
-    "river_name": "Deduru Oya",
+    "river": {
+      "name": "Deduru Oya",
+      "river_basin": {"name": "Deduru Oya", "code": "RB 99"}
+    },
     "name": "Moragaswewa",
     "district_id": "LK-61",
-    "latLng": [7.731867586461941, 80.24296279159842],
-    "alert_level": 4.75,
-    "minor_flood_level": 6.0,
-    "major_flood_level": 7.0
+    "lat_lng": [7.731867586461941, 80.24296279159842],
+    "alert_level": {"m": 4.75},
+    "minor_flood_level": {"m": 6.0},
+    "major_flood_level": {"m": 7.0}
   },
+
   {
-    "river_basin_name": "Maha Oya",
-    "river_basin_code": "RB 102",
-    "river_name": "Maha Oya",
+    "river": {
+      "name": "Maha Oya",
+      "river_basin": {"name": "Maha Oya", "code": "RB 102"}
+    },
     "name": "Badalgama",
     "district_id": "LK-62;LK-61;LK-12",
-    "latLng": [7.2931279607144255, 79.97767925329397],
-    "alert_level": 5.0,
-    "minor_flood_level": 6.2,
-    "major_flood_level": 9.6
+    "lat_lng": [7.2931279607144255, 79.97767925329397],
+    "alert_level": {"m": 5.0},
+    "minor_flood_level": {"m": 6.2},
+    "major_flood_level": {"m": 9.6}
   },
   {
-    "river_basin_name": "Maha Oya",
-    "river_basin_code": "RB 102",
-    "river_name": "Maha Oya",
+    "river": {
+      "name": "Maha Oya",
+      "river_basin": {"name": "Maha Oya", "code": "RB 102"}
+    },
     "name": "Giriulla",
     "district_id": "LK-61",
-    "latLng": [7.3303094121475345, 80.12432086937476],
-    "alert_level": 5.5,
-    "minor_flood_level": 6.5,
-    "major_flood_level": 7.5
+    "lat_lng": [7.3303094121475345, 80.12432086937476],
+    "alert_level": {"m": 5.5},
+    "minor_flood_level": {"m": 6.5},
+    "major_flood_level": {"m": 7.5}
   },
+
   {
-    "river_basin_name": "Attanagalu Oya",
-    "river_basin_code": "RB 103",
-    "river_name": "Attanagalu Oya",
+    "river": {
+      "name": "Attanagalu Oya",
+      "river_basin": {"name": "Attanagalu Oya", "code": "RB 103"}
+    },
     "name": "Dunamale",
     "district_id": "LK-12",
-    "latLng": [7.113033305509533, 80.07900097051707],
-    "alert_level": 3.3,
-    "minor_flood_level": 4.4,
-    "major_flood_level": 5.5
+    "lat_lng": [7.113033305509533, 80.07900097051707],
+    "alert_level": {"m": 3.3},
+    "minor_flood_level": {"m": 4.4},
+    "major_flood_level": {"m": 5.5}
   }
 ]

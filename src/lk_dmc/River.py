@@ -17,8 +17,8 @@ class River:
     @classmethod
     def from_dict(cls, d):
         return cls(
-            name=d["river_name"],
-            river_basin=RiverBasin.from_dict(d),
+            name=d["name"],
+            river_basin=RiverBasin.from_dict(d["river_basin"]),
         )
 
     def __eq__(self, value):

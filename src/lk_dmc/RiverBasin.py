@@ -29,7 +29,7 @@ class RiverBasin:
 
     @classmethod
     def from_dict(cls, d):
-        return cls(code=d["river_basin_code"], name=d["river_basin_name"])
+        return cls(code=d["code"], name=d["name"])
 
     def __eq__(self, value):
         if not isinstance(value, RiverBasin):

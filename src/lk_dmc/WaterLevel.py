@@ -18,3 +18,7 @@ class WaterLevel:
         if not isinstance(value, WaterLevel):
             return False
         return abs(self.m - value.m) < 1e-6
+
+    @classmethod
+    def from_dict(cls, d):
+        return cls(m=d["m"])

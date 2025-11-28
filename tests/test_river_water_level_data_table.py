@@ -42,25 +42,25 @@ class TestCase(unittest.TestCase):
             },
         )
 
-    def test_to_csv(self):
+    def test_to_json(self):
         pdf_path = os.path.join(
             "tests", "inputs", "test_river_water_level_data_table.pdf"
         )
         t = RiverWaterLevelDataTable.from_pdf(pdf_path)
 
-        actual_csv_path = os.path.join(
-            "tests", "outputs", "test_river_water_level_data_table.csv"
+        actual_json_path = os.path.join(
+            "tests", "outputs", "test_river_water_level_data_table.json"
         )
-        expected_csv_path = os.path.join(
+        expected_json_path = os.path.join(
             "tests",
             "inputs",
-            "test_river_water_level_data_table.csv",
+            "test_river_water_level_data_table.json",
         )
-        t.to_csv(actual_csv_path)
+        t.to_json(actual_json_path)
 
-        self.assertTrue(os.path.exists(actual_csv_path))
-        with open(actual_csv_path, "r") as actual_file:
-            with open(expected_csv_path, "r") as expected_file:
+        self.assertTrue(os.path.exists(actual_json_path))
+        with open(actual_json_path, "r") as actual_file:
+            with open(expected_json_path, "r") as expected_file:
                 actual_content = actual_file.read()
                 expected_content = expected_file.read()
                 self.assertEqual(actual_content, expected_content)
