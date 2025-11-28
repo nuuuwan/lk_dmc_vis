@@ -2,7 +2,7 @@
 
 This is a schematic diagram of river water levels across gauging stations in Sri Lanka.
 
-Data from [@dmc_lk](https://www.dmc.gov.lk/index.php).
+Data from the [Disaster Management Center](https://www.dmc.gov.lk/index.php) of Sri Lanka.
 
 Updated whenever new information is released by the DMC, usually every 3 hours.
 
