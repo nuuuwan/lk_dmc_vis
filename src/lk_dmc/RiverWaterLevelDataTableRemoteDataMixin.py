@@ -72,7 +72,7 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         rwld_table_list = []
         for url_pdf in url_pdf_list:
             rwld_table = cls.from_url_pdf(url_pdf)
-            if not rwld_table:
+            if rwld_table:
                 rwld_table_list.append(rwld_table)
         return rwld_table_list
 
