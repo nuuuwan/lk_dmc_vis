@@ -1,5 +1,7 @@
 import os
+from pathlib import Path
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 from gig import Ent, EntType
 from matplotlib.lines import Line2D
@@ -45,8 +47,7 @@ class RiverWaterLevelDataTableMapMixin:
 
         for river in rivers:
             locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
+                GaugingStation.from_name_safe(name) or Location.from_name(name)
                 for name in river.location_names
             ]
             n_locations = len(locations)
@@ -99,17 +100,14 @@ class RiverWaterLevelDataTableMapMixin:
 
     def __get_station_level__(self, rwld):
         station = rwld.gauging_station
-
+        level = 1
+        if rwld.current_water_level >= station.alert_level:
+            level = 2
+        if rwld.current_water_level >= station.minor_flood_level:
+            level = 3
         if rwld.current_water_level >= station.major_flood_level:
-            return 4
-
-        elif rwld.current_water_level >= station.minor_flood_level:
-            return 3
-
-        elif rwld.current_water_level >= station.alert_level:
-            return 2
-
-        return 1
+            level = 4
+        return level
 
     def __draw_station__(self, ax, rwld):
         station = rwld.gauging_station
@@ -168,14 +166,23 @@ class RiverWaterLevelDataTableMapMixin:
     def draw(self):
         fig, ax = plt.subplots(figsize=(16, 16))
 
-        font_path = os.path.join("fonts", "Ubuntu-Regular.ttf")
-        plt.rcParams["font.family"] = font_path
+        base = Path(__file__).resolve().parents[2]
+        font_path = base / "fonts" / "Ubuntu-Regular.ttf"
+        if font_path.exists():
+            try:
+                mpl.font_manager.fontManager.addfont(str(font_path))
+                fp = mpl.font_manager.FontProperties(fname=str(font_path))
+                font_name = fp.get_name()
+                plt.rcParams["font.family"] = font_name
+            except Exception:
+                plt.rcParams["font.family"] = "DejaVu Sans"
+        else:
+            plt.rcParams["font.family"] = "DejaVu Sans"
 
         self.__draw_map__(ax)
         self.__draw_rivers__(ax)
         self.__draw_locations__(ax)
         self.__draw_stations__(ax)
-
         self.__draw_legend__(ax)
         fig.text(
             0.5,
