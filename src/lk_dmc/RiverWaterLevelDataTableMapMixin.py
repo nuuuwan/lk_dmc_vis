@@ -17,9 +17,9 @@ log = Log("RiverWaterLevelDataTableMapMixin")
 class RiverWaterLevelDataTableMapMixin:
     LEVEL_TO_COLOR = {
         0: "grey",
-        1: (0, 0.65, 0),
-        2: (1, 0.33, 0),
-        3: (1, 0.65, 0),
+        1: (0, 0.5, 0),
+        2: (0.75, 0.75, 0),
+        3: (1, 0.5, 0),
         4: (1, 0, 0),
     }
 
@@ -152,10 +152,10 @@ class RiverWaterLevelDataTableMapMixin:
     def __draw_legend__(self, ax):
         legend_handles = []
         for color, label in [
-            ("red", "Major Floods"),
-            ("orange", "Minor Floods"),
-            ("yellow", "On Alert"),
-            ("green", "Normal"),
+            (self.LEVEL_TO_COLOR[4], "Major Floods"),
+            (self.LEVEL_TO_COLOR[3], "Minor Floods"),
+            (self.LEVEL_TO_COLOR[2], "On Alert"),
+            (self.LEVEL_TO_COLOR[1], "Normal"),
             ("grey", "Circle = Gauging Station"),
             ("grey", "Square = Other Location"),
         ]:
