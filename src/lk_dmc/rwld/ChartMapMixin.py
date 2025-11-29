@@ -14,7 +14,7 @@ from lk_dmc.core.River import River
 log = Log("RiverWaterLevelDataTableMapMixin")
 
 
-class RiverWaterLevelDataTableMapMixin:
+class ChartMapMixin:
     LEVEL_TO_COLOR = {
         0: "grey",
         1: (0, 0.5, 0),
