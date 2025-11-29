@@ -28,6 +28,25 @@ class ChartGaugingStationMixin:
     @classmethod
     def __draw_station_annotations__(cls, station, ax):
         ax.set_title(f"{station.name} - River Water Level")
+
+        flood_levels = [
+            (station.major_flood_level, "red", "Major Flood"),
+            (station.minor_flood_level, "darkorange", "Minor Flood"),
+            (station.alert_level, "orange", "Alert"),
+        ]
+
+        for level, color, label in flood_levels:
+            ax.axhline(
+                y=level,
+                color=color,
+                linestyle="--",
+                linewidth=1.5,
+                label=label,
+                alpha=0.7,
+            )
+
+        ax.legend(loc="upper left")
+
         return station
 
     @classmethod
