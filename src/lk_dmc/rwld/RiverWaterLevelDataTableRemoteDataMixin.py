@@ -3,6 +3,8 @@ import os
 import requests
 from utils import Log, TSVFile
 
+from lk_dmc.rwld.RiverWaterLevelData import RiverWaterLevelData
+
 log = Log("RiverWaterLevelDataTableRemoteDataMixin")
 
 
@@ -77,7 +79,9 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         return rwld_table_list
 
     @classmethod
-    def latest(cls):
+    def get_station_name_to_rwld_list(
+        cls,
+    ) -> dict[str, list[RiverWaterLevelData]]:
         rwld_table_list = cls.list_latest()
         idx = {}
         for rwld_table in rwld_table_list:
@@ -88,11 +92,20 @@ class RiverWaterLevelDataTableRemoteDataMixin:
                 if station_name not in idx:
                     idx[station_name] = []
                 idx[station_name].append(rwld)
+        return idx
 
+    @classmethod
+    def get_station_name_to_latest_rwld(
+        cls,
+    ) -> dict[str, RiverWaterLevelData]:
+        idx = cls.get_station_name_to_rwld_list()
         for station_name, rwld_list in idx.items():
             rwld_list.sort(key=lambda x: x.time_ut, reverse=True)
             idx[station_name] = rwld_list[0]
+        return idx
 
+    @classmethod
+    def latest(cls):
+        idx = cls.get_station_name_to_latest_rwld()
         latest_rwld_table = cls(d_list=list(idx.values()))
-
         return latest_rwld_table
