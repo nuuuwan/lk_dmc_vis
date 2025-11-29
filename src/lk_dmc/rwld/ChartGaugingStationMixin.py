@@ -26,12 +26,16 @@ class ChartGaugingStationMixin:
         return ts, levels
 
     @classmethod
+    def __draw_station_annotations__(cls, station, ax):
+        ax.set_title(f"{station.name} - River Water Level")
+        return station
+
+    @classmethod
     def __draw_for_station__(cls, station_name, rwld_list):
         ts, levels = cls.__get_data__(rwld_list)
 
         fig, ax = plt.subplots(figsize=(8, 4.5))
         ax.plot(ts, levels, marker="o", linestyle="-")
-        ax.set_title(f"{station_name} - River Water Level")
 
         ax.set_xlabel("Time")
         ax.set_ylabel("Water Level (m)")
@@ -42,6 +46,8 @@ class ChartGaugingStationMixin:
         fig.autofmt_xdate()
 
         station = GaugingStation.from_name(station_name)
+        cls.__draw_station_annotations__(station, ax)
+
         os.makedirs(cls.DIR_IMAGES_STATIONS, exist_ok=True)
         image_path = os.path.join(
             cls.DIR_IMAGES_STATIONS, f"{station.file_prefix}.png"
