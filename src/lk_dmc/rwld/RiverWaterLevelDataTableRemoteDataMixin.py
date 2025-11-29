@@ -35,10 +35,11 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         url_pdf_list = []
         for d in d_list_with_water_level:
             date_str = d["date_str"]
-            num = d["num"]
             year = date_str[:4]
             decade = year[:3] + "0s"
-            url_pdf = url_base + f"/{decade}/{year}/{date_str}-{num}/doc.pdf"
+            doc_id = d["doc_id"]
+
+            url_pdf = url_base + f"/{decade}/{year}/{doc_id}/doc.pdf"
             url_pdf_list.append(url_pdf)
         log.info(f"Found {len(url_pdf_list)} water level PDF URLs")
         return url_pdf_list
@@ -55,11 +56,15 @@ class RiverWaterLevelDataTableRemoteDataMixin:
 
         pdf_path = os.path.join("data", "pdfs", f"{doc_id}.pdf")
         if not os.path.exists(pdf_path):
-            response = requests.get(url_pdf, timeout=30)
-            response.raise_for_status()
-            with open(pdf_path, "wb") as f:
-                f.write(response.content)
-            log.info(f"Downloaded {url_pdf} to {pdf_path}")
+            try:
+                response = requests.get(url_pdf, timeout=30)
+                response.raise_for_status()
+                with open(pdf_path, "wb") as f:
+                    f.write(response.content)
+                log.info(f"Downloaded {url_pdf} to {pdf_path}")
+            except Exception as e:
+                log.error(f"Failed to download {url_pdf}: {e}")
+                return None
 
         else:
             log.debug(f"{pdf_path} Exists.")
