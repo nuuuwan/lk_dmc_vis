@@ -1,14 +1,15 @@
 from dataclasses import asdict, dataclass
 
 import camelot
-import fitz
+import pymupdf
 from utils import JSONFile, Log, TimeFormat
 
 from lk_dmc.rwld.ChartGaugingStationMixin import ChartGaugingStationMixin
 from lk_dmc.rwld.ChartMapMixin import ChartMapMixin
 from lk_dmc.rwld.RiverWaterLevelData import RiverWaterLevelData
-from lk_dmc.rwld.RiverWaterLevelDataTableRemoteDataMixin import \
-    RiverWaterLevelDataTableRemoteDataMixin
+from lk_dmc.rwld.RiverWaterLevelDataTableRemoteDataMixin import (
+    RiverWaterLevelDataTableRemoteDataMixin,
+)
 
 log = Log("RiverWaterLevelDataTable")
 
@@ -42,7 +43,7 @@ class RiverWaterLevelDataTable(
 
     @classmethod
     def get_date_time_from_pdf(cls, pdf_path: str):
-        doc = fitz.open(pdf_path)
+        doc = pymupdf.open(pdf_path)
         page = doc[0]
         content = page.get_text()
         lines = content.splitlines()
