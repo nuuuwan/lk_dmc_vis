@@ -7,7 +7,7 @@ log = Log("ReadMe")
 
 class ReadMe:
     PATH = "README.md"
-    URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis/"
+    URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis"
 
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
