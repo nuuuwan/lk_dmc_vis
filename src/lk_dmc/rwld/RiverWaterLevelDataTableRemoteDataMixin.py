@@ -29,7 +29,7 @@ class RiverWaterLevelDataTableRemoteDataMixin:
 
         d_list = TSVFile(tsv_path).read()
         d_list_with_water_level = [
-            d for d in d_list if d["description"].lower() == "water level"
+            d for d in d_list if "water level" in d["description"].lower()
         ]
 
         url_pdf_list = []
