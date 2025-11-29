@@ -162,3 +162,39 @@ class RiverWaterLevelDataTableRemoteDataMixin:
             )
         )
         return idx
+
+    @classmethod
+    def get_sorted_basin_to_river_to_stations(cls):
+        basin_to_river_to_stations = (
+            GaugingStation.get_basic_to_river_to_station()
+        )
+        basin_to_avg_flood_score = cls.get_basin_to_avg_flood_score()
+        river_to_avg_flood_score = cls.get_river_to_avg_flood_score()
+        station_name_to_latest_rwld = cls.get_station_name_to_latest_rwld()
+        idx = {}
+        for basin, river_to_stations in basin_to_river_to_stations.items():
+            for river, station_name_to_station in river_to_stations.items():
+                basin_to_river_to_stations[basin][river] = dict(
+                    sorted(
+                        station_name_to_station.items(),
+                        key=lambda item: station_name_to_latest_rwld[
+                            item[0]
+                        ].flood_score,
+                        reverse=True,
+                    )
+                )
+            idx[basin] = dict(
+                sorted(
+                    basin_to_river_to_stations[basin].items(),
+                    key=lambda x: river_to_avg_flood_score.get(x[0], 0),
+                    reverse=True,
+                )
+            )
+        idx = dict(
+            sorted(
+                idx.items(),
+                key=lambda x: basin_to_avg_flood_score.get(x[0], 0),
+                reverse=True,
+            )
+        )
+        return idx

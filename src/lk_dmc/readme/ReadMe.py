@@ -13,15 +13,13 @@ class ReadMe:
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
         self.map_image_path = self.latest.draw_map()
+        self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
         self.station_to_latest_rwld = (
             RiverWaterLevelDataTable.get_station_name_to_latest_rwld()
         )
-        self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
-        self.basin_to_avg_flood_score = (
-            RiverWaterLevelDataTable.get_basin_to_avg_flood_score()
-        )
-        self.river_to_avg_flood_score = (
-            RiverWaterLevelDataTable.get_river_to_avg_flood_score()
+
+        self.basin_to_river_to_stations = (
+            RiverWaterLevelDataTable.get_sorted_basin_to_river_to_stations()
         )
 
     def get_lines_header(self) -> list[str]:
@@ -88,15 +86,7 @@ class ReadMe:
                 "",
             ]
         )
-        station_names = sorted(
-            station_name_to_station.keys(),
-            key=lambda station_name: self.station_to_latest_rwld[
-                station_name
-            ].flood_score,
-            reverse=True,
-        )
-        for station_name in station_names:
-            station = station_name_to_station[station_name]
+        for station_name, station in station_name_to_station.items():
             lines.extend(self.get_lines_for_station(station))
 
         return lines
@@ -112,32 +102,37 @@ class ReadMe:
                 "",
             ]
         )
-        rivers = sorted(
-            river_to_stations.keys(),
-            key=lambda river_name: self.river_to_avg_flood_score.get(
-                river_name, 0
-            ),
-            reverse=True,
-        )
-        for river_name in rivers:
+        for river_name, station_name_to_station in river_to_stations.items():
             idx3 = river_to_stations[river_name]
-            lines.extend(self.get_lines_for_river(river_name, idx3))
-
-        return lines
-
-    def get_lines_for_river_basins(self) -> list[str]:
-        idx1 = GaugingStation.get_basic_to_river_to_station()
-        lines = []
-        for river_basin_name in self.basin_to_avg_flood_score.keys():
-            idx2 = idx1[river_basin_name]
             lines.extend(
-                self.get_lines_for_river_basin(river_basin_name, idx2)
+                self.get_lines_for_river(river_name, station_name_to_station)
             )
 
         return lines
 
+    def get_lines_for_river_basins(self) -> list[str]:
+        lines = []
+        for (
+            river_basin_name,
+            river_to_stations,
+        ) in self.basin_to_river_to_stations.items():
+            lines.extend(
+                self.get_lines_for_river_basin(
+                    river_basin_name, river_to_stations
+                )
+            )
+
+        return lines
+
+    def get_lines_for_summary_table(self) -> list[str]:
+        return []
+
     def get_lines(self) -> list[str]:
-        return self.get_lines_header() + self.get_lines_for_river_basins()
+        return (
+            self.get_lines_header()
+            + self.get_lines_for_summary_table()
+            + self.get_lines_for_river_basins()
+        )
 
     def build(self):
         lines = self.get_lines()
