@@ -53,7 +53,7 @@ class RiverWaterLevelData:
 
     @classmethod
     def from_df_row(
-        cls, row, current_river_basin: RiverBasin, doc_id: str
+        cls, row, current_river_basin: RiverBasin, time_ut: str
     ) -> tuple["RiverWaterLevelData", str]:
         river_basin = RiverBasin.from_df_row(row) or current_river_basin
         river = River.from_df_row(row, river_basin)
@@ -74,7 +74,6 @@ class RiverWaterLevelData:
             else 0.0
         )
 
-        time_ut = TimeFormat("%Y-%m-%d-%H-%M").parse(doc_id[:16]).ut
         time_str = TimeFormat("%Y-%m-%d %H:%M:%S").format(Time(time_ut))
 
         rwld = cls(

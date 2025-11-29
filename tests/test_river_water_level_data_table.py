@@ -6,6 +6,13 @@ from lk_dmc import ReadMe, RiverWaterLevelDataTable
 
 
 class TestCase(unittest.TestCase):
+    def test_get_date_time_from_pdf(self):
+        pdf_path = os.path.join(
+            "tests", "inputs", "2025-11-28-15-30-water-level.pdf"
+        )
+        ut = RiverWaterLevelDataTable.get_date_time_from_pdf(pdf_path)
+        self.assertEqual(ut, 1764324000.0)
+
     def test_list_from_pdf(self):
         pdf_path = os.path.join(
             "tests", "inputs", "2025-11-28-15-30-water-level.pdf"
