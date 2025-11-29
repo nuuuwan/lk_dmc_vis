@@ -10,6 +10,7 @@ class ReadMe:
     PATH = "README.md"
     URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis"
     URL_DETAILS = "https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md"
+    URL_SOURCE = "https://www.dmc.gov.lk"
 
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
@@ -31,29 +32,33 @@ class ReadMe:
             "# #SriLanka 🇱🇰 - Flood Map",
             "",
             (
-                "This is a schematic diagram of river water levels"
-                + " across gauging stations in Sri Lanka."
+                "Infographics, Charts and Data of **River Water Levels**"
+                + " across Sri Lanka."
             ),
             "",
             (
-                "Data from the "
+                "[Data](data) from the "
                 + "[Disaster Management Center]"
-                + "(https://www.dmc.gov.lk/index.php)"
+                + f"({self.URL_SOURCE})"
                 + " of Sri Lanka."
             ),
             "",
             (
                 "Updated whenever new information is released by the DMC,"
-                + " usually every 3 hours."
+                + " usually every **3 hours**."
             ),
             "",
             (
-                "Map Image only:"
+                "High-Resolution Map Image:"
                 + f" [{self.URL_IMAGE_ONLY}]"
                 + f"({self.URL_IMAGE_ONLY})"
             ),
             "",
-            ("Details:" + f" [{self.URL_DETAILS}]" + f"({self.URL_DETAILS})"),
+            (
+                "Detailed Analysis and Projections:"
+                + f" [{self.URL_DETAILS}]"
+                + f"({self.URL_DETAILS})"
+            ),
             "",
             f"![Map]({self.map_image_path})",
             "",

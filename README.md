@@ -1,14 +1,14 @@
 # #SriLanka 🇱🇰 - Flood Map
 
-This is a schematic diagram of river water levels across gauging stations in Sri Lanka.
+Infographics, Charts and Data of **River Water Levels** across Sri Lanka.
 
-Data from the [Disaster Management Center](https://www.dmc.gov.lk/index.php) of Sri Lanka.
+[Data](data) from the [Disaster Management Center](https://www.dmc.gov.lk) of Sri Lanka.
 
-Updated whenever new information is released by the DMC, usually every 3 hours.
+Updated whenever new information is released by the DMC, usually every **3 hours**.
 
-Map Image only: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.io/lk_dmc_vis)
+High-Resolution Map Image: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.io/lk_dmc_vis)
 
-Details: [https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md](https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md)
+Detailed Analysis and Projections: [https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md](https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md)
 
 ![Map](images/map.png)
 
