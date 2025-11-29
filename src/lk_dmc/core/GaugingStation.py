@@ -54,3 +54,18 @@ class GaugingStation(AbstractTable):
             + f' "{gs.major_flood_level}" != "{e_major_flood_level}"'
         )
         return gs
+
+    @classmethod
+    def get_basic_to_river_to_station(
+        cls,
+    ) -> dict[str, dict[str, "GaugingStation"]]:
+        idx: dict[str, dict[str, GaugingStation]] = {}
+        for station in cls.list_all():
+            river = station.river
+            river_basin = river.river_basin
+            if river_basin.name not in idx:
+                idx[river_basin.name] = {}
+            if river.name not in idx[river_basin.name]:
+                idx[river_basin.name][river.name] = {}
+            idx[river_basin.name][river.name][station.name] = station
+        return idx

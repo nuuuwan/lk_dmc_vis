@@ -1,5 +1,6 @@
 from utils import File, Log
 
+from lk_dmc.core import GaugingStation, RiverBasin
 from lk_dmc.rwld import RiverWaterLevelDataTable
 
 log = Log("ReadMe")
@@ -45,19 +46,50 @@ class ReadMe:
             "",
         ]
 
-    def get_lines_for_gauging_stations(self) -> list[str]:
+    def get_lines_for_station(self, station_name, station):
         lines = []
-        for station_name, image_path in self.station_to_image.items():
-            lines += [
-                f"## {station_name}",
-                "",
-                f"![{station_name}]({image_path})",
+        image_path = self.station_to_image.get(station_name)
+        lines += [
+            f"#### {station.name} Gauging Station",
+            "",
+            f"![{station.name}]({image_path})",
+            "",
+        ]
+        return lines
+
+    def get_lines_for_river(
+        self, river_name, station_name_to_station
+    ) -> list[str]:
+        lines = []
+        lines.extend(
+            [
+                f"### {river_name}",
                 "",
             ]
+        )
+        for station_name, station in station_name_to_station.items():
+            lines.extend(self.get_lines_for_station(station_name, station))
+
+        return lines
+
+    def get_lines_for_river_basin(self) -> list[str]:
+        idx1 = GaugingStation.get_basic_to_river_to_station()
+        lines = []
+        for river_basin_name, idx2 in idx1.items():
+            river_basin = RiverBasin.from_name(river_basin_name)
+            lines.extend(
+                [
+                    f"## {river_basin.name} River Basin ({river_basin.code})",
+                    "",
+                ]
+            )
+            for river_name, idx3 in idx2.items():
+                lines.extend(self.get_lines_for_river(river_name, idx3))
+
         return lines
 
     def get_lines(self) -> list[str]:
-        return self.get_lines_header() + self.get_lines_for_gauging_stations()
+        return self.get_lines_header() + self.get_lines_for_river_basin()
 
     def build(self):
         lines = self.get_lines()
