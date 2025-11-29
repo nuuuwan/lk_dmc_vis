@@ -28,10 +28,6 @@ class RiverWaterLevelData:
 
     @property
     def flood_score(self) -> float:
-        # Intepretation
-        # > 1 Major
-        # 0-1 Minor
-        # < 0 Normal
         station = self.gauging_station
         major = station.major_flood_level
         minor = station.minor_flood_level

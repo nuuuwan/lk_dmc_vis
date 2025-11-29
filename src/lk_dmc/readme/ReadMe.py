@@ -97,7 +97,7 @@ class ReadMe:
                 "",
             ]
         )
-        for station_name, station in station_name_to_station.items():
+        for station in station_name_to_station.values():
             lines.extend(self.get_lines_for_station(station))
 
         return lines
@@ -114,7 +114,6 @@ class ReadMe:
             ]
         )
         for river_name, station_name_to_station in river_to_stations.items():
-            idx3 = river_to_stations[river_name]
             lines.extend(
                 self.get_lines_for_river(river_name, station_name_to_station)
             )
@@ -140,43 +139,42 @@ class ReadMe:
         lines.extend(
             [
                 (
-                    "| River Basin | River | Gauging Station "
+                    "| Gauging Station | River | River Basin "
                     "| Level (m) | Rate-of-Rise (m/hr) | Alert |"
                 ),
                 (
-                    "|-------------|-------|-----------------|"
-                    "----------------:|-----------------:|-------|"
+                    "|-----------------|-------|-------------|"
+                    "----------:|--------------------:|-------|"
                 ),
             ]
         )
         for (
-            basin_name,
-            river_to_stations,
-        ) in self.basin_to_river_to_stations.items():
-            for (
-                river_name,
-                station_name_to_station,
-            ) in river_to_stations.items():
-                for station_name, station in station_name_to_station.items():
-                    rwld = self.station_to_latest_rwld[station_name]
-                    level_velocity = self.station_to_level_velocity[
-                        station_name
-                    ]
-                    velocity_emoji = ""
-                    if level_velocity >= 0.01:
-                        velocity_emoji = "🔺"
+            station_name,
+            rwld,
+        ) in self.station_to_latest_rwld.items():
+            level_velocity = self.station_to_level_velocity[station_name]
+            station = GaugingStation.from_name(station_name)
+            river = station.river
+            basin = river.river_basin
 
-                    velocity_str = f"{velocity_emoji}{level_velocity:.2f}"
-                    lines.extend(
-                        [
-                            f"| {basin_name} "
-                            + f"| {river_name} "
-                            + f"| {station_name} "
-                            + f"| {rwld.current_water_level:.1f} "
-                            + f"| {velocity_str}"
-                            + f"| {rwld.alert} |",
-                        ]
-                    )
+            river_name = river.name
+            basin_name = basin.name
+
+            velocity_emoji = ""
+            if level_velocity >= 0.01:
+                velocity_emoji = "🔺"
+
+            velocity_str = f"{velocity_emoji}{level_velocity:.2f}"
+            lines.extend(
+                [
+                    f"| [{station_name}]({station.url_google_maps}) "
+                    + f"| {river_name} "
+                    + f"| {basin_name} "
+                    + f"| {rwld.current_water_level:.1f} "
+                    + f"| {velocity_str} "
+                    + f"| {rwld.alert} |",
+                ]
+            )
         lines.append("")
         return lines
 
