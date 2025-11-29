@@ -1,4 +1,4 @@
-from utils import File, Log
+from utils import File, Log, Time
 
 from lk_dmc.core import GaugingStation, RiverBasin
 from lk_dmc.rwld import RiverWaterLevelDataTable
@@ -51,6 +51,9 @@ class ReadMe:
 
     def get_lines_for_station(self, station_name, station):
         rwld = self.station_to_latest_rwld[station_name]
+        dt_last_updated = Time.now().ut - rwld.time_ut
+        dt_last_updated_hours = dt_last_updated // 3600
+        emoji_late = "⌛" if dt_last_updated_hours >= 24 else ""
         alert = rwld.alert
         lines = []
         image_path = self.station_to_image.get(station_name)
@@ -58,6 +61,10 @@ class ReadMe:
             f"#### {alert}"
             + f" - [{station.name}]({station.url_google_maps})"
             + " Gauging Station",
+            "",
+            "*Last Updated"
+            + f" **{dt_last_updated_hours:.0f} hours** ago*"
+            + f" {emoji_late}",
             "",
             f"![{station.name}]({image_path})",
             "",
