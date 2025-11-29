@@ -9,6 +9,7 @@ log = Log("ReadMe")
 class ReadMe:
     PATH = "README.md"
     URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis"
+    URL_DETAILS = "https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md"
 
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
@@ -47,10 +48,12 @@ class ReadMe:
             ),
             "",
             (
-                "Image only link:"
+                "Map Image only:"
                 + f" [{self.URL_IMAGE_ONLY}]"
                 + f"({self.URL_IMAGE_ONLY})"
             ),
+            "",
+            ("Details:" + f" [{self.URL_DETAILS}]" + f"({self.URL_DETAILS})"),
             "",
             f"![Map]({self.map_image_path})",
             "",

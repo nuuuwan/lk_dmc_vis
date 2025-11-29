@@ -6,7 +6,9 @@ Data from the [Disaster Management Center](https://www.dmc.gov.lk/index.php) of 
 
 Updated whenever new information is released by the DMC, usually every 3 hours.
 
-Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.io/lk_dmc_vis)
+Map Image only: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.io/lk_dmc_vis)
+
+Details: [https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md](https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md)
 
 ![Map](images/map.png)
 
