@@ -5,6 +5,7 @@ import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 from utils import Log
 
+from lk_dmc.core.Alert import Alert
 from lk_dmc.core.GaugingStation import GaugingStation
 
 log = Log("ChartGaugingStationMixin")
@@ -29,19 +30,17 @@ class ChartGaugingStationMixin:
     def __draw_station_annotations__(cls, station, ax):
         ax.set_title(f"{station.name} - River Water Level")
 
-        flood_levels = [
-            (station.major_flood_level, "red", "Major Flood"),
-            (station.minor_flood_level, "darkorange", "Minor Flood"),
-            (station.alert_level, "orange", "Alert"),
-        ]
-
-        for level, color, label in flood_levels:
+        for level, alert in [
+            (station.major_flood_level, Alert.MAJOR),
+            (station.minor_flood_level, Alert.MINOR),
+            (station.alert_level, Alert.ALERT),
+        ]:
             ax.axhline(
                 y=level,
-                color=color,
+                color=alert.color,
                 linestyle="--",
                 linewidth=1.5,
-                label=label,
+                label=alert.label,
                 alpha=0.7,
             )
 

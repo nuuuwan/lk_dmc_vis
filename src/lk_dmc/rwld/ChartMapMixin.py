@@ -7,6 +7,7 @@ from gig import Ent, EntType
 from matplotlib.lines import Line2D
 from utils import Log, Time, TimeFormat
 
+from lk_dmc.core.Alert import Alert
 from lk_dmc.core.GaugingStation import GaugingStation
 from lk_dmc.core.Location import Location
 from lk_dmc.core.River import River
@@ -15,13 +16,6 @@ log = Log("RiverWaterLevelDataTableMapMixin")
 
 
 class ChartMapMixin:
-    LEVEL_TO_COLOR = {
-        0: "grey",
-        1: (0, 0.5, 0),
-        2: (1, 0.75, 0),
-        3: (1, 0.5, 0),
-        4: (1, 0, 0),
-    }
 
     LOCATION_MARKER_SHAPE = "s"
     LOCATION_MARKER_SIZE = 3
@@ -42,13 +36,13 @@ class ChartMapMixin:
                 alpha=1.0,
             )
 
-    def get_station_to_level_map(self):
-        station_to_level = {}
+    def get_station_to_alert(self):
+        station_to_alert = {}
         for rwld in self.d_list:
             station = rwld.gauging_station
-            level = self.__get_station_level__(rwld)
-            station_to_level[station.name] = level
-        return station_to_level
+            alert = Alert.from_rwld(rwld)
+            station_to_alert[station.name] = alert
+        return station_to_alert
 
     def __draw_river_segment__(self, ax, loc1, loc2, color):
         y1, x1 = loc1.lat_lng
@@ -71,7 +65,7 @@ class ChartMapMixin:
             alpha=0.75,
         )
 
-    def __draw_river__(self, ax, river, station_to_level):
+    def __draw_river__(self, ax, river, station_to_alert):
         locations = [
             GaugingStation.from_name_safe(name) or Location.from_name(name)
             for name in river.location_names
@@ -82,12 +76,12 @@ class ChartMapMixin:
             loc1 = locations[i]
             loc2 = locations[i + 1]
 
-            level1 = station_to_level.get(loc1.name, 0)
-            level2 = station_to_level.get(loc2.name, 0)
+            level1 = station_to_alert.get(loc1.name, Alert.NO_DATA).level
+            level2 = station_to_alert.get(loc2.name, Alert.NO_DATA).level
             level_max = max(level1, level2)
-            color = self.LEVEL_TO_COLOR[level_max]
+            alert_max = Alert.from_level(level_max)
 
-            self.__draw_river_segment__(ax, loc1, loc2, color)
+            self.__draw_river_segment__(ax, loc1, loc2, alert_max.color)
 
             if i == n_locations - 2:
                 y1, x1 = loc1.lat_lng
@@ -104,10 +98,10 @@ class ChartMapMixin:
 
     def __draw_rivers__(self, ax):
         rivers = River.list_all()
-        station_to_level = self.get_station_to_level_map()
+        station_to_alert = self.get_station_to_alert()
 
         for river in rivers:
-            self.__draw_river__(ax, river, station_to_level)
+            self.__draw_river__(ax, river, station_to_alert)
 
     def __draw_locations__(self, ax):
         locations = Location.list_all()
@@ -130,22 +124,11 @@ class ChartMapMixin:
                 color="black",
             )
 
-    def __get_station_level__(self, rwld):
-        station = rwld.gauging_station
-        level = 1
-        if rwld.current_water_level >= station.alert_level:
-            level = 2
-        if rwld.current_water_level >= station.minor_flood_level:
-            level = 3
-        if rwld.current_water_level >= station.major_flood_level:
-            level = 4
-        return level
-
     def __draw_station__(self, ax, rwld):
         station = rwld.gauging_station
         lat, lng = station.lat_lng
-        level = self.__get_station_level__(rwld)
-        color = self.LEVEL_TO_COLOR[level]
+        alert = Alert.from_rwld(rwld)
+        color = alert.color
 
         # draw white-filled marker with colored edge (no connecting line)
         ax.plot(
@@ -175,15 +158,10 @@ class ChartMapMixin:
 
     def __draw_legend__(self, ax):
         legend_handles = []
-        for color, label in [
-            (self.LEVEL_TO_COLOR[4], "Major Floods"),
-            (self.LEVEL_TO_COLOR[3], "Minor Floods"),
-            (self.LEVEL_TO_COLOR[2], "On Alert"),
-            (self.LEVEL_TO_COLOR[1], "Normal"),
-            ("grey", "Circle = Gauging Station"),
-            ("grey", "Square = Other Location"),
-        ]:
-            if "Square" in label:
+        for alert in Alert.list_all():
+            label = alert.label
+            color = alert.color
+            if alert.level == 0:
                 markersize = self.LOCATION_MARKER_SIZE
                 marker_style = self.LOCATION_MARKER_SHAPE
             else:
