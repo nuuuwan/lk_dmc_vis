@@ -24,7 +24,7 @@ class ChartGaugingStationMixin:
         ]
         ts = [datetime.fromtimestamp(d.time_ut) for d in rwld_list_recent]
         levels = [d.current_water_level for d in rwld_list_recent]
-        return ts, levels
+        return ts, levels, rwld_list_recent
 
     @classmethod
     def __draw_station_annotations__(cls, station, ax):
@@ -49,8 +49,32 @@ class ChartGaugingStationMixin:
         return station
 
     @classmethod
+    def __draw_latest_annotations__(cls, ts, levels, rwld_list_recent, ax):
+        latest_time = ts[-1]
+        latest_level = levels[-1]
+        rwld = rwld_list_recent[-1]
+        time_str = latest_time.strftime("%b %d, %H:%M")
+        ax.annotate(
+            "\n".join(
+                [
+                    time_str,
+                    f"{latest_level:.2f}m",
+                    rwld.alert.label,
+                ]
+            ),
+            xy=(latest_time, latest_level),
+            xytext=(10, 10),
+            textcoords="offset points",
+            bbox=dict(
+                boxstyle="round,pad=0.5", fc=rwld.alert.color, alpha=0.7
+            ),
+            arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0"),
+            fontsize=9,
+        )
+
+    @classmethod
     def __draw_for_station__(cls, station_name, rwld_list):
-        ts, levels = cls.__get_data__(rwld_list)
+        ts, levels, rwld_list_recent = cls.__get_data__(rwld_list)
 
         fig, ax = plt.subplots(figsize=(8, 4.5))
         ax.plot(ts, levels, marker="o", linestyle="-")
@@ -65,6 +89,7 @@ class ChartGaugingStationMixin:
 
         station = GaugingStation.from_name(station_name)
         cls.__draw_station_annotations__(station, ax)
+        cls.__draw_latest_annotations__(ts, levels, rwld_list_recent, ax)
 
         os.makedirs(cls.DIR_IMAGES_STATIONS, exist_ok=True)
         image_path = os.path.join(

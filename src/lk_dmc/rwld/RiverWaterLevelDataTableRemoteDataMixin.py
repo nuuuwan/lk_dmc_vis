@@ -103,7 +103,7 @@ class RiverWaterLevelDataTableRemoteDataMixin:
                 idx[station_name].append(rwld)
 
         for station_name in idx.keys():
-            idx[station_name].sort(key=lambda x: x.time_ut, reverse=True)
+            idx[station_name].sort(key=lambda x: x.time_ut)
         return idx
 
     @classmethod
