@@ -14,7 +14,7 @@ Details: [https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md](https://git
 
 ## Summary Table
 
-| River Basin | River | Gauging Station | Level (m) | Rising Speed (m/hr) | Alert |
+| River Basin | River | Gauging Station | Level (m) | Rate-of-Rise (m/hr) | Alert |
 |-------------|-------|-----------------|----------------:|-----------------:|-------|
 | Maha Oya | Maha Oya | Giriulla | 11.5 | -0.24| 🔴 Major Flood |
 | Maha Oya | Maha Oya | Badalgama | 13.4 | -0.01| 🔴 Major Flood |
