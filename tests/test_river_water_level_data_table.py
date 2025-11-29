@@ -37,12 +37,12 @@ class TestCase(unittest.TestCase):
         t = RiverWaterLevelDataTable.from_pdf(pdf_path)
 
         actual_json_path = os.path.join(
-            "tests", "outputs", "test_river_water_level_data_table.json"
+            "tests", "outputs", "2025-11-28-15-30-water-level.json"
         )
         expected_json_path = os.path.join(
             "tests",
             "inputs",
-            "test_river_water_level_data_table.json",
+            "2025-11-28-15-30-water-level.json",
         )
         t.to_json(actual_json_path)
 
@@ -53,7 +53,6 @@ class TestCase(unittest.TestCase):
                 expected_content = expected_file.read()
                 self.assertEqual(actual_content, expected_content)
 
-    @unittest.skip("slow")
-    def test_list_latest(self):
-        t_list = RiverWaterLevelDataTable.list_latest()
-        self.assertGreaterEqual(len(t_list), 1)
+    def test_pipeline(self):
+        latest = RiverWaterLevelDataTable.latest()
+        latest.draw()
