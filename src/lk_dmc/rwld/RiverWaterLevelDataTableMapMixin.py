@@ -7,9 +7,9 @@ from gig import Ent, EntType
 from matplotlib.lines import Line2D
 from utils import Log, Time, TimeFormat
 
-from lk_dmc.GaugingStation import GaugingStation
-from lk_dmc.Location import Location
-from lk_dmc.River import River
+from lk_dmc.core.GaugingStation import GaugingStation
+from lk_dmc.core.Location import Location
+from lk_dmc.core.River import River
 
 log = Log("RiverWaterLevelDataTableMapMixin")
 

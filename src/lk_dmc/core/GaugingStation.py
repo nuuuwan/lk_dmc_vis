@@ -1,8 +1,8 @@
 from dataclasses import asdict, dataclass
 
-from lk_dmc.AbstractTable import AbstractTable
-from lk_dmc.River import River
-from lk_dmc.WaterLevel import WaterLevel
+from lk_dmc.base.AbstractTable import AbstractTable
+from lk_dmc.core.River import River
+from lk_dmc.core.WaterLevel import WaterLevel
 
 
 @dataclass

@@ -2,10 +2,10 @@ from dataclasses import dataclass
 
 from utils import Log, Time, TimeFormat
 
-from lk_dmc.GaugingStation import GaugingStation
-from lk_dmc.River import River
-from lk_dmc.RiverBasin import RiverBasin
-from lk_dmc.WaterLevel import WaterLevel
+from lk_dmc.core.GaugingStation import GaugingStation
+from lk_dmc.core.River import River
+from lk_dmc.core.RiverBasin import RiverBasin
+from lk_dmc.core.WaterLevel import WaterLevel
 
 log = Log("RiverWaterLevelData")
 

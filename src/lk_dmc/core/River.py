@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from lk_dmc.AbstractTable import AbstractTable
-from lk_dmc.RiverBasin import RiverBasin
+from lk_dmc.base.AbstractTable import AbstractTable
+from lk_dmc.core.RiverBasin import RiverBasin
 
 
 @dataclass

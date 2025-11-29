@@ -3,10 +3,10 @@ from dataclasses import asdict, dataclass
 import camelot
 from utils import JSONFile, Log
 
-from lk_dmc.RiverWaterLevelData import RiverWaterLevelData
-from lk_dmc.RiverWaterLevelDataTableMapMixin import \
+from lk_dmc.rwld.RiverWaterLevelData import RiverWaterLevelData
+from lk_dmc.rwld.RiverWaterLevelDataTableMapMixin import \
     RiverWaterLevelDataTableMapMixin
-from lk_dmc.RiverWaterLevelDataTableRemoteDataMixin import \
+from lk_dmc.rwld.RiverWaterLevelDataTableRemoteDataMixin import \
     RiverWaterLevelDataTableRemoteDataMixin
 
 log = Log("RiverWaterLevelDataTable")
