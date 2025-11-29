@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 from utils import Log, Time, TimeFormat
 
+from lk_dmc.core.Alert import Alert
 from lk_dmc.core.GaugingStation import GaugingStation
 from lk_dmc.core.River import River
 from lk_dmc.core.RiverBasin import RiverBasin
@@ -24,6 +25,18 @@ class RiverWaterLevelData:
     @property
     def gauging_station(self) -> GaugingStation:
         return GaugingStation.from_name(self.gauging_station_name)
+
+    @property
+    def alert(self) -> Alert:  # noqa: CFQ004
+        station = self.gauging_station
+        if self.current_water_level >= station.major_flood_level:
+            return Alert.MAJOR
+        elif self.current_water_level >= station.minor_flood_level:
+            return Alert.MINOR
+        elif self.current_water_level >= station.alert_level:
+            return Alert.ALERT
+        else:
+            return Alert.NORMAL
 
     @classmethod
     def from_df_row(

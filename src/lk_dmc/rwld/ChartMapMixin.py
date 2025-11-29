@@ -40,7 +40,7 @@ class ChartMapMixin:
         station_to_alert = {}
         for rwld in self.d_list:
             station = rwld.gauging_station
-            alert = Alert.from_rwld(rwld)
+            alert = rwld.alert
             station_to_alert[station.name] = alert
         return station_to_alert
 
@@ -76,10 +76,9 @@ class ChartMapMixin:
             loc1 = locations[i]
             loc2 = locations[i + 1]
 
-            level1 = station_to_alert.get(loc1.name, Alert.NO_DATA).level
-            level2 = station_to_alert.get(loc2.name, Alert.NO_DATA).level
-            level_max = max(level1, level2)
-            alert_max = Alert.from_level(level_max)
+            alert1 = station_to_alert.get(loc1.name, Alert.NO_DATA)
+            alert2 = station_to_alert.get(loc2.name, Alert.NO_DATA)
+            alert_max = max(alert1, alert2)
 
             self.__draw_river_segment__(ax, loc1, loc2, alert_max.color)
 
@@ -127,7 +126,7 @@ class ChartMapMixin:
     def __draw_station__(self, ax, rwld):
         station = rwld.gauging_station
         lat, lng = station.lat_lng
-        alert = Alert.from_rwld(rwld)
+        alert = rwld.alert
         color = alert.color
 
         # draw white-filled marker with colored edge (no connecting line)
