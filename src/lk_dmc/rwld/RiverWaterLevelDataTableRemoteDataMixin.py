@@ -101,6 +101,9 @@ class RiverWaterLevelDataTableRemoteDataMixin:
                 if station_name not in idx:
                     idx[station_name] = []
                 idx[station_name].append(rwld)
+
+        for station_name in idx.keys():
+            idx[station_name].sort(key=lambda x: x.time_ut, reverse=True)
         return idx
 
     @classmethod

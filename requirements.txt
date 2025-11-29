@@ -2,3 +2,4 @@ utils-nuuuwan
 camelot-py[cv]
 matplotlib
 gig-nuuuwan
+fitz
