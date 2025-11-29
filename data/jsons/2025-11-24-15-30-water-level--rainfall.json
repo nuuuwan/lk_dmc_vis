@@ -1,0 +1,394 @@
+{
+  "d_list": [
+    {
+      "gauging_station_name": "Nagalagam Street",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.7924800000000001,
+      "current_water_level": 0.8382000000000001,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Hanwella",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.81,
+      "current_water_level": 2.74,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Glencourse",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 10.43,
+      "current_water_level": 10.35,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 2.0
+    },
+    {
+      "gauging_station_name": "Kithulgala",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.8,
+      "current_water_level": 1.99,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 13.2
+    },
+    {
+      "gauging_station_name": "Holombuwa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.28,
+      "current_water_level": 1.24,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Deraniyagala",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.69,
+      "current_water_level": 1.04,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 64.0
+    },
+    {
+      "gauging_station_name": "Norwood",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.02,
+      "current_water_level": 1.11,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 5.9
+    },
+    {
+      "gauging_station_name": "Putupaula",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.03,
+      "current_water_level": 2.01,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Ellagawa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 6.4,
+      "current_water_level": 6.39,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Rathnapura",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 6.65,
+      "current_water_level": 6.6,
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 2.8
+    },
+    {
+      "gauging_station_name": "Magura",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.89,
+      "current_water_level": 2.8,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Kalawellawa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 6.15,
+      "current_water_level": 6.1,
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Baddegama",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 4.09,
+      "current_water_level": 4.05,
+      "remarks": "Minor Flood",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Thawalama",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.14,
+      "current_water_level": 2.14,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Thalgahagoda",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.55,
+      "current_water_level": 1.53,
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Panadugama",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 4.26,
+      "current_water_level": 4.23,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Pitabeddara",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.21,
+      "current_water_level": 1.25,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.9
+    },
+    {
+      "gauging_station_name": "Urawa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.95,
+      "current_water_level": 1.36,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 96.3
+    },
+    {
+      "gauging_station_name": "Moraketiya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.13,
+      "current_water_level": 1.1,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Thanamalwila",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.84,
+      "current_water_level": 1.79,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Wellawaya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.53,
+      "current_water_level": 1.61,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Kuda Oya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.91,
+      "current_water_level": 1.88,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Katharagama",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.2,
+      "current_water_level": 0.19,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.5
+    },
+    {
+      "gauging_station_name": "Nakkala",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.14,
+      "current_water_level": 1.14,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.8
+    },
+    {
+      "gauging_station_name": "Siyambalanduwa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.97,
+      "current_water_level": 0.96,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 2.9
+    },
+    {
+      "gauging_station_name": "Padiyathalawa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.28,
+      "current_water_level": 1.35,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 13.0
+    },
+    {
+      "gauging_station_name": "Manampitiya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.34,
+      "current_water_level": 1.38,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 15.8
+    },
+    {
+      "gauging_station_name": "Weraganthota",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": -2.16,
+      "current_water_level": -2.28,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 16.7
+    },
+    {
+      "gauging_station_name": "Peradeniya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.72,
+      "current_water_level": 2.65,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Nawalapitiya",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.39,
+      "current_water_level": 1.38,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Thaldena",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 0.75,
+      "current_water_level": 0.75,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 2.3
+    },
+    {
+      "gauging_station_name": "Horowpothana",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 4.75,
+      "current_water_level": 4.76,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 8.9
+    },
+    {
+      "gauging_station_name": "Yaka Wewa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 1.56,
+      "current_water_level": 1.52,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 10.5
+    },
+    {
+      "gauging_station_name": "Thanthirimale",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 2.35,
+      "current_water_level": 2.42,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 10.9
+    },
+    {
+      "gauging_station_name": "Galgamuwa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 3.99,
+      "current_water_level": 3.89,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 26.7
+    },
+    {
+      "gauging_station_name": "Moragaswewa",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 5.94,
+      "current_water_level": 5.92,
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 2.5
+    },
+    {
+      "gauging_station_name": "Badalgama",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 5.02,
+      "current_water_level": 4.89,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Giriulla",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 3.65,
+      "current_water_level": 3.53,
+      "remarks": "Normal",
+      "rising_or_falling": "",
+      "rainfall_mm": 0.0
+    },
+    {
+      "gauging_station_name": "Dunamale",
+      "time_str": "2025-11-24 15:30:00",
+      "time_ut": 1763978400.0,
+      "previous_water_level": 4.32,
+      "current_water_level": 4.26,
+      "remarks": "Alert",
+      "rising_or_falling": "Falling",
+      "rainfall_mm": 0.0
+    }
+  ]
+}
