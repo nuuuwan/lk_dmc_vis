@@ -14,11 +14,11 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Maha Oya
 
-#### Badalgama Gauging Station
+#### 🔴 Major Flood - Badalgama Gauging Station
 
 ![Badalgama](images/stations/badalgama.png)
 
-#### Giriulla Gauging Station
+#### 🔴 Major Flood - Giriulla Gauging Station
 
 ![Giriulla](images/stations/giriulla.png)
 
@@ -26,11 +26,11 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Gin Ganga
 
-#### Baddegama Gauging Station
+#### 🟢 Normal - Baddegama Gauging Station
 
 ![Baddegama](images/stations/baddegama.png)
 
-#### Thawalama Gauging Station
+#### 🟢 Normal - Thawalama Gauging Station
 
 ![Thawalama](images/stations/thawalama.png)
 
@@ -38,37 +38,37 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Seethawaka Ganga
 
-#### Deraniyagala Gauging Station
+#### 🟢 Normal - Deraniyagala Gauging Station
 
 ![Deraniyagala](images/stations/deraniyagala.png)
 
 ### Kelani Ganga
 
-#### Glencourse Gauging Station
+#### 🔴 Major Flood - Glencourse Gauging Station
 
 ![Glencourse](images/stations/glencourse.png)
 
-#### Hanwella Gauging Station
+#### 🔴 Major Flood - Hanwella Gauging Station
 
 ![Hanwella](images/stations/hanwella.png)
 
-#### Kithulgala Gauging Station
+#### 🟡 Alert - Kithulgala Gauging Station
 
 ![Kithulgala](images/stations/kithulgala.png)
 
-#### Nagalagam Street Gauging Station
+#### 🟠 Minor Flood - Nagalagam Street Gauging Station
 
 ![Nagalagam Street](images/stations/nagalagam-street.png)
 
 ### Gurugoda Oya
 
-#### Holombuwa Gauging Station
+#### 🔴 Major Flood - Holombuwa Gauging Station
 
 ![Holombuwa](images/stations/holombuwa.png)
 
 ### Kehelgamu Oya
 
-#### Norwood Gauging Station
+#### 🟡 Alert - Norwood Gauging Station
 
 ![Norwood](images/stations/norwood.png)
 
@@ -76,7 +76,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Attanagalu Oya
 
-#### Dunamale Gauging Station
+#### 🔴 Major Flood - Dunamale Gauging Station
 
 ![Dunamale](images/stations/dunamale.png)
 
@@ -84,27 +84,27 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Kalu Ganga
 
-#### Ellagawa Gauging Station
+#### 🟡 Alert - Ellagawa Gauging Station
 
 ![Ellagawa](images/stations/ellagawa.png)
 
-#### Putupaula Gauging Station
+#### 🟡 Alert - Putupaula Gauging Station
 
 ![Putupaula](images/stations/putupaula.png)
 
-#### Rathnapura Gauging Station
+#### 🟠 Minor Flood - Rathnapura Gauging Station
 
 ![Rathnapura](images/stations/rathnapura.png)
 
 ### Kuda Ganga
 
-#### Kalawellawa Gauging Station
+#### 🟠 Minor Flood - Kalawellawa Gauging Station
 
 ![Kalawellawa](images/stations/kalawellawa.png)
 
 ### Maguru Ganga
 
-#### Magura Gauging Station
+#### 🟡 Alert - Magura Gauging Station
 
 ![Magura](images/stations/magura.png)
 
@@ -112,7 +112,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Mee Oya
 
-#### Galgamuwa Gauging Station
+#### 🟢 Normal - Galgamuwa Gauging Station
 
 ![Galgamuwa](images/stations/galgamuwa.png)
 
@@ -120,7 +120,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Yan Oya
 
-#### Horowpothana Gauging Station
+#### 🟠 Minor Flood - Horowpothana Gauging Station
 
 ![Horowpothana](images/stations/horowpothana.png)
 
@@ -128,7 +128,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Menik Ganga
 
-#### Katharagama Gauging Station
+#### 🔴 Major Flood - Katharagama Gauging Station
 
 ![Katharagama](images/stations/katharagama.png)
 
@@ -136,17 +136,17 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Kuda Oya
 
-#### Kuda Oya Gauging Station
+#### 🟢 Normal - Kuda Oya Gauging Station
 
 ![Kuda Oya](images/stations/kuda-oya.png)
 
 ### Kirindi Oya
 
-#### Thanamalwila Gauging Station
+#### 🟢 Normal - Thanamalwila Gauging Station
 
 ![Thanamalwila](images/stations/thanamalwila.png)
 
-#### Wellawaya Gauging Station
+#### 🟢 Normal - Wellawaya Gauging Station
 
 ![Wellawaya](images/stations/wellawaya.png)
 
@@ -154,25 +154,25 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Mahaweli Ganga
 
-#### Manampitiya Gauging Station
+#### 🟢 Normal - Manampitiya Gauging Station
 
 ![Manampitiya](images/stations/manampitiya.png)
 
-#### Nawalapitiya Gauging Station
+#### 🟠 Minor Flood - Nawalapitiya Gauging Station
 
 ![Nawalapitiya](images/stations/nawalapitiya.png)
 
-#### Peradeniya Gauging Station
+#### 🔴 Major Flood - Peradeniya Gauging Station
 
 ![Peradeniya](images/stations/peradeniya.png)
 
-#### Weraganthota Gauging Station
+#### 🟢 Normal - Weraganthota Gauging Station
 
 ![Weraganthota](images/stations/weraganthota.png)
 
 ### Badulu Oya
 
-#### Thaldena Gauging Station
+#### 🟢 Normal - Thaldena Gauging Station
 
 ![Thaldena](images/stations/thaldena.png)
 
@@ -180,7 +180,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Deduru Oya
 
-#### Moragaswewa Gauging Station
+#### 🔴 Major Flood - Moragaswewa Gauging Station
 
 ![Moragaswewa](images/stations/moragaswewa.png)
 
@@ -188,7 +188,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Walawe Ganga
 
-#### Moraketiya Gauging Station
+#### 🟢 Normal - Moraketiya Gauging Station
 
 ![Moraketiya](images/stations/moraketiya.png)
 
@@ -196,7 +196,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Kumbukkan Oya
 
-#### Nakkala Gauging Station
+#### 🟢 Normal - Nakkala Gauging Station
 
 ![Nakkala](images/stations/nakkala.png)
 
@@ -204,7 +204,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Maduru Oya
 
-#### Padiyathalawa Gauging Station
+#### 🟢 Normal - Padiyathalawa Gauging Station
 
 ![Padiyathalawa](images/stations/padiyathalawa.png)
 
@@ -212,21 +212,21 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Nilwala Ganga
 
-#### Panadugama Gauging Station
+#### 🟢 Normal - Panadugama Gauging Station
 
 ![Panadugama](images/stations/panadugama.png)
 
-#### Pitabeddara Gauging Station
+#### 🟢 Normal - Pitabeddara Gauging Station
 
 ![Pitabeddara](images/stations/pitabeddara.png)
 
-#### Thalgahagoda Gauging Station
+#### 🟡 Alert - Thalgahagoda Gauging Station
 
 ![Thalgahagoda](images/stations/thalgahagoda.png)
 
 ### Urubokka Ganga
 
-#### Urawa Gauging Station
+#### 🟢 Normal - Urawa Gauging Station
 
 ![Urawa](images/stations/urawa.png)
 
@@ -234,7 +234,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Heda Oya
 
-#### Siyambalanduwa Gauging Station
+#### 🟢 Normal - Siyambalanduwa Gauging Station
 
 ![Siyambalanduwa](images/stations/siyambalanduwa.png)
 
@@ -242,7 +242,7 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Malwathu Oya
 
-#### Thanthirimale Gauging Station
+#### 🔴 Major Flood - Thanthirimale Gauging Station
 
 ![Thanthirimale](images/stations/thanthirimale.png)
 
@@ -250,6 +250,6 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ### Mukunu Oya
 
-#### Yaka Wewa Gauging Station
+#### 🟠 Minor Flood - Yaka Wewa Gauging Station
 
 ![Yaka Wewa](images/stations/yaka-wewa.png)
