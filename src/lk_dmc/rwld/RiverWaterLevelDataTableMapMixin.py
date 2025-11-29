@@ -50,55 +50,64 @@ class RiverWaterLevelDataTableMapMixin:
             station_to_level[station.name] = level
         return station_to_level
 
-    def __draw_rivers__(self, ax):
-        rivers = River.list_all()
+    def __draw_river_segment__(self, ax, loc1, loc2, color):
+        y1, x1 = loc1.lat_lng
+        y2, x2 = loc2.lat_lng
 
-        for river in rivers:
-            locations = [
-                GaugingStation.from_name_safe(name)
-                or Location.from_name(name)
-                for name in river.location_names
-            ]
-            n_locations = len(locations)
-            station_to_level = self.get_station_to_level_map()
-            for i in range(n_locations - 1):
-                loc1 = locations[i]
-                loc2 = locations[i + 1]
+        dx = x2 - x1
+        dy = y2 - y1
 
-                level1 = station_to_level.get(loc1.name, 0)
-                level2 = station_to_level.get(loc2.name, 0)
-                level_max = max(level1, level2)
-                color = self.LEVEL_TO_COLOR[level_max]
+        dmin = min(abs(dx), abs(dy))
+        xmid1 = x1 + dmin * dx / abs(dx) / 2
+        ymid1 = y1 + dmin * dy / abs(dy) / 2
+        xmid2 = x2 - dmin * dx / abs(dx) / 2
+        ymid2 = y2 - dmin * dy / abs(dy) / 2
 
+        ax.plot(
+            [x1, xmid1, xmid2, x2],
+            [y1, ymid1, ymid2, y2],
+            color=color,
+            linewidth=self.RIVER_WIDTH,
+            alpha=0.75,
+        )
+
+    def __draw_river__(self, ax, river, station_to_level):
+        locations = [
+            GaugingStation.from_name_safe(name) or Location.from_name(name)
+            for name in river.location_names
+        ]
+        n_locations = len(locations)
+
+        for i in range(n_locations - 1):
+            loc1 = locations[i]
+            loc2 = locations[i + 1]
+
+            level1 = station_to_level.get(loc1.name, 0)
+            level2 = station_to_level.get(loc2.name, 0)
+            level_max = max(level1, level2)
+            color = self.LEVEL_TO_COLOR[level_max]
+
+            self.__draw_river_segment__(ax, loc1, loc2, color)
+
+            if i == n_locations - 2:
                 y1, x1 = loc1.lat_lng
                 y2, x2 = loc2.lat_lng
-
-                dx = x2 - x1
-                dy = y2 - y1
-                if i == n_locations - 2:
-                    ax.text(
-                        (x1 + x2) / 2,
-                        (y1 + y2) / 2,
-                        river.name,
-                        horizontalalignment="center",
-                        verticalalignment="center",
-                        fontsize=self.RIVER_WIDTH * 1.5,
-                        color="black",
-                    )
-
-                dmin = min(abs(dx), abs(dy))
-                xmid1 = x1 + dmin * dx / abs(dx) / 2
-                ymid1 = y1 + dmin * dy / abs(dy) / 2
-                xmid2 = x2 - dmin * dx / abs(dx) / 2
-                ymid2 = y2 - dmin * dy / abs(dy) / 2
-
-                ax.plot(
-                    [x1, xmid1, xmid2, x2],
-                    [y1, ymid1, ymid2, y2],
-                    color=color,
-                    linewidth=self.RIVER_WIDTH,
-                    alpha=0.75,
+                ax.text(
+                    (x1 + x2) / 2,
+                    (y1 + y2) / 2,
+                    river.name,
+                    horizontalalignment="center",
+                    verticalalignment="center",
+                    fontsize=self.RIVER_WIDTH * 1.5,
+                    color="black",
                 )
+
+    def __draw_rivers__(self, ax):
+        rivers = River.list_all()
+        station_to_level = self.get_station_to_level_map()
+
+        for river in rivers:
+            self.__draw_river__(ax, river, station_to_level)
 
     def __draw_locations__(self, ax):
         locations = Location.list_all()
