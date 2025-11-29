@@ -54,16 +54,3 @@ class GaugingStation(AbstractTable):
             + f' "{gs.major_flood_level}" != "{e_major_flood_level}"'
         )
         return gs
-
-    @classmethod
-    def from_name(cls, name):
-        gs_list = cls.list_all()
-        for gs in gs_list:
-            if gs.name == name:
-                return gs
-        raise ValueError(f"Gauging Station with name '{name}' not found")
-
-    def __eq__(self, other):
-        if not isinstance(other, GaugingStation):
-            return False
-        return asdict(self) == asdict(other)
