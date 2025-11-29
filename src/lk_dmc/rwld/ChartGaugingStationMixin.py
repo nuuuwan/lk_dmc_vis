@@ -64,7 +64,7 @@ class ChartGaugingStationMixin:
                 ]
             ),
             xy=(latest_time, latest_level),
-            xytext=(10, 10),
+            xytext=(20, 20),
             textcoords="offset points",
             bbox=dict(
                 boxstyle="round,pad=0.5", fc=rwld.alert.color, alpha=0.7
