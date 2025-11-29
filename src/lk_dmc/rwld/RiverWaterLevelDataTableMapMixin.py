@@ -204,6 +204,26 @@ class RiverWaterLevelDataTableMapMixin:
 
         ax.legend(handles=legend_handles, loc="upper right", fontsize=8)
 
+    def __draw_titles_and_footnotes__(self, fig):
+        for y, text, fontsize in [
+            (0.85, "Sri Lanka - Flood Map", 16),
+            (
+                0.825,
+                f"As of {TimeFormat.TIME.format(Time(self.time_updated_ut))}",
+                12,
+            ),
+            (0.8, "Data source: http://dmc.gov.lk", 8),
+        ]:
+            fig.text(
+                0.5,
+                y,
+                text,
+                fontsize=fontsize,
+                color="black",
+                horizontalalignment="center",
+                verticalalignment="center",
+            )
+
     def draw(self):
         fig, ax = plt.subplots(figsize=(16, 16))
 
@@ -225,34 +245,7 @@ class RiverWaterLevelDataTableMapMixin:
         self.__draw_locations__(ax)
         self.__draw_stations__(ax)
         self.__draw_legend__(ax)
-        fig.text(
-            0.5,
-            0.85,
-            "Sri Lanka - Flood Map",
-            fontsize=16,
-            color="black",
-            horizontalalignment="center",
-            verticalalignment="center",
-        )
-        time_str = TimeFormat.TIME.format(Time(self.time_updated_ut))
-        fig.text(
-            0.5,
-            0.825,
-            f"As of {time_str}",
-            fontsize=12,
-            color="black",
-            horizontalalignment="center",
-            verticalalignment="center",
-        )
-        fig.text(
-            0.5,
-            0.8,
-            "Data source: http://dmc.gov.lk",
-            fontsize=8,
-            color="black",
-            horizontalalignment="center",
-            verticalalignment="center",
-        )
+        self.__draw_titles_and_footnotes__(fig)
 
         ax.set_axis_off()
         for spine in ax.spines.values():
