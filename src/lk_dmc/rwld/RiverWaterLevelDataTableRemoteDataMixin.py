@@ -113,41 +113,42 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         return latest_rwld_table
 
     @classmethod
-    def get_river_to_avg_alert_level(cls) -> dict[str, float]:
+    def get_river_to_avg_flood_score(cls) -> dict[str, float]:
         river_to_stations = GaugingStation.get_river_to_stations()
         station_to_rwld = cls.get_station_name_to_latest_rwld()
-        river_to_avg_alert_level = {}
+        idx = {}
         for river, stations in river_to_stations.items():
             rwlds = [station_to_rwld[station] for station in stations]
-            levels = [rwld.alert.level for rwld in rwlds]
-            avg_level = sum(levels) / len(levels)
-            river_to_avg_alert_level[river] = avg_level
+            flood_scores = [rwld.flood_score for rwld in rwlds]
+            avg_level = sum(flood_scores) / len(flood_scores)
+            idx[river] = avg_level
 
-        river_to_avg_alert_level = dict(
+        idx = dict(
             sorted(
-                river_to_avg_alert_level.items(),
+                idx.items(),
                 key=lambda x: x[1],
                 reverse=True,
             )
         )
-        return river_to_avg_alert_level
+        return idx
 
     @classmethod
-    def get_basin_to_avg_alert_level(cls) -> dict[str, float]:
+    def get_basin_to_avg_flood_score(cls) -> dict[str, float]:
         basin_to_river = River.get_basin_to_river()
-        river_to_avg_alert_level = cls.get_river_to_avg_alert_level()
+        river_to_avg_flood_score = cls.get_river_to_avg_flood_score()
 
-        basin_to_avg_alert_level = {}
+        idx = {}
         for basin, rivers in basin_to_river.items():
-            levels = [river_to_avg_alert_level[river] for river in rivers]
-            avg_level = sum(levels) / len(levels)
-            basin_to_avg_alert_level[basin] = avg_level
+            flood_scores = [
+                river_to_avg_flood_score[river] for river in rivers
+            ]
+            idx[basin] = sum(flood_scores) / len(flood_scores)
 
-        basin_to_avg_alert_level = dict(
+        idx = dict(
             sorted(
-                basin_to_avg_alert_level.items(),
+                idx.items(),
                 key=lambda x: x[1],
                 reverse=True,
             )
         )
-        return basin_to_avg_alert_level
+        return idx

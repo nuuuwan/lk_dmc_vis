@@ -17,11 +17,11 @@ class ReadMe:
             RiverWaterLevelDataTable.get_station_name_to_latest_rwld()
         )
         self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
-        self.basin_to_avg_alert_level = (
-            RiverWaterLevelDataTable.get_basin_to_avg_alert_level()
+        self.basin_to_avg_flood_score = (
+            RiverWaterLevelDataTable.get_basin_to_avg_flood_score()
         )
-        self.river_to_avg_alert_level = (
-            RiverWaterLevelDataTable.get_river_to_avg_alert_level()
+        self.river_to_avg_flood_score = (
+            RiverWaterLevelDataTable.get_river_to_avg_flood_score()
         )
 
     def get_lines_header(self) -> list[str]:
@@ -55,7 +55,8 @@ class ReadMe:
             "",
         ]
 
-    def get_lines_for_station(self, station_name, station):
+    def get_lines_for_station(self, station):
+        station_name = station.name
         rwld = self.station_to_latest_rwld[station_name]
         dt_last_updated = Time.now().ut - rwld.time_ut
         dt_last_updated_hours = dt_last_updated // 3600
@@ -87,8 +88,16 @@ class ReadMe:
                 "",
             ]
         )
-        for station_name, station in station_name_to_station.items():
-            lines.extend(self.get_lines_for_station(station_name, station))
+        station_names = sorted(
+            station_name_to_station.keys(),
+            key=lambda station_name: self.station_to_latest_rwld[
+                station_name
+            ].flood_score,
+            reverse=True,
+        )
+        for station_name in station_names:
+            station = station_name_to_station[station_name]
+            lines.extend(self.get_lines_for_station(station))
 
         return lines
 
@@ -105,7 +114,7 @@ class ReadMe:
         )
         rivers = sorted(
             river_to_stations.keys(),
-            key=lambda river_name: self.river_to_avg_alert_level.get(
+            key=lambda river_name: self.river_to_avg_flood_score.get(
                 river_name, 0
             ),
             reverse=True,
@@ -119,7 +128,7 @@ class ReadMe:
     def get_lines_for_river_basins(self) -> list[str]:
         idx1 = GaugingStation.get_basic_to_river_to_station()
         lines = []
-        for river_basin_name in self.basin_to_avg_alert_level.keys():
+        for river_basin_name in self.basin_to_avg_flood_score.keys():
             idx2 = idx1[river_basin_name]
             lines.extend(
                 self.get_lines_for_river_basin(river_basin_name, idx2)

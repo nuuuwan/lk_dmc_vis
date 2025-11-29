@@ -27,6 +27,19 @@ class RiverWaterLevelData:
         return GaugingStation.from_name(self.gauging_station_name)
 
     @property
+    def flood_score(self) -> float:
+        # Intepretation
+        # > 1 Major
+        # 0-1 Minor
+        # < 0 Normal
+        station = self.gauging_station
+        major = station.major_flood_level
+        minor = station.minor_flood_level
+        current = self.current_water_level
+        flood_score = (current - minor) / (major - minor)
+        return flood_score
+
+    @property
     def alert(self) -> Alert:  # noqa: CFQ004
         station = self.gauging_station
         if self.current_water_level >= station.major_flood_level:
