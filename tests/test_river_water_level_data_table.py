@@ -2,16 +2,21 @@ import os
 import unittest
 from dataclasses import asdict
 
+from utils import Time, TimeFormat
+
 from lk_dmc import ReadMe, RiverWaterLevelDataTable
 
 
 class TestCase(unittest.TestCase):
     def test_get_date_time_from_pdf(self):
-        pdf_path = os.path.join(
-            "tests", "inputs", "2025-11-28-15-30-water-level.pdf"
-        )
-        ut = RiverWaterLevelDataTable.get_date_time_from_pdf(pdf_path)
-        self.assertEqual(ut, 1764324000.0)
+        for pdf_name, expected_time_str in [
+            ["2025-11-28-15-30-water-level.pdf", "2025-11-28 15:30:00"],
+            ["2025-11-28-06-00-water-level.pdf", "2025-11-28 06:30:00"],
+        ]:
+            pdf_path = os.path.join("tests", "inputs", pdf_name)
+            ut = RiverWaterLevelDataTable.get_date_time_from_pdf(pdf_path)
+            actual_time_str = TimeFormat.TIME.format(Time(ut))
+            self.assertEqual(actual_time_str, expected_time_str)
 
     def test_list_from_pdf(self):
         pdf_path = os.path.join(

@@ -1,7 +1,7 @@
 from dataclasses import asdict, dataclass
 
 import camelot
-import PyPDF2
+import fitz
 from utils import JSONFile, Log, TimeFormat
 
 from lk_dmc.rwld.ChartGaugingStationMixin import ChartGaugingStationMixin
@@ -43,21 +43,21 @@ class RiverWaterLevelDataTable(
 
     @classmethod
     def get_date_time_from_pdf(cls, pdf_path: str):
+        doc = fitz.open(pdf_path)
+        page = doc[0]
+        content = page.get_text()
+        lines = content.splitlines()
+        n_lines = len(lines)
+
         date_str = None
         time_str = None
-        with open(pdf_path, "rb") as f:
-            reader = PyPDF2.PdfReader(f)
-            first_page = reader.pages[0]
-            text = first_page.extract_text()
-            lines = text.splitlines()
-            n_lines = len(lines)
-            for i in range(n_lines - 1):
-                line = lines[i]
-                next_line = lines[i + 1]
-                if line.startswith("DATE:"):
-                    date_str = next_line
-                elif line.startswith("TIME:"):
-                    time_str = next_line
+        for i in range(n_lines - 1):
+            line = lines[i].replace(" ", "")
+            next_line = lines[i + 1].replace(" ", "")
+            if line.startswith("DATE:"):
+                date_str = next_line
+            elif line.startswith("TIME:"):
+                time_str = next_line
 
         if date_str is None or time_str is None:
             raise ValueError(f"Could not find date/time in PDF: {pdf_path}")
