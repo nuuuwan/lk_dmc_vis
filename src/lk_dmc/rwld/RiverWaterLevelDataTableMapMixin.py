@@ -239,7 +239,7 @@ class RiverWaterLevelDataTableMapMixin:
             plt.rcParams["font.family"] = "DejaVu Sans"
 
     def draw_map(self) -> str:
-        fig, ax = plt.subplots(figsize=(16, 16))
+        fig, ax = plt.subplots()
 
         self.__set_font__()
 
