@@ -224,9 +224,7 @@ class RiverWaterLevelDataTableMapMixin:
                 verticalalignment="center",
             )
 
-    def draw(self):
-        fig, ax = plt.subplots(figsize=(16, 16))
-
+    def __set_font__(self):
         base = Path(__file__).resolve().parents[2]
         font_path = base / "fonts" / "Ubuntu-Regular.ttf"
         if font_path.exists():
@@ -239,6 +237,11 @@ class RiverWaterLevelDataTableMapMixin:
                 plt.rcParams["font.family"] = "DejaVu Sans"
         else:
             plt.rcParams["font.family"] = "DejaVu Sans"
+
+    def draw(self):
+        fig, ax = plt.subplots(figsize=(16, 16))
+
+        self.__set_font__()
 
         self.__draw_map__(ax)
         self.__draw_rivers__(ax)
