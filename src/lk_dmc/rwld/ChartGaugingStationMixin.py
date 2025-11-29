@@ -13,6 +13,7 @@ log = Log("ChartGaugingStationMixin")
 class ChartGaugingStationMixin:
 
     TIME_WINDOW_DAYS = 7
+    DIR_IMAGES_STATIONS = os.path.join("images", "stations")
 
     @classmethod
     def __get_data__(cls, rwld_list):
@@ -41,8 +42,9 @@ class ChartGaugingStationMixin:
         fig.autofmt_xdate()
 
         station = GaugingStation.from_name(station_name)
+        os.makedirs(cls.DIR_IMAGES_STATIONS, exist_ok=True)
         image_path = os.path.join(
-            "images", f"station.{station.file_prefix}.png"
+            cls.DIR_IMAGES_STATIONS, f"{station.file_prefix}.png"
         )
         fig.savefig(image_path, dpi=300, bbox_inches="tight")
         log.info(f"Wrote {image_path}")
