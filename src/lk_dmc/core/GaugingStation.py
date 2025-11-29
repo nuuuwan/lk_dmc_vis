@@ -1,4 +1,4 @@
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 
 from lk_dmc.base.AbstractTable import AbstractTable
 from lk_dmc.core.River import River

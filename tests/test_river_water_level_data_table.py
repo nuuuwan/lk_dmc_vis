@@ -55,4 +55,4 @@ class TestCase(unittest.TestCase):
 
     def test_pipeline(self):
         latest = RiverWaterLevelDataTable.latest()
-        latest.draw()
+        latest.draw_map()
