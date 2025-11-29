@@ -125,7 +125,34 @@ class ReadMe:
         return lines
 
     def get_lines_for_summary_table(self) -> list[str]:
-        return []
+        lines = ["## Summary Table", ""]
+        lines.extend(
+            [
+                "| River Basin | River | Gauging Station | Water Level (m) | Alert |",
+                "|-------------|-------|-----------------|----------------:|-------|",
+            ]
+        )
+        for (
+            basin_name,
+            river_to_stations,
+        ) in self.basin_to_river_to_stations.items():
+            for (
+                river_name,
+                station_name_to_station,
+            ) in river_to_stations.items():
+                for station_name, station in station_name_to_station.items():
+                    rwld = self.station_to_latest_rwld[station_name]
+                    lines.extend(
+                        [
+                            f"| {basin_name} "
+                            + f"| {river_name} "
+                            + f"| {station_name} "
+                            + f"| {rwld.current_water_level:.2f} "
+                            + f"| {rwld.alert} |",
+                        ]
+                    )
+        lines.append("")
+        return lines
 
     def get_lines(self) -> list[str]:
         return (

@@ -10,6 +10,50 @@ Image only link: [https://nuuuwan.github.io/lk_dmc_vis](https://nuuuwan.github.i
 
 ![Map](images/map.png)
 
+## Summary Table
+
+| River Basin | River | Gauging Station | Water Level (m) | Alert |
+|-------------|-------|-----------------|-----------------|-------|
+| Maha Oya | Maha Oya | Giriulla | 11.47 | 🔴 Major Flood |
+| Maha Oya | Maha Oya | Badalgama | 13.38 | 🔴 Major Flood |
+| Malwathu Oya | Malwathu Oya | Thanthirimale | 9.72 | 🔴 Major Flood |
+| Deduru Oya | Deduru Oya | Moragaswewa | 8.33 | 🔴 Major Flood |
+| Attanagalu Oya | Attanagalu Oya | Dunamale | 6.60 | 🔴 Major Flood |
+| Maa Oya | Mukunu Oya | Yaka Wewa | 5.73 | 🟠 Minor Flood |
+| Kalu Ganga | Kuda Ganga | Kalawellawa | 8.13 | 🔴 Major Flood |
+| Kalu Ganga | Kalu Ganga | Ellagawa | 11.50 | 🟠 Minor Flood |
+| Kalu Ganga | Kalu Ganga | Rathnapura | 8.55 | 🟠 Minor Flood |
+| Kalu Ganga | Kalu Ganga | Putupaula | 3.87 | 🟡 Alert |
+| Kalu Ganga | Maguru Ganga | Magura | 4.53 | 🟡 Alert |
+| Yan Oya | Yan Oya | Horowpothana | 7.72 | 🟠 Minor Flood |
+| Menik Ganga | Menik Ganga | Katharagama | 2.90 | 🟢 Normal |
+| Nilwala Ganga | Nilwala Ganga | Thalgahagoda | 1.61 | 🟡 Alert |
+| Nilwala Ganga | Nilwala Ganga | Panadugama | 4.46 | 🟢 Normal |
+| Nilwala Ganga | Nilwala Ganga | Pitabeddara | 1.49 | 🟢 Normal |
+| Nilwala Ganga | Urubokka Ganga | Urawa | 0.97 | 🟢 Normal |
+| Walawe Ganga | Walawe Ganga | Moraketiya | 2.25 | 🟢 Normal |
+| Kelani Ganga | Kelani Ganga | Glencourse | 20.75 | 🔴 Major Flood |
+| Kelani Ganga | Kelani Ganga | Hanwella | 10.81 | 🔴 Major Flood |
+| Kelani Ganga | Kelani Ganga | Nagalagam Street | 1.89 | 🟠 Minor Flood |
+| Kelani Ganga | Kelani Ganga | Kithulgala | 2.85 | 🟢 Normal |
+| Kelani Ganga | Gurugoda Oya | Holombuwa | 2.81 | 🟢 Normal |
+| Kelani Ganga | Kehelgamu Oya | Norwood | 1.70 | 🟡 Alert |
+| Kelani Ganga | Seethawaka Ganga | Deraniyagala | 2.38 | 🟢 Normal |
+| Gin Ganga | Gin Ganga | Baddegama | 3.20 | 🟢 Normal |
+| Gin Ganga | Gin Ganga | Thawalama | 2.54 | 🟢 Normal |
+| Maduru Oya | Maduru Oya | Padiyathalawa | 1.75 | 🟢 Normal |
+| Mahaweli Ganga | Mahaweli Ganga | Peradeniya | 14.80 | 🔴 Major Flood |
+| Mahaweli Ganga | Mahaweli Ganga | Nawalapitiya | 5.70 | 🟠 Minor Flood |
+| Mahaweli Ganga | Mahaweli Ganga | Manampitiya | 0.00 | 🟢 Normal |
+| Mahaweli Ganga | Mahaweli Ganga | Weraganthota | 0.00 | 🟢 Normal |
+| Mahaweli Ganga | Badulu Oya | Thaldena | 0.00 | 🟢 Normal |
+| Kumbukkan Oya | Kumbukkan Oya | Nakkala | 2.00 | 🟢 Normal |
+| Mee Oya | Mee Oya | Galgamuwa | 0.00 | 🟢 Normal |
+| Heda Oya | Heda Oya | Siyambalanduwa | 1.62 | 🟢 Normal |
+| Kirindi Oya | Kirindi Oya | Thanamalwila | 2.10 | 🟢 Normal |
+| Kirindi Oya | Kirindi Oya | Wellawaya | 1.37 | 🟢 Normal |
+| Kirindi Oya | Kuda Oya | Kuda Oya | 2.39 | 🟢 Normal |
+
 ## Maha Oya River Basin (RB 102)
 
 ### Maha Oya
