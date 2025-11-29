@@ -1,5 +1,5 @@
 import os
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
@@ -8,6 +8,8 @@ from utils import Log
 
 from lk_dmc.core.Alert import Alert
 from lk_dmc.core.GaugingStation import GaugingStation
+
+SL_TIMEZONE = timezone(timedelta(hours=5, minutes=30))
 
 log = Log("ChartGaugingStationMixin")
 
@@ -23,7 +25,10 @@ class ChartGaugingStationMixin:
         rwld_list_recent = [
             rwld for rwld in rwld_list if rwld.time_ut > min_time_ut
         ]
-        ts = [datetime.fromtimestamp(d.time_ut) for d in rwld_list_recent]
+        ts = [
+            datetime.fromtimestamp(d.time_ut, tz=SL_TIMEZONE)
+            for d in rwld_list_recent
+        ]
         levels = [d.current_water_level for d in rwld_list_recent]
         return ts, levels, rwld_list_recent
 
@@ -117,7 +122,7 @@ class ChartGaugingStationMixin:
         ax.plot(ts, levels, marker="o", linestyle="-")
         cls.__draw_extrapolation__(ts, levels, ax)
 
-        ax.set_xlabel("Time")
+        ax.set_xlabel("Time (Sri Lanka)")
         ax.set_ylabel("Water Level (m)")
         ax.grid(True)
 
