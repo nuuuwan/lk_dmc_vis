@@ -55,7 +55,9 @@ class ReadMe:
         lines = []
         image_path = self.station_to_image.get(station_name)
         lines += [
-            f"#### {alert} - {station.name} Gauging Station",
+            f"#### {alert}"
+            + f" - [{station.name}]({station.url_google_maps})"
+            + " Gauging Station",
             "",
             f"![{station.name}]({image_path})",
             "",

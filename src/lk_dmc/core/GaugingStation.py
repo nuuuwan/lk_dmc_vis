@@ -1,17 +1,17 @@
 from dataclasses import dataclass
 
 from lk_dmc.base.AbstractTable import AbstractTable
+from lk_dmc.core.Location import Location
 from lk_dmc.core.River import River
 from lk_dmc.core.WaterLevel import WaterLevel
 
 
 @dataclass
-class GaugingStation(AbstractTable):
+class GaugingStation(Location, AbstractTable):
     river_name: str
     alert_level: float
     minor_flood_level: float
     major_flood_level: float
-    lat_lng: tuple[float, float]
     district_id: str
 
     @property
