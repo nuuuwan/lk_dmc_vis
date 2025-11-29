@@ -1,4 +1,5 @@
 import os
+from functools import cache
 
 import requests
 from utils import Log, TSVFile
@@ -76,6 +77,7 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         return rwld
 
     @classmethod
+    @cache
     def list_latest(cls):
         url_pdf_list = cls.get_latest_url_pdf_list()
         rwld_table_list = []
