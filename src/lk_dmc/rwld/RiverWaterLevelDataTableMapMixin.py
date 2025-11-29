@@ -215,12 +215,12 @@ class RiverWaterLevelDataTableMapMixin:
             (0.8, "Data source: http://dmc.gov.lk", 8),
         ]:
             fig.text(
-                0.5,
+                0.3,
                 y,
                 text,
                 fontsize=fontsize,
                 color="black",
-                horizontalalignment="center",
+                horizontalalignment="left",
                 verticalalignment="center",
             )
 
