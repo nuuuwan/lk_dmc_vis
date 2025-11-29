@@ -1,10 +1,17 @@
 from utils import File, Log
 
+from lk_dmc.rwld import RiverWaterLevelDataTable
+
 log = Log("ReadMe")
 
 
 class ReadMe:
     PATH = "README.md"
+    URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis/"
+
+    def __init__(self):
+        self.latest = RiverWaterLevelDataTable.latest()
+        self.map_image_path = self.latest.draw_map()
 
     def get_lines(self) -> list[str]:
         return [
@@ -29,11 +36,11 @@ class ReadMe:
             "",
             (
                 "Image only link:"
-                + " [https://nuuuwan.github.io/lk_dmc_vis]"
-                + "(https://nuuuwan.github.io/lk_dmc_vis/)"
+                + f" [{self.URL_IMAGE_ONLY}]"
+                + f"({self.URL_IMAGE_ONLY})"
             ),
             "",
-            "![images/map.png](images/map.png)",
+            f"![Map]({self.map_image_path})",
             "",
         ]
 
