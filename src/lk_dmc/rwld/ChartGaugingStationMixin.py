@@ -63,9 +63,9 @@ class ChartGaugingStationMixin:
         ax.annotate(
             "\n".join(
                 [
-                    time_str,
                     f"{latest_level:.2f}m",
                     rwld.alert.label,
+                    time_str,
                 ]
             ),
             xy=(latest_time, latest_level),
