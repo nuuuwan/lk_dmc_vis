@@ -76,6 +76,8 @@ class ChartGaugingStationMixin:
     @classmethod
     def __draw_extrapolation__(cls, ts, levels, ax):
         last_time = ts[-1]
+        last_level = levels[-1]
+        min_level = min(levels)
         cutoff_time = last_time - timedelta(days=1)
         recent_indices = [i for i, t in enumerate(ts) if t >= cutoff_time]
 
@@ -88,15 +90,14 @@ class ChartGaugingStationMixin:
         levels_numeric = np.array(recent_levels)
 
         coeffs = np.polyfit(ts_numeric, levels_numeric, 1)
-        slope, intercept = coeffs
+        slope = coeffs[0]
 
         future_time = last_time + timedelta(days=1)
-        extrapolate_ts = [last_time, future_time]
-        extrapolate_levels = [
-            slope * t.timestamp() + intercept for t in extrapolate_ts
-        ]
+        time_delta = future_time.timestamp() - last_time.timestamp()
+        future_level = last_level + slope * time_delta
 
-        extrapolate_levels = [max(0, level) for level in extrapolate_levels]
+        extrapolate_ts = [last_time, future_time]
+        extrapolate_levels = [last_level, max(min_level, future_level)]
 
         ax.plot(
             extrapolate_ts,
@@ -104,7 +105,7 @@ class ChartGaugingStationMixin:
             linestyle=":",
             linewidth=2,
             color="gray",
-            label="24h Trend",
+            label="Trend",
             alpha=0.7,
         )
 
