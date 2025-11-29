@@ -2,7 +2,7 @@ import os
 import unittest
 from dataclasses import asdict
 
-from lk_dmc import RiverWaterLevelDataTable
+from lk_dmc import ReadMe, RiverWaterLevelDataTable
 
 
 class TestCase(unittest.TestCase):
@@ -56,3 +56,4 @@ class TestCase(unittest.TestCase):
     def test_pipeline(self):
         latest = RiverWaterLevelDataTable.latest()
         latest.draw_map()
+        ReadMe().build()
