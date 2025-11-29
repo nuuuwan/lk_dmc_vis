@@ -12,8 +12,9 @@ class ReadMe:
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
         self.map_image_path = self.latest.draw_map()
+        self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
 
-    def get_lines(self) -> list[str]:
+    def get_lines_header(self) -> list[str]:
         return [
             "# #SriLanka 🇱🇰 - Flood Map",
             "",
@@ -43,6 +44,20 @@ class ReadMe:
             f"![Map]({self.map_image_path})",
             "",
         ]
+
+    def get_lines_for_gauging_stations(self) -> list[str]:
+        lines = []
+        for station_name, image_path in self.station_to_image.items():
+            lines += [
+                f"## {station_name}",
+                "",
+                f"![{station_name}]({image_path})",
+                "",
+            ]
+        return lines
+
+    def get_lines(self) -> list[str]:
+        return self.get_lines_header() + self.get_lines_for_gauging_stations()
 
     def build(self):
         lines = self.get_lines()

@@ -8,6 +8,10 @@ from utils import JSONFile
 class AbstractTable:
     name: str
 
+    @property
+    def file_prefix(self) -> str:
+        return self.name.replace(" ", "-").lower()
+
     @classmethod
     def get_file_prefix(cls):
         return "".join(

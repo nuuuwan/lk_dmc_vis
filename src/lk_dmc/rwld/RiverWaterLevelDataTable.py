@@ -3,6 +3,7 @@ from dataclasses import asdict, dataclass
 import camelot
 from utils import JSONFile, Log
 
+from lk_dmc.rwld.ChartGaugingStationMixin import ChartGaugingStationMixin
 from lk_dmc.rwld.ChartMapMixin import ChartMapMixin
 from lk_dmc.rwld.RiverWaterLevelData import RiverWaterLevelData
 from lk_dmc.rwld.RiverWaterLevelDataTableRemoteDataMixin import \
@@ -13,7 +14,9 @@ log = Log("RiverWaterLevelDataTable")
 
 @dataclass
 class RiverWaterLevelDataTable(
-    RiverWaterLevelDataTableRemoteDataMixin, ChartMapMixin
+    RiverWaterLevelDataTableRemoteDataMixin,
+    ChartMapMixin,
+    ChartGaugingStationMixin,
 ):
     d_list: list[RiverWaterLevelData]
 
