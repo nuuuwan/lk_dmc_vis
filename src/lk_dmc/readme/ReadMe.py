@@ -21,6 +21,9 @@ class ReadMe:
         self.basin_to_river_to_stations = (
             RiverWaterLevelDataTable.get_sorted_basin_to_river_to_stations()
         )
+        self.station_to_level_velocity = (
+            RiverWaterLevelDataTable.get_station_to_level_velocity()
+        )
 
     def get_lines_header(self) -> list[str]:
         return [
@@ -128,8 +131,14 @@ class ReadMe:
         lines = ["## Summary Table", ""]
         lines.extend(
             [
-                "| River Basin | River | Gauging Station | Water Level (m) | Alert |",
-                "|-------------|-------|-----------------|----------------:|-------|",
+                (
+                    "| River Basin | River | Gauging Station "
+                    "| Water Level (m) | Velocity (m/hr) | Alert |"
+                ),
+                (
+                    "|-------------|-------|-----------------|"
+                    "----------------:|-----------------:|-------|"
+                ),
             ]
         )
         for (
@@ -142,12 +151,21 @@ class ReadMe:
             ) in river_to_stations.items():
                 for station_name, station in station_name_to_station.items():
                     rwld = self.station_to_latest_rwld[station_name]
+                    level_velocity = self.station_to_level_velocity[
+                        station_name
+                    ]
+                    velocity_emoji = ""
+                    if level_velocity >= 0.01:
+                        velocity_emoji = "🔺"
+
+                    velocity_str = f"{velocity_emoji}{level_velocity:.2f}"
                     lines.extend(
                         [
                             f"| {basin_name} "
                             + f"| {river_name} "
                             + f"| {station_name} "
-                            + f"| {rwld.current_water_level:.2f} "
+                            + f"| {rwld.current_water_level:.1f} "
+                            + f"| {velocity_str}"
                             + f"| {rwld.alert} |",
                         ]
                     )

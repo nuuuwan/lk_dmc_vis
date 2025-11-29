@@ -107,6 +107,24 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         return idx
 
     @classmethod
+    def get_station_to_level_velocity(cls):
+        idx = cls.get_station_name_to_rwld_list()
+        station_name_to_level_velocity = {}
+        for station_name, rwld_list in idx.items():
+            if len(rwld_list) < 2:
+                continue
+            rwld_latest = rwld_list[-1]
+            rwld_second_latest = rwld_list[-2]
+            dlevel = (
+                rwld_latest.current_water_level
+                - rwld_second_latest.current_water_level
+            )
+            dt = rwld_latest.time_ut - rwld_second_latest.time_ut
+            level_velocity_mph = dlevel / dt * 3600
+            station_name_to_level_velocity[station_name] = level_velocity_mph
+        return station_name_to_level_velocity
+
+    @classmethod
     def get_station_name_to_latest_rwld(
         cls,
     ) -> dict[str, RiverWaterLevelData]:
