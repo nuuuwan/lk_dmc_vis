@@ -69,3 +69,15 @@ class GaugingStation(Location, AbstractTable):
                 idx[river_basin.name][river.name] = {}
             idx[river_basin.name][river.name][station.name] = station
         return idx
+
+    @classmethod
+    def get_river_to_stations(
+        cls,
+    ) -> dict[str, list[str]]:
+        idx: dict[str, list[GaugingStation]] = {}
+        for station in cls.list_all():
+            river = station.river
+            if river.name not in idx:
+                idx[river.name] = []
+            idx[river.name].append(station.name)
+        return idx

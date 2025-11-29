@@ -17,6 +17,12 @@ class ReadMe:
             RiverWaterLevelDataTable.get_station_name_to_latest_rwld()
         )
         self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
+        self.basin_to_avg_alert_level = (
+            RiverWaterLevelDataTable.get_basin_to_avg_alert_level()
+        )
+        self.river_to_avg_alert_level = (
+            RiverWaterLevelDataTable.get_river_to_avg_alert_level()
+        )
 
     def get_lines_header(self) -> list[str]:
         return [
@@ -86,24 +92,43 @@ class ReadMe:
 
         return lines
 
-    def get_lines_for_river_basin(self) -> list[str]:
+    def get_lines_for_river_basin(
+        self, river_basin_name, river_to_stations
+    ) -> list[str]:
+        lines = []
+        river_basin = RiverBasin.from_name(river_basin_name)
+        lines.extend(
+            [
+                f"## {river_basin.name} River Basin ({river_basin.code})",
+                "",
+            ]
+        )
+        rivers = sorted(
+            river_to_stations.keys(),
+            key=lambda river_name: self.river_to_avg_alert_level.get(
+                river_name, 0
+            ),
+            reverse=True,
+        )
+        for river_name in rivers:
+            idx3 = river_to_stations[river_name]
+            lines.extend(self.get_lines_for_river(river_name, idx3))
+
+        return lines
+
+    def get_lines_for_river_basins(self) -> list[str]:
         idx1 = GaugingStation.get_basic_to_river_to_station()
         lines = []
-        for river_basin_name, idx2 in idx1.items():
-            river_basin = RiverBasin.from_name(river_basin_name)
+        for river_basin_name in self.basin_to_avg_alert_level.keys():
+            idx2 = idx1[river_basin_name]
             lines.extend(
-                [
-                    f"## {river_basin.name} River Basin ({river_basin.code})",
-                    "",
-                ]
+                self.get_lines_for_river_basin(river_basin_name, idx2)
             )
-            for river_name, idx3 in idx2.items():
-                lines.extend(self.get_lines_for_river(river_name, idx3))
 
         return lines
 
     def get_lines(self) -> list[str]:
-        return self.get_lines_header() + self.get_lines_for_river_basin()
+        return self.get_lines_header() + self.get_lines_for_river_basins()
 
     def build(self):
         lines = self.get_lines()
