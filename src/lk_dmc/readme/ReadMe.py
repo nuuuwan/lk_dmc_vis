@@ -136,7 +136,7 @@ class ReadMe:
             [
                 (
                     "| River Basin | River | Gauging Station "
-                    "| Water Level (m) | Velocity (m/hr) | Alert |"
+                    "| Level (m) | Rising Speed (m/hr) | Alert |"
                 ),
                 (
                     "|-------------|-------|-----------------|"
