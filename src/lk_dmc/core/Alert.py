@@ -20,6 +20,9 @@ class Alert:
         assert isinstance(other, Alert)
         return self.level > other.level
 
+    def __str__(self) -> str:
+        return f"{self.emoji} {self.name}"
+
 
 Alert.MAJOR = Alert(4, "Major Flood", (1.0, 0.0, 0.0), "🔴")
 Alert.MINOR = Alert(3, "Minor Flood", (1.0, 0.5, 0.0), "🟠")

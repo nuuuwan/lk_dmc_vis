@@ -13,6 +13,9 @@ class ReadMe:
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
         self.map_image_path = self.latest.draw_map()
+        self.station_to_latest_rwld = (
+            RiverWaterLevelDataTable.get_station_name_to_latest_rwld()
+        )
         self.station_to_image = RiverWaterLevelDataTable.draw_all_stations()
 
     def get_lines_header(self) -> list[str]:
@@ -47,10 +50,12 @@ class ReadMe:
         ]
 
     def get_lines_for_station(self, station_name, station):
+        rwld = self.station_to_latest_rwld[station_name]
+        alert = rwld.alert
         lines = []
         image_path = self.station_to_image.get(station_name)
         lines += [
-            f"#### {station.name} Gauging Station",
+            f"#### {alert} - {station.name} Gauging Station",
             "",
             f"![{station.name}]({image_path})",
             "",
