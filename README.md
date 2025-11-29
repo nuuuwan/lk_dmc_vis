@@ -14,47 +14,47 @@ Detailed Analysis and Projections: [https://github.com/nuuuwan/lk_dmc_vis/blob/m
 
 ## Summary Table
 
-| River Basin | River | Gauging Station | Level (m) | Rate-of-Rise (m/hr) | Alert |
-|-------------|-------|-----------------|----------------:|-----------------:|-------|
-| Maha Oya | Maha Oya | Giriulla | 11.5 | -0.24| 🔴 Major Flood |
-| Maha Oya | Maha Oya | Badalgama | 13.4 | -0.01| 🔴 Major Flood |
-| Malwathu Oya | Malwathu Oya | Thanthirimale | 9.7 | 🔺0.08| 🔴 Major Flood |
-| Deduru Oya | Deduru Oya | Moragaswewa | 8.3 | 🔺0.05| 🔴 Major Flood |
-| Attanagalu Oya | Attanagalu Oya | Dunamale | 6.4 | -0.08| 🔴 Major Flood |
-| Maa Oya | Mukunu Oya | Yaka Wewa | 5.7 | -0.00| 🟠 Minor Flood |
-| Kalu Ganga | Kuda Ganga | Kalawellawa | 8.1 | 0.00| 🔴 Major Flood |
-| Kalu Ganga | Kalu Ganga | Ellagawa | 11.5 | 🔺0.06| 🟠 Minor Flood |
-| Kalu Ganga | Kalu Ganga | Rathnapura | 8.3 | -0.08| 🟠 Minor Flood |
-| Kalu Ganga | Kalu Ganga | Putupaula | 3.9 | 🔺0.02| 🟡 Alert |
-| Kalu Ganga | Maguru Ganga | Magura | 4.3 | -0.06| 🟡 Alert |
-| Yan Oya | Yan Oya | Horowpothana | 7.7 | -0.01| 🟠 Minor Flood |
-| Menik Ganga | Menik Ganga | Katharagama | 2.1 | -0.26| 🟢 Normal |
-| Nilwala Ganga | Nilwala Ganga | Thalgahagoda | 1.6 | -0.00| 🟡 Alert |
-| Nilwala Ganga | Nilwala Ganga | Panadugama | 4.4 | -0.03| 🟢 Normal |
-| Nilwala Ganga | Nilwala Ganga | Pitabeddara | 1.5 | -0.00| 🟢 Normal |
-| Nilwala Ganga | Urubokka Ganga | Urawa | 1.0 | -0.00| 🟢 Normal |
-| Walawe Ganga | Walawe Ganga | Moraketiya | 2.2 | -0.02| 🟢 Normal |
-| Gin Ganga | Gin Ganga | Baddegama | 3.1 | -0.02| 🟢 Normal |
-| Gin Ganga | Gin Ganga | Thawalama | 2.5 | -0.02| 🟢 Normal |
-| Kelani Ganga | Kelani Ganga | Glencourse | 20.4 | -0.13| 🔴 Major Flood |
-| Kelani Ganga | Kelani Ganga | Hanwella | 10.9 | 🔺0.02| 🔴 Major Flood |
-| Kelani Ganga | Kelani Ganga | Nagalagam Street | 2.0 | 🔺0.02| 🟠 Minor Flood |
-| Kelani Ganga | Kelani Ganga | Kithulgala | 3.4 | 🔺0.17| 🟡 Alert |
-| Kelani Ganga | Gurugoda Oya | Holombuwa | 2.6 | -0.08| 🟢 Normal |
-| Kelani Ganga | Kehelgamu Oya | Norwood | 1.6 | -0.02| 🟡 Alert |
-| Kelani Ganga | Seethawaka Ganga | Deraniyagala | 2.3 | -0.04| 🟢 Normal |
-| Maduru Oya | Maduru Oya | Padiyathalawa | 1.8 | 🔺0.10| 🟢 Normal |
-| Mahaweli Ganga | Mahaweli Ganga | Peradeniya | 14.8 | 🔺0.22| 🔴 Major Flood |
-| Mahaweli Ganga | Mahaweli Ganga | Nawalapitiya | 5.7 | -0.33| 🟠 Minor Flood |
-| Mahaweli Ganga | Mahaweli Ganga | Manampitiya | 0.0 | -0.61| 🟢 Normal |
-| Mahaweli Ganga | Mahaweli Ganga | Weraganthota | 0.0 | 0.00| 🟢 Normal |
-| Mahaweli Ganga | Badulu Oya | Thaldena | 0.0 | 0.00| 🟢 Normal |
-| Kumbukkan Oya | Kumbukkan Oya | Nakkala | 2.0 | 🔺0.02| 🟢 Normal |
-| Mee Oya | Mee Oya | Galgamuwa | 0.0 | -0.68| 🟢 Normal |
-| Heda Oya | Heda Oya | Siyambalanduwa | 1.6 | -0.00| 🟢 Normal |
-| Kirindi Oya | Kirindi Oya | Thanamalwila | 2.1 | -0.00| 🟢 Normal |
-| Kirindi Oya | Kirindi Oya | Wellawaya | 1.3 | -0.01| 🟢 Normal |
-| Kirindi Oya | Kuda Oya | Kuda Oya | 2.4 | -0.01| 🟢 Normal |
+| Gauging Station | River | River Basin | Level (m) | Rate-of-Rise (m/hr) | Alert |
+|-----------------|-------|-------------|----------:|--------------------:|-------|
+| [Giriulla](https://www.google.com/maps/place/7.3303094121475345,80.12432086937476) | Maha Oya | Maha Oya | 11.5 | -0.24 | 🔴 Major Flood |
+| [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) | Mahaweli Ganga | Mahaweli Ganga | 14.8 | 🔺0.22 | 🔴 Major Flood |
+| [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) | Malwathu Oya | Malwathu Oya | 9.7 | 🔺0.08 | 🔴 Major Flood |
+| [Moragaswewa](https://www.google.com/maps/place/7.731867586461941,80.24296279159842) | Deduru Oya | Deduru Oya | 8.3 | 🔺0.05 | 🔴 Major Flood |
+| [Badalgama](https://www.google.com/maps/place/7.2931279607144255,79.97767925329397) | Maha Oya | Maha Oya | 13.4 | -0.01 | 🔴 Major Flood |
+| [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) | Attanagalu Oya | Attanagalu Oya | 6.4 | -0.08 | 🔴 Major Flood |
+| [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) | Kelani Ganga | Kelani Ganga | 20.4 | -0.13 | 🔴 Major Flood |
+| [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) | Kelani Ganga | Kelani Ganga | 10.9 | 🔺0.02 | 🔴 Major Flood |
+| [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) | Kuda Ganga | Kalu Ganga | 8.1 | 0.00 | 🔴 Major Flood |
+| [Yaka Wewa](https://www.google.com/maps/place/8.726531670464757,80.67505377972024) | Mukunu Oya | Maa Oya | 5.7 | -0.00 | 🟠 Minor Flood |
+| [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) | Kelani Ganga | Kelani Ganga | 2.0 | 🔺0.02 | 🟠 Minor Flood |
+| [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) | Mahaweli Ganga | Mahaweli Ganga | 5.7 | -0.33 | 🟠 Minor Flood |
+| [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) | Kalu Ganga | Kalu Ganga | 11.5 | 🔺0.06 | 🟠 Minor Flood |
+| [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) | Kalu Ganga | Kalu Ganga | 8.3 | -0.08 | 🟠 Minor Flood |
+| [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) | Yan Oya | Yan Oya | 7.7 | -0.01 | 🟠 Minor Flood |
+| [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) | Kalu Ganga | Kalu Ganga | 3.9 | 🔺0.02 | 🟡 Alert |
+| [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) | Nilwala Ganga | Nilwala Ganga | 1.6 | -0.00 | 🟡 Alert |
+| [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) | Kelani Ganga | Kelani Ganga | 3.4 | 🔺0.17 | 🟡 Alert |
+| [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) | Kehelgamu Oya | Kelani Ganga | 1.6 | -0.02 | 🟡 Alert |
+| [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) | Maguru Ganga | Kalu Ganga | 4.3 | -0.06 | 🟡 Alert |
+| [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) | Gurugoda Oya | Kelani Ganga | 2.6 | -0.08 | 🟢 Normal |
+| [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) | Gin Ganga | Gin Ganga | 3.1 | -0.02 | 🟢 Normal |
+| [Panadugama](https://www.google.com/maps/place/6.1100549018149115,80.48065133051018) | Nilwala Ganga | Nilwala Ganga | 4.4 | -0.03 | 🟢 Normal |
+| [Katharagama](https://www.google.com/maps/place/6.418350424146931,81.33162402101244) | Menik Ganga | Menik Ganga | 2.1 | -0.26 | 🟢 Normal |
+| [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) | Walawe Ganga | Walawe Ganga | 2.2 | -0.02 | 🟢 Normal |
+| [Urawa](https://www.google.com/maps/place/6.236507396306039,80.56633784106945) | Urubokka Ganga | Nilwala Ganga | 1.0 | -0.00 | 🟢 Normal |
+| [Padiyathalawa](https://www.google.com/maps/place/7.3827145879708445,81.19476999029227) | Maduru Oya | Maduru Oya | 1.8 | 🔺0.10 | 🟢 Normal |
+| [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) | Nilwala Ganga | Nilwala Ganga | 1.5 | -0.00 | 🟢 Normal |
+| [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) | Gin Ganga | Gin Ganga | 2.5 | -0.02 | 🟢 Normal |
+| [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) | Mahaweli Ganga | Mahaweli Ganga | 0.0 | -0.61 | 🟢 Normal |
+| [Nakkala](https://www.google.com/maps/place/6.890291115719028,81.29789316071579) | Kumbukkan Oya | Kumbukkan Oya | 2.0 | 🔺0.02 | 🟢 Normal |
+| [Galgamuwa](https://www.google.com/maps/place/7.968417972307392,80.26139261952191) | Mee Oya | Mee Oya | 0.0 | -0.68 | 🟢 Normal |
+| [Weraganthota](https://www.google.com/maps/place/7.329958849723429,80.98789578050872) | Mahaweli Ganga | Mahaweli Ganga | 0.0 | 0.00 | 🟢 Normal |
+| [Thaldena](https://www.google.com/maps/place/7.092702894310825,81.04865409851845) | Badulu Oya | Mahaweli Ganga | 0.0 | 0.00 | 🟢 Normal |
+| [Siyambalanduwa](https://www.google.com/maps/place/6.905508688496518,81.54537666124355) | Heda Oya | Heda Oya | 1.6 | -0.00 | 🟢 Normal |
+| [Thanamalwila](https://www.google.com/maps/place/6.44280954004885,81.13889314602751) | Kirindi Oya | Kirindi Oya | 2.1 | -0.00 | 🟢 Normal |
+| [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) | Seethawaka Ganga | Kelani Ganga | 2.3 | -0.04 | 🟢 Normal |
+| [Wellawaya](https://www.google.com/maps/place/6.733186416118142,81.10987205932976) | Kirindi Oya | Kirindi Oya | 1.3 | -0.01 | 🟢 Normal |
+| [Kuda Oya](https://www.google.com/maps/place/6.531299778512797,81.11931312403397) | Kuda Oya | Kirindi Oya | 2.4 | -0.01 | 🟢 Normal |
 
 ## Maha Oya River Basin (RB 102)
 
