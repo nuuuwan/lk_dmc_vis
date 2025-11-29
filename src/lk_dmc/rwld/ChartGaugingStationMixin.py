@@ -1,8 +1,9 @@
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+import numpy as np
 from utils import Log
 
 from lk_dmc.core.Alert import Alert
@@ -73,11 +74,47 @@ class ChartGaugingStationMixin:
         )
 
     @classmethod
+    def __draw_extrapolation__(cls, ts, levels, ax):
+        last_time = ts[-1]
+        cutoff_time = last_time - timedelta(days=1)
+        recent_indices = [i for i, t in enumerate(ts) if t >= cutoff_time]
+
+        if len(recent_indices) < 2:
+            return
+
+        recent_ts = [ts[i] for i in recent_indices]
+        recent_levels = [levels[i] for i in recent_indices]
+        ts_numeric = np.array([t.timestamp() for t in recent_ts])
+        levels_numeric = np.array(recent_levels)
+
+        coeffs = np.polyfit(ts_numeric, levels_numeric, 1)
+        slope, intercept = coeffs
+
+        future_time = last_time + timedelta(days=1)
+        extrapolate_ts = [last_time, future_time]
+        extrapolate_levels = [
+            slope * t.timestamp() + intercept for t in extrapolate_ts
+        ]
+
+        extrapolate_levels = [max(0, level) for level in extrapolate_levels]
+
+        ax.plot(
+            extrapolate_ts,
+            extrapolate_levels,
+            linestyle=":",
+            linewidth=2,
+            color="gray",
+            label="24h Trend",
+            alpha=0.7,
+        )
+
+    @classmethod
     def __draw_for_station__(cls, station_name, rwld_list):
         ts, levels, rwld_list_recent = cls.__get_data__(rwld_list)
 
         fig, ax = plt.subplots(figsize=(8, 4.5))
         ax.plot(ts, levels, marker="o", linestyle="-")
+        cls.__draw_extrapolation__(ts, levels, ax)
 
         ax.set_xlabel("Time")
         ax.set_ylabel("Water Level (m)")
