@@ -129,13 +129,14 @@ class RiverWaterLevelDataTableRemoteDataMixin:
         cls,
     ) -> dict[str, RiverWaterLevelData]:
         idx = cls.get_station_name_to_rwld_list()
+        station_to_velocity = cls.get_station_to_level_velocity()
         for station_name, rwld_list in idx.items():
             rwld_list.sort(key=lambda x: x.time_ut, reverse=True)
             idx[station_name] = rwld_list[0]
         idx = dict(
             sorted(
                 idx.items(),
-                key=lambda x: (x[1].alert.level, x[1].flood_score),
+                key=lambda x: (x[1].alert.level, station_to_velocity[x[0]]),
                 reverse=True,
             )
         )
