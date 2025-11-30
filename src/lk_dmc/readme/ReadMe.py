@@ -182,7 +182,7 @@ class ReadMe:
 
     def get_lines_notice_on_lk_irrigation(self) -> list[str]:
         return [
-            "## 🚨 IMPORTANT NOTICE: Higher Frequency River Level Data 🆕",
+            "## 🚨 IMPORTANT: Higher Frequency River Water Level Data 🆕",
             "",
             "The **Irrigation Department**’s Hydrology and Disaster",
             "Management Division measures and publishes river",
@@ -193,16 +193,17 @@ class ReadMe:
             "then issues an *aggregated bulletin* approximately",
             "every **three hours**.",
             "",
-            "And so, if you are analysing river levels or building",
+            "And so, if you are analysing river water levels or building",
             "flood-related tools, the Irrigation Department’s",
             "**higher resolution** dataset is the better choice.",
             "",
             "I am collecting the Irrigation Department data here:",
             f"[{self.URL_REPO_IRRIGATION}]({self.URL_REPO_IRRIGATION})",
             "",
-            "I will continue maintaining this repo:",
-            f"[{self.URL_REPO_THIS}]({self.URL_REPO_THIS})",
-            "with the DMC's bulletins, since many users rely on it.",
+            "I will continue to maintain ",
+            f"[{self.URL_REPO_THIS}]({self.URL_REPO_THIS}),",
+            "which is based off DMC's bulletins,",
+            "since some of you are using it.",
             "",
         ]
 
