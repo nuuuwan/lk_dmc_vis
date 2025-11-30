@@ -12,7 +12,7 @@ Detailed Analysis and Projections: [https://github.com/nuuuwan/lk_dmc_vis/blob/m
 
 ![Map](images/map.png)
 
-## 📢 Higher-Frequency River Level Data from the Irrigation Department
+## 🚨 IMPORTANT-NOTICE: Higher-Frequency River Level Data 🆕 from the Irrigation Department
 
 The Disaster Management Centre of Sri Lanka receives its river water level data from the Hydrology and Disaster Management Division of the Irrigation Department.
 
