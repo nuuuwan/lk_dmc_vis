@@ -11,6 +11,8 @@ class ReadMe:
     URL_IMAGE_ONLY = "https://nuuuwan.github.io/lk_dmc_vis"
     URL_DETAILS = "https://github.com/nuuuwan/lk_dmc_vis/blob/main/README.md"
     URL_SOURCE = "https://www.dmc.gov.lk"
+    URL_REPO_IRRIGATION = "https://github.com/nuuuwan/lk_irrigation"
+    URL_REPO_THIS = "https://github.com/nuuuwan/lk_dmc_vis"
 
     def __init__(self):
         self.latest = RiverWaterLevelDataTable.latest()
@@ -178,9 +180,37 @@ class ReadMe:
         lines.append("")
         return lines
 
+    def get_lines_notice_on_lk_irrigation(self) -> list[str]:
+        return [
+            "## 📢 Higher-Frequency River Level Data"
+            + " from the Irrigation Department",
+            "",
+            "The Disaster Management Centre of Sri Lanka receives its river"
+            + " water level data from the Hydrology and Disaster Management"
+            + " Division of the Irrigation Department.",
+            "",
+            "The Irrigation Department publishes the same measurements,"
+            + " but at a much higher frequency."
+            + " If you are doing analysis or building tools",
+            "related to water levels or flooding, the Department’s dataset",
+            "is the better choice.",
+            "",
+            "I am collecting the Irrigation Department data here:",
+            f"[{self.URL_REPO_IRRIGATION}]({self.URL_REPO_IRRIGATION})",
+            "",
+            "I will continue maintaining this repo (",
+            f"[{self.URL_REPO_THIS}]({self.URL_REPO_THIS})",
+            " since many users are already using it.",
+            "However, if you need higher-resolution measurements,"
+            + " I recommend using ",
+            f"[lk_irrigation]({self.URL_REPO_IRRIGATION})",
+            "",
+        ]
+
     def get_lines(self) -> list[str]:
         return (
             self.get_lines_header()
+            + self.get_lines_notice_on_lk_irrigation()
             + self.get_lines_for_summary_table()
             + self.get_lines_for_river_basins()
         )
