@@ -182,28 +182,27 @@ class ReadMe:
 
     def get_lines_notice_on_lk_irrigation(self) -> list[str]:
         return [
-            "## 🚨 IMPORTANT-NOTICE: Higher-Frequency River Level Data 🆕"
-            + " from the Irrigation Department",
+            "## 🚨 IMPORTANT NOTICE: Higher Frequency River Level Data 🆕",
             "",
-            "The Disaster Management Centre of Sri Lanka receives its river"
-            + " water level data from the Hydrology and Disaster Management"
-            + " Division of the Irrigation Department.",
+            "The **Irrigation Department**’s Hydrology and Disaster",
+            "Management Division measures and publishes river",
+            "water levels **several times per hour**.",
             "",
-            "The Irrigation Department publishes the same measurements,"
-            + " but at a much higher frequency."
-            + " If you are doing analysis or building tools",
-            "related to water levels or flooding, the Department’s dataset",
-            "is the better choice.",
+            "The **Disaster Management Centre (DMC)** obtains these",
+            "same measurements from the Irrigation Department,",
+            "then issues an *aggregated bulletin* approximately",
+            "every **three hours**.",
+            "",
+            "And so, if you are analysing river levels or building",
+            "flood-related tools, the Irrigation Department’s",
+            "**higher resolution** dataset is the better choice.",
             "",
             "I am collecting the Irrigation Department data here:",
             f"[{self.URL_REPO_IRRIGATION}]({self.URL_REPO_IRRIGATION})",
             "",
-            "I will continue maintaining this repo (",
+            "I will continue maintaining this repo:",
             f"[{self.URL_REPO_THIS}]({self.URL_REPO_THIS})",
-            " since many users are already using it.",
-            "However, if you need higher-resolution measurements,"
-            + " I recommend using ",
-            f"[lk_irrigation]({self.URL_REPO_IRRIGATION})",
+            "with the DMC's bulletins, since many users rely on it.",
             "",
         ]
 
