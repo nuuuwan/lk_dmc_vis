@@ -182,7 +182,7 @@ class ReadMe:
 
     def get_lines_notice_on_lk_irrigation(self) -> list[str]:
         return [
-            "## 📢 Higher-Frequency River Level Data"
+            "## 🚨 IMPORTANT-NOTICE: Higher-Frequency River Level Data 🆕"
             + " from the Irrigation Department",
             "",
             "The Disaster Management Centre of Sri Lanka receives its river"
