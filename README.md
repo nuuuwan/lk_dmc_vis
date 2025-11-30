@@ -41,41 +41,41 @@ since some of you are using it.
 |-----------------|-------|-------------|----------:|--------------------:|-------|
 | [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) | Mahaweli Ganga | Mahaweli Ganga | 14.8 | 🔺0.22 | 🔴 Major Flood |
 | [Moragaswewa](https://www.google.com/maps/place/7.731867586461941,80.24296279159842) | Deduru Oya | Deduru Oya | 8.3 | 🔺0.05 | 🔴 Major Flood |
-| [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) | Kelani Ganga | Kelani Ganga | 2.4 | 🔺0.02 | 🔴 Major Flood |
-| [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) | Malwathu Oya | Malwathu Oya | 10.8 | 🔺0.02 | 🔴 Major Flood |
-| [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) | Kelani Ganga | Kelani Ganga | 10.3 | -0.05 | 🔴 Major Flood |
+| [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) | Kelani Ganga | Kelani Ganga | 2.5 | 🔺0.04 | 🔴 Major Flood |
+| [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) | Malwathu Oya | Malwathu Oya | 10.6 | -0.04 | 🔴 Major Flood |
+| [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) | Kelani Ganga | Kelani Ganga | 10.2 | -0.06 | 🔴 Major Flood |
 | [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) | Kalu Ganga | Kalu Ganga | 4.3 | 0.00 | 🟠 Minor Flood |
-| [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) | Attanagalu Oya | Attanagalu Oya | 5.0 | -0.01 | 🟠 Minor Flood |
+| [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) | Attanagalu Oya | Attanagalu Oya | 4.9 | -0.02 | 🟠 Minor Flood |
 | [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) | Kalu Ganga | Kalu Ganga | 11.9 | -0.02 | 🟠 Minor Flood |
-| [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) | Kuda Ganga | Kalu Ganga | 7.7 | -0.03 | 🟠 Minor Flood |
+| [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) | Kuda Ganga | Kalu Ganga | 7.6 | -0.03 | 🟠 Minor Flood |
 | [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) | Mahaweli Ganga | Mahaweli Ganga | 5.7 | -0.33 | 🟠 Minor Flood |
-| [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) | Yan Oya | Yan Oya | 7.5 | -0.01 | 🟡 Alert |
-| [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) | Kalu Ganga | Kalu Ganga | 6.4 | -0.06 | 🟡 Alert |
-| [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) | Kelani Ganga | Kelani Ganga | 15.6 | -0.22 | 🟡 Alert |
+| [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) | Yan Oya | Yan Oya | 7.4 | -0.02 | 🟡 Alert |
+| [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) | Kalu Ganga | Kalu Ganga | 6.2 | -0.07 | 🟡 Alert |
 | [Badalgama](https://www.google.com/maps/place/7.2931279607144255,79.97767925329397) | Maha Oya | Maha Oya | 6.1 | -0.31 | 🟡 Alert |
-| [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) | Kelani Ganga | Kelani Ganga | 2.6 | 0.00 | 🟢 Normal |
-| [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) | Gin Ganga | Gin Ganga | 2.1 | 0.00 | 🟢 Normal |
+| [Wellawaya](https://www.google.com/maps/place/6.733186416118142,81.10987205932976) | Kirindi Oya | Kirindi Oya | 1.2 | 0.00 | 🟢 Normal |
+| [Katharagama](https://www.google.com/maps/place/6.418350424146931,81.33162402101244) | Menik Ganga | Menik Ganga | 0.9 | 0.00 | 🟢 Normal |
+| [Nakkala](https://www.google.com/maps/place/6.890291115719028,81.29789316071579) | Kumbukkan Oya | Kumbukkan Oya | 1.8 | 0.00 | 🟢 Normal |
 | [Weraganthota](https://www.google.com/maps/place/7.329958849723429,80.98789578050872) | Mahaweli Ganga | Mahaweli Ganga | 0.0 | 0.00 | 🟢 Normal |
 | [Thaldena](https://www.google.com/maps/place/7.092702894310825,81.04865409851845) | Badulu Oya | Mahaweli Ganga | 0.0 | 0.00 | 🟢 Normal |
-| [Wellawaya](https://www.google.com/maps/place/6.733186416118142,81.10987205932976) | Kirindi Oya | Kirindi Oya | 1.2 | -0.00 | 🟢 Normal |
-| [Katharagama](https://www.google.com/maps/place/6.418350424146931,81.33162402101244) | Menik Ganga | Menik Ganga | 0.9 | -0.00 | 🟢 Normal |
-| [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) | Nilwala Ganga | Nilwala Ganga | 1.2 | -0.01 | 🟢 Normal |
+| [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) | Gin Ganga | Gin Ganga | 2.1 | -0.00 | 🟢 Normal |
+| [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) | Kehelgamu Oya | Kelani Ganga | 1.4 | -0.00 | 🟢 Normal |
 | [Urawa](https://www.google.com/maps/place/6.236507396306039,80.56633784106945) | Urubokka Ganga | Nilwala Ganga | 0.8 | -0.01 | 🟢 Normal |
-| [Siyambalanduwa](https://www.google.com/maps/place/6.905508688496518,81.54537666124355) | Heda Oya | Heda Oya | 1.3 | -0.01 | 🟢 Normal |
-| [Kuda Oya](https://www.google.com/maps/place/6.531299778512797,81.11931312403397) | Kuda Oya | Kirindi Oya | 2.0 | -0.01 | 🟢 Normal |
-| [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) | Seethawaka Ganga | Kelani Ganga | 1.6 | -0.01 | 🟢 Normal |
-| [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) | Kehelgamu Oya | Kelani Ganga | 1.4 | -0.01 | 🟢 Normal |
-| [Nakkala](https://www.google.com/maps/place/6.890291115719028,81.29789316071579) | Kumbukkan Oya | Kumbukkan Oya | 1.8 | -0.01 | 🟢 Normal |
-| [Thanamalwila](https://www.google.com/maps/place/6.44280954004885,81.13889314602751) | Kirindi Oya | Kirindi Oya | 1.7 | -0.02 | 🟢 Normal |
-| [Panadugama](https://www.google.com/maps/place/6.1100549018149115,80.48065133051018) | Nilwala Ganga | Nilwala Ganga | 3.6 | -0.02 | 🟢 Normal |
+| [Kuda Oya](https://www.google.com/maps/place/6.531299778512797,81.11931312403397) | Kuda Oya | Kirindi Oya | 1.9 | -0.01 | 🟢 Normal |
+| [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) | Nilwala Ganga | Nilwala Ganga | 1.1 | -0.01 | 🟢 Normal |
+| [Thanamalwila](https://www.google.com/maps/place/6.44280954004885,81.13889314602751) | Kirindi Oya | Kirindi Oya | 1.7 | -0.01 | 🟢 Normal |
+| [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) | Nilwala Ganga | Nilwala Ganga | 1.0 | -0.02 | 🟢 Normal |
 | [Padiyathalawa](https://www.google.com/maps/place/7.3827145879708445,81.19476999029227) | Maduru Oya | Maduru Oya | 1.1 | -0.02 | 🟢 Normal |
-| [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) | Walawe Ganga | Walawe Ganga | 1.6 | -0.02 | 🟢 Normal |
-| [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) | Nilwala Ganga | Nilwala Ganga | 1.1 | -0.02 | 🟢 Normal |
-| [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) | Gurugoda Oya | Kelani Ganga | 1.7 | -0.02 | 🟢 Normal |
-| [Yaka Wewa](https://www.google.com/maps/place/8.726531670464757,80.67505377972024) | Mukunu Oya | Maa Oya | 1.4 | -0.02 | 🟢 Normal |
-| [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) | Gin Ganga | Gin Ganga | 2.3 | -0.03 | 🟢 Normal |
+| [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) | Gin Ganga | Gin Ganga | 2.3 | -0.02 | 🟢 Normal |
+| [Yaka Wewa](https://www.google.com/maps/place/8.726531670464757,80.67505377972024) | Mukunu Oya | Maa Oya | 1.3 | -0.02 | 🟢 Normal |
+| [Panadugama](https://www.google.com/maps/place/6.1100549018149115,80.48065133051018) | Nilwala Ganga | Nilwala Ganga | 3.5 | -0.02 | 🟢 Normal |
+| [Siyambalanduwa](https://www.google.com/maps/place/6.905508688496518,81.54537666124355) | Heda Oya | Heda Oya | 1.3 | -0.02 | 🟢 Normal |
+| [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) | Seethawaka Ganga | Kelani Ganga | 1.5 | -0.03 | 🟢 Normal |
+| [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) | Maguru Ganga | Kalu Ganga | 2.5 | -0.05 | 🟢 Normal |
+| [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) | Gurugoda Oya | Kelani Ganga | 1.5 | -0.06 | 🟢 Normal |
 | [Giriulla](https://www.google.com/maps/place/7.3303094121475345,80.12432086937476) | Maha Oya | Maha Oya | 3.8 | -0.06 | 🟢 Normal |
-| [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) | Maguru Ganga | Kalu Ganga | 2.6 | -0.10 | 🟢 Normal |
+| [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) | Walawe Ganga | Walawe Ganga | 1.4 | -0.08 | 🟢 Normal |
+| [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) | Kelani Ganga | Kelani Ganga | 2.4 | -0.10 | 🟢 Normal |
+| [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) | Kelani Ganga | Kelani Ganga | 14.9 | -0.22 | 🟢 Normal |
 | [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) | Mahaweli Ganga | Mahaweli Ganga | 0.0 | -0.61 | 🟢 Normal |
 | [Galgamuwa](https://www.google.com/maps/place/7.968417972307392,80.26139261952191) | Mee Oya | Mee Oya | 0.0 | -0.68 | 🟢 Normal |
 
@@ -85,7 +85,7 @@ since some of you are using it.
 
 #### 🔴 Major Flood - [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Thanthirimale](images/stations/thanthirimale.png)
 
@@ -95,7 +95,7 @@ since some of you are using it.
 
 #### 🔴 Major Flood - [Moragaswewa](https://www.google.com/maps/place/7.731867586461941,80.24296279159842) Gauging Station
 
-*Last Updated **66 hours** ago* ⌛
+*Last Updated **67 hours** ago* ⌛
 
 ![Moragaswewa](images/stations/moragaswewa.png)
 
@@ -105,7 +105,7 @@ since some of you are using it.
 
 #### 🟠 Minor Flood - [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Dunamale](images/stations/dunamale.png)
 
@@ -115,7 +115,7 @@ since some of you are using it.
 
 #### 🟡 Alert - [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Horowpothana](images/stations/horowpothana.png)
 
@@ -125,7 +125,7 @@ since some of you are using it.
 
 #### 🟠 Minor Flood - [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Kalawellawa](images/stations/kalawellawa.png)
 
@@ -133,19 +133,19 @@ since some of you are using it.
 
 #### 🟠 Minor Flood - [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) Gauging Station
 
-*Last Updated **9 hours** ago* 
+*Last Updated **10 hours** ago* 
 
 ![Ellagawa](images/stations/ellagawa.png)
 
 #### 🟠 Minor Flood - [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Putupaula](images/stations/putupaula.png)
 
 #### 🟡 Alert - [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Rathnapura](images/stations/rathnapura.png)
 
@@ -153,7 +153,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Magura](images/stations/magura.png)
 
@@ -163,13 +163,13 @@ since some of you are using it.
 
 #### 🟡 Alert - [Badalgama](https://www.google.com/maps/place/7.2931279607144255,79.97767925329397) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **4 hours** ago* 
 
 ![Badalgama](images/stations/badalgama.png)
 
 #### 🟢 Normal - [Giriulla](https://www.google.com/maps/place/7.3303094121475345,80.12432086937476) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **4 hours** ago* 
 
 ![Giriulla](images/stations/giriulla.png)
 
@@ -179,19 +179,19 @@ since some of you are using it.
 
 #### 🟢 Normal - [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Thalgahagoda](images/stations/thalgahagoda.png)
 
 #### 🟢 Normal - [Panadugama](https://www.google.com/maps/place/6.1100549018149115,80.48065133051018) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Panadugama](images/stations/panadugama.png)
 
 #### 🟢 Normal - [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Pitabeddara](images/stations/pitabeddara.png)
 
@@ -199,7 +199,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Urawa](https://www.google.com/maps/place/6.236507396306039,80.56633784106945) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Urawa](images/stations/urawa.png)
 
@@ -209,7 +209,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Moraketiya](images/stations/moraketiya.png)
 
@@ -219,7 +219,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Katharagama](https://www.google.com/maps/place/6.418350424146931,81.33162402101244) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Katharagama](images/stations/katharagama.png)
 
@@ -229,25 +229,25 @@ since some of you are using it.
 
 #### 🔴 Major Flood - [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) Gauging Station
 
-*Last Updated **66 hours** ago* ⌛
+*Last Updated **67 hours** ago* ⌛
 
 ![Peradeniya](images/stations/peradeniya.png)
 
 #### 🟠 Minor Flood - [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) Gauging Station
 
-*Last Updated **66 hours** ago* ⌛
+*Last Updated **67 hours** ago* ⌛
 
 ![Nawalapitiya](images/stations/nawalapitiya.png)
 
 #### 🟢 Normal - [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) Gauging Station
 
-*Last Updated **69 hours** ago* ⌛
+*Last Updated **70 hours** ago* ⌛
 
 ![Manampitiya](images/stations/manampitiya.png)
 
 #### 🟢 Normal - [Weraganthota](https://www.google.com/maps/place/7.329958849723429,80.98789578050872) Gauging Station
 
-*Last Updated **69 hours** ago* ⌛
+*Last Updated **70 hours** ago* ⌛
 
 ![Weraganthota](images/stations/weraganthota.png)
 
@@ -255,7 +255,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Thaldena](https://www.google.com/maps/place/7.092702894310825,81.04865409851845) Gauging Station
 
-*Last Updated **69 hours** ago* ⌛
+*Last Updated **70 hours** ago* ⌛
 
 ![Thaldena](images/stations/thaldena.png)
 
@@ -265,67 +265,15 @@ since some of you are using it.
 
 #### 🟢 Normal - [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Baddegama](images/stations/baddegama.png)
 
 #### 🟢 Normal - [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Thawalama](images/stations/thawalama.png)
-
-## Kelani Ganga River Basin (RB 01)
-
-### Kelani Ganga
-
-#### 🔴 Major Flood - [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Nagalagam Street](images/stations/nagalagam-street.png)
-
-#### 🔴 Major Flood - [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Hanwella](images/stations/hanwella.png)
-
-#### 🟡 Alert - [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Glencourse](images/stations/glencourse.png)
-
-#### 🟢 Normal - [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Kithulgala](images/stations/kithulgala.png)
-
-### Gurugoda Oya
-
-#### 🟢 Normal - [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Holombuwa](images/stations/holombuwa.png)
-
-### Kehelgamu Oya
-
-#### 🟢 Normal - [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Norwood](images/stations/norwood.png)
-
-### Seethawaka Ganga
-
-#### 🟢 Normal - [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) Gauging Station
-
-*Last Updated **3 hours** ago* 
-
-![Deraniyagala](images/stations/deraniyagala.png)
 
 ## Maduru Oya River Basin (RB 54)
 
@@ -333,9 +281,61 @@ since some of you are using it.
 
 #### 🟢 Normal - [Padiyathalawa](https://www.google.com/maps/place/7.3827145879708445,81.19476999029227) Gauging Station
 
-*Last Updated **9 hours** ago* 
+*Last Updated **10 hours** ago* 
 
 ![Padiyathalawa](images/stations/padiyathalawa.png)
+
+## Kelani Ganga River Basin (RB 01)
+
+### Kelani Ganga
+
+#### 🔴 Major Flood - [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Nagalagam Street](images/stations/nagalagam-street.png)
+
+#### 🔴 Major Flood - [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Hanwella](images/stations/hanwella.png)
+
+#### 🟢 Normal - [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Glencourse](images/stations/glencourse.png)
+
+#### 🟢 Normal - [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Kithulgala](images/stations/kithulgala.png)
+
+### Kehelgamu Oya
+
+#### 🟢 Normal - [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Norwood](images/stations/norwood.png)
+
+### Gurugoda Oya
+
+#### 🟢 Normal - [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Holombuwa](images/stations/holombuwa.png)
+
+### Seethawaka Ganga
+
+#### 🟢 Normal - [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) Gauging Station
+
+*Last Updated **1 hours** ago* 
+
+![Deraniyagala](images/stations/deraniyagala.png)
 
 ## Kumbukkan Oya River Basin (RB 31)
 
@@ -343,7 +343,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Nakkala](https://www.google.com/maps/place/6.890291115719028,81.29789316071579) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Nakkala](images/stations/nakkala.png)
 
@@ -353,7 +353,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Galgamuwa](https://www.google.com/maps/place/7.968417972307392,80.26139261952191) Gauging Station
 
-*Last Updated **69 hours** ago* ⌛
+*Last Updated **70 hours** ago* ⌛
 
 ![Galgamuwa](images/stations/galgamuwa.png)
 
@@ -363,7 +363,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Yaka Wewa](https://www.google.com/maps/place/8.726531670464757,80.67505377972024) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Yaka Wewa](images/stations/yaka-wewa.png)
 
@@ -373,7 +373,7 @@ since some of you are using it.
 
 #### 🟢 Normal - [Siyambalanduwa](https://www.google.com/maps/place/6.905508688496518,81.54537666124355) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Siyambalanduwa](images/stations/siyambalanduwa.png)
 
@@ -383,13 +383,13 @@ since some of you are using it.
 
 #### 🟢 Normal - [Thanamalwila](https://www.google.com/maps/place/6.44280954004885,81.13889314602751) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Thanamalwila](images/stations/thanamalwila.png)
 
 #### 🟢 Normal - [Wellawaya](https://www.google.com/maps/place/6.733186416118142,81.10987205932976) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Wellawaya](images/stations/wellawaya.png)
 
@@ -397,6 +397,6 @@ since some of you are using it.
 
 #### 🟢 Normal - [Kuda Oya](https://www.google.com/maps/place/6.531299778512797,81.11931312403397) Gauging Station
 
-*Last Updated **3 hours** ago* 
+*Last Updated **1 hours** ago* 
 
 ![Kuda Oya](images/stations/kuda-oya.png)
