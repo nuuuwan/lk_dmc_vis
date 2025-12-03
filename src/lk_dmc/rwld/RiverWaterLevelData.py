@@ -64,11 +64,7 @@ class RiverWaterLevelData:
         gauging_station = GaugingStation.from_df_row(row, river, river_basin)
         previous_water_level = WaterLevel.from_str(row[7].strip(), unit)
         current_water_level = WaterLevel.from_str(row[8].strip(), unit)
-        rainfall_mm = (
-            float(rainfall)
-            if rainfall and rainfall not in ("-", "N.A.")
-            else 0.0
-        )
+        rainfall_mm = WaterLevel.from_str(rainfall, "m")
 
         time_str = TimeFormat("%Y-%m-%d %H:%M:%S").format(Time(time_ut))
 
