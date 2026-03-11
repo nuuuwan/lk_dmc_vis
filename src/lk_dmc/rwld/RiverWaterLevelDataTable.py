@@ -63,6 +63,7 @@ class RiverWaterLevelDataTable(
 
         date_time_str = f"{date_str} {time_str}"
         date_time_str = date_time_str.replace(".M", "M")
+        date_time_str = date_time_str.replace("Noon", "PM")
         ut = TimeFormat("%d-%b-%Y %I:%M%p").parse(date_time_str).ut
         return ut
 
