@@ -62,6 +62,7 @@ class RiverWaterLevelDataTable(
             raise ValueError(f"Could not find date/time in PDF: {pdf_path}")
 
         date_time_str = f"{date_str} {time_str}"
+        date_time_str = date_time_str.replace(".M", "M")
         ut = TimeFormat("%d-%b-%Y %I:%M%p").parse(date_time_str).ut
         return ut
 
