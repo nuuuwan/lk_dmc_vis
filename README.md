@@ -39,45 +39,45 @@ since some of you are using it.
 
 | Gauging Station | River | River Basin | Level (m) | Rate-of-Rise (m/hr) | Alert |
 |-----------------|-------|-------------|----------:|--------------------:|-------|
-| [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) | Kuda Ganga | Kalu Ganga | 5.2 | 0.01 | 🟡 Alert |
-| [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) | Malwathu Oya | Malwathu Oya | 1.3 | 🔺0.44 | 🟢 Normal |
-| [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) | Kelani Ganga | Kelani Ganga | 12.5 | 🔺0.26 | 🟢 Normal |
-| [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) | Kelani Ganga | Kelani Ganga | 4.2 | 🔺0.10 | 🟢 Normal |
-| [Galgamuwa](https://www.google.com/maps/place/7.968417972307392,80.26139261952191) | Mee Oya | Mee Oya | 0.2 | 🔺0.08 | 🟢 Normal |
-| [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) | Attanagalu Oya | Attanagalu Oya | 2.7 | 🔺0.04 | 🟢 Normal |
-| [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) | Gin Ganga | Gin Ganga | 1.9 | 🔺0.04 | 🟢 Normal |
-| [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) | Maguru Ganga | Kalu Ganga | 2.8 | 🔺0.02 | 🟢 Normal |
+| [Kalawellawa](https://www.google.com/maps/place/6.6315078194386246,80.16073462916866) | Kuda Ganga | Kalu Ganga | 5.3 | 🔺0.01 | 🟡 Alert |
+| [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) | Mahaweli Ganga | Mahaweli Ganga | 2.1 | 🔺0.16 | 🟢 Normal |
+| [Hanwella](https://www.google.com/maps/place/6.910489028063102,80.08133984391833) | Kelani Ganga | Kelani Ganga | 4.6 | 🔺0.15 | 🟢 Normal |
+| [Glencourse](https://www.google.com/maps/place/6.975736673046383,80.18660711562987) | Kelani Ganga | Kelani Ganga | 12.7 | 🔺0.06 | 🟢 Normal |
+| [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) | Nilwala Ganga | Nilwala Ganga | 0.3 | 🔺0.05 | 🟢 Normal |
+| [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) | Kelani Ganga | Kelani Ganga | 0.8 | 🔺0.05 | 🟢 Normal |
+| [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) | Gurugoda Oya | Kelani Ganga | 1.0 | 🔺0.04 | 🟢 Normal |
+| [Baddegama](https://www.google.com/maps/place/6.177477311875031,80.18051836126706) | Gin Ganga | Gin Ganga | 2.0 | 🔺0.03 | 🟢 Normal |
 | [Panadugama](https://www.google.com/maps/place/6.1100549018149115,80.48065133051018) | Nilwala Ganga | Nilwala Ganga | 2.8 | 🔺0.02 | 🟢 Normal |
-| [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) | Walawe Ganga | Walawe Ganga | 0.9 | 🔺0.01 | 🟢 Normal |
-| [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) | Kalu Ganga | Kalu Ganga | 8.6 | 0.01 | 🟢 Normal |
+| [Magura](https://www.google.com/maps/place/6.513716270509724,80.24399187228877) | Maguru Ganga | Kalu Ganga | 2.8 | 🔺0.01 | 🟢 Normal |
+| [Dunamale](https://www.google.com/maps/place/7.113033305509533,80.07900097051707) | Attanagalu Oya | Attanagalu Oya | 2.8 | 🔺0.01 | 🟢 Normal |
+| [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) | Nilwala Ganga | Nilwala Ganga | 0.8 | 🔺0.01 | 🟢 Normal |
+| [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) | Kalu Ganga | Kalu Ganga | 2.5 | 0.01 | 🟢 Normal |
+| [Moraketiya](https://www.google.com/maps/place/6.3450504078771,80.90195373048093) | Walawe Ganga | Walawe Ganga | 0.9 | 0.01 | 🟢 Normal |
 | [Wellawaya](https://www.google.com/maps/place/6.733186416118142,81.10987205932976) | Kirindi Oya | Kirindi Oya | 0.9 | 0.00 | 🟢 Normal |
-| [Thaldena](https://www.google.com/maps/place/7.092702894310825,81.04865409851845) | Badulu Oya | Mahaweli Ganga | 0.3 | 0.00 | 🟢 Normal |
-| [Giriulla](https://www.google.com/maps/place/7.3303094121475345,80.12432086937476) | Maha Oya | Maha Oya | 1.3 | 0.00 | 🟢 Normal |
-| [Urawa](https://www.google.com/maps/place/6.236507396306039,80.56633784106945) | Urubokka Ganga | Nilwala Ganga | 0.1 | 0.00 | 🟢 Normal |
 | [Katharagama](https://www.google.com/maps/place/6.418350424146931,81.33162402101244) | Menik Ganga | Menik Ganga | -0.1 | 0.00 | 🟢 Normal |
-| [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) | Kehelgamu Oya | Kelani Ganga | 0.7 | 0.00 | 🟢 Normal |
+| [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) | Kalu Ganga | Kalu Ganga | 8.6 | 0.00 | 🟢 Normal |
+| [Urawa](https://www.google.com/maps/place/6.236507396306039,80.56633784106945) | Urubokka Ganga | Nilwala Ganga | 0.1 | 0.00 | 🟢 Normal |
 | [Thanamalwila](https://www.google.com/maps/place/6.44280954004885,81.13889314602751) | Kirindi Oya | Kirindi Oya | 0.7 | 0.00 | 🟢 Normal |
 | [Kuda Oya](https://www.google.com/maps/place/6.531299778512797,81.11931312403397) | Kuda Oya | Kirindi Oya | 1.3 | 0.00 | 🟢 Normal |
 | [Nakkala](https://www.google.com/maps/place/6.890291115719028,81.29789316071579) | Kumbukkan Oya | Kumbukkan Oya | 0.7 | 0.00 | 🟢 Normal |
 | [Siyambalanduwa](https://www.google.com/maps/place/6.905508688496518,81.54537666124355) | Heda Oya | Heda Oya | 0.5 | 0.00 | 🟢 Normal |
+| [Padiyathalawa](https://www.google.com/maps/place/7.3827145879708445,81.19476999029227) | Maduru Oya | Maduru Oya | 0.1 | 0.00 | 🟢 Normal |
+| [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) | Yan Oya | Yan Oya | 1.3 | 0.00 | 🟢 Normal |
 | [Yaka Wewa](https://www.google.com/maps/place/8.726531670464757,80.67505377972024) | Mukunu Oya | Maa Oya | 0.5 | 0.00 | 🟢 Normal |
+| [Giriulla](https://www.google.com/maps/place/7.3303094121475345,80.12432086937476) | Maha Oya | Maha Oya | 1.3 | 0.00 | 🟢 Normal |
+| [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) | Kehelgamu Oya | Kelani Ganga | 0.7 | -0.00 | 🟢 Normal |
+| [Thaldena](https://www.google.com/maps/place/7.092702894310825,81.04865409851845) | Badulu Oya | Mahaweli Ganga | 0.3 | -0.00 | 🟢 Normal |
+| [Thanthirimale](https://www.google.com/maps/place/8.580763249784683,80.28400551575419) | Malwathu Oya | Malwathu Oya | 1.3 | -0.00 | 🟢 Normal |
 | [Moragaswewa](https://www.google.com/maps/place/7.731867586461941,80.24296279159842) | Deduru Oya | Deduru Oya | 0.5 | -0.00 | 🟢 Normal |
-| [Padiyathalawa](https://www.google.com/maps/place/7.3827145879708445,81.19476999029227) | Maduru Oya | Maduru Oya | 0.1 | -0.00 | 🟢 Normal |
-| [Horowpothana](https://www.google.com/maps/place/8.577144224946247,80.88120305584708) | Yan Oya | Yan Oya | 1.3 | -0.00 | 🟢 Normal |
-| [Pitabeddara](https://www.google.com/maps/place/6.20712968715078,80.45044348808202) | Nilwala Ganga | Nilwala Ganga | 0.7 | -0.01 | 🟢 Normal |
+| [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) | Gin Ganga | Gin Ganga | 2.1 | -0.00 | 🟢 Normal |
 | [Badalgama](https://www.google.com/maps/place/7.2931279607144255,79.97767925329397) | Maha Oya | Maha Oya | 2.6 | -0.01 | 🟢 Normal |
-| [Thawalama](https://www.google.com/maps/place/6.342938049010117,80.33185946143057) | Gin Ganga | Gin Ganga | 2.1 | -0.01 | 🟢 Normal |
-| [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) | Gurugoda Oya | Kelani Ganga | 0.9 | -0.02 | 🟢 Normal |
-| [Thalgahagoda](https://www.google.com/maps/place/6.012329836481981,80.5347970941782) | Nilwala Ganga | Nilwala Ganga | 0.2 | -0.02 | 🟢 Normal |
-| [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) | Kalu Ganga | Kalu Ganga | 2.5 | -0.02 | 🟢 Normal |
-| [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) | Kalu Ganga | Kalu Ganga | 4.9 | -0.02 | 🟢 Normal |
-| [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) | Mahaweli Ganga | Mahaweli Ganga | 1.6 | -0.03 | 🟢 Normal |
-| [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) | Mahaweli Ganga | Mahaweli Ganga | 0.0 | -0.03 | 🟢 Normal |
-| [Weraganthota](https://www.google.com/maps/place/7.329958849723429,80.98789578050872) | Mahaweli Ganga | Mahaweli Ganga | -3.3 | -0.05 | 🟢 Normal |
-| [Nagalagam Street](https://www.google.com/maps/place/6.96027242132317,79.87858326530204) | Kelani Ganga | Kelani Ganga | 0.6 | -0.05 | 🟢 Normal |
-| [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) | Mahaweli Ganga | Mahaweli Ganga | 1.7 | -0.08 | 🟢 Normal |
-| [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) | Kelani Ganga | Kelani Ganga | 1.8 | -0.10 | 🟢 Normal |
-| [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) | Seethawaka Ganga | Kelani Ganga | 2.0 | -0.15 | 🟢 Normal |
+| [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) | Mahaweli Ganga | Mahaweli Ganga | -0.0 | -0.01 | 🟢 Normal |
+| [Galgamuwa](https://www.google.com/maps/place/7.968417972307392,80.26139261952191) | Mee Oya | Mee Oya | 0.2 | -0.01 | 🟢 Normal |
+| [Kithulgala](https://www.google.com/maps/place/6.985283769517581,80.42544930669654) | Kelani Ganga | Kelani Ganga | 1.7 | -0.01 | 🟢 Normal |
+| [Weraganthota](https://www.google.com/maps/place/7.329958849723429,80.98789578050872) | Mahaweli Ganga | Mahaweli Ganga | -3.3 | -0.01 | 🟢 Normal |
+| [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) | Mahaweli Ganga | Mahaweli Ganga | 1.6 | -0.04 | 🟢 Normal |
+| [Deraniyagala](https://www.google.com/maps/place/6.925762947059961,80.33922404112188) | Seethawaka Ganga | Kelani Ganga | 1.8 | -0.08 | 🟢 Normal |
+| [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) | Kalu Ganga | Kalu Ganga | 4.7 | -0.08 | 🟢 Normal |
 
 ## Kalu Ganga River Basin (RB 03)
 
@@ -91,17 +91,17 @@ since some of you are using it.
 
 ### Kalu Ganga
 
-#### 🟢 Normal - [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) Gauging Station
-
-*Last Updated **5 hours** ago* 
-
-![Rathnapura](images/stations/rathnapura.png)
-
 #### 🟢 Normal - [Ellagawa](https://www.google.com/maps/place/6.730399127799353,80.21307042256922) Gauging Station
 
 *Last Updated **5 hours** ago* 
 
 ![Ellagawa](images/stations/ellagawa.png)
+
+#### 🟢 Normal - [Rathnapura](https://www.google.com/maps/place/6.689859893761882,80.38027645749384) Gauging Station
+
+*Last Updated **5 hours** ago* 
+
+![Rathnapura](images/stations/rathnapura.png)
 
 #### 🟢 Normal - [Putupaula](https://www.google.com/maps/place/6.611561688998894,80.05974948036196) Gauging Station
 
@@ -231,14 +231,6 @@ since some of you are using it.
 
 ![Hanwella](images/stations/hanwella.png)
 
-### Kehelgamu Oya
-
-#### 🟢 Normal - [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) Gauging Station
-
-*Last Updated **5 hours** ago* 
-
-![Norwood](images/stations/norwood.png)
-
 ### Gurugoda Oya
 
 #### 🟢 Normal - [Holombuwa](https://www.google.com/maps/place/7.18861230041471,80.27381001159266) Gauging Station
@@ -246,6 +238,14 @@ since some of you are using it.
 *Last Updated **5 hours** ago* 
 
 ![Holombuwa](images/stations/holombuwa.png)
+
+### Kehelgamu Oya
+
+#### 🟢 Normal - [Norwood](https://www.google.com/maps/place/6.839557267884663,80.61239609102284) Gauging Station
+
+*Last Updated **5 hours** ago* 
+
+![Norwood](images/stations/norwood.png)
 
 ### Seethawaka Ganga
 
@@ -295,17 +295,17 @@ since some of you are using it.
 
 ### Mahaweli Ganga
 
-#### 🟢 Normal - [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) Gauging Station
-
-*Last Updated **5 hours** ago* 
-
-![Manampitiya](images/stations/manampitiya.png)
-
 #### 🟢 Normal - [Peradeniya](https://www.google.com/maps/place/7.2641705575045075,80.5936236622826) Gauging Station
 
 *Last Updated **5 hours** ago* 
 
 ![Peradeniya](images/stations/peradeniya.png)
+
+#### 🟢 Normal - [Manampitiya](https://www.google.com/maps/place/7.913305747028369,81.08904162459265) Gauging Station
+
+*Last Updated **5 hours** ago* 
+
+![Manampitiya](images/stations/manampitiya.png)
 
 #### 🟢 Normal - [Nawalapitiya](https://www.google.com/maps/place/7.046038718801128,80.52624731051829) Gauging Station
 
