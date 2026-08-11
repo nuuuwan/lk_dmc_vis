@@ -53,7 +53,9 @@ class RiverWaterLevelData:
     ) -> tuple["RiverWaterLevelData", str]:
         river_basin = RiverBasin.from_df_row(row) or current_river_basin
         river = River.from_df_row(row, river_basin)
-        assert river, "River could not be created from row"
+        if not river:
+            return None, river_basin
+        
 
         unit = row[3].strip()
         assert unit in ("m", "ft"), f"Unknown unit: {unit}"

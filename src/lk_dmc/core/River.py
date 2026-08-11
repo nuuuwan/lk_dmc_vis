@@ -2,6 +2,9 @@ from dataclasses import dataclass
 
 from lk_dmc.base.AbstractTable import AbstractTable
 from lk_dmc.core.RiverBasin import RiverBasin
+from utils import Log
+
+log = Log('River')
 
 
 @dataclass
@@ -11,7 +14,11 @@ class River(AbstractTable):
 
     @classmethod
     def from_df_row(cls, df_row, expected_river_basin) -> "River":
-        river_name = df_row[1].strip() or df_row[0].split(")")[1].strip()
+        try:
+            river_name = df_row[1].strip() or df_row[0].split(")")[1].strip()
+        except Exception as e:
+            log.warning(f"Failed to parse river name from {df_row}") 
+            return None
         river = River.from_name(river_name)
         assert (
             river.river_basin == expected_river_basin
