@@ -27,7 +27,6 @@ class TestCase(unittest.TestCase):
 
         rwld = t.d_list[0]
         actual_d = asdict(rwld)
-        print(actual_d)
         self.assertEqual(
             actual_d,
             {
