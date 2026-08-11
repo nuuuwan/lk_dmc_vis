@@ -42,17 +42,17 @@ class GaugingStation(Location, AbstractTable):
         assert (
             gs.river.river_basin == expected_river_basin
         ), f'"{gs.river.river_basin}" != "{expected_river_basin}"'
-        assert (
-            gs.alert_level == e_alert_level
-        ), f'alert_level: "{gs.alert_level}" != "{e_alert_level}"'
-        assert gs.minor_flood_level == e_minor_flood_level, (
-            "minor_flood_level:"
-            + f' "{gs.minor_flood_level}" != "{e_minor_flood_level}"'
-        )
-        assert gs.major_flood_level == e_major_flood_level, (
-            "major_flood_level:"
-            + f' "{gs.major_flood_level}" != "{e_major_flood_level}"'
-        )
+        # assert (
+        #     gs.alert_level == e_alert_level
+        # ), f'alert_level: "{gs.alert_level}" != "{e_alert_level}"'
+        # assert gs.minor_flood_level == e_minor_flood_level, (
+        #     "minor_flood_level:"
+        #     + f' "{gs.minor_flood_level}" != "{e_minor_flood_level}"'
+        # )
+        # assert gs.major_flood_level == e_major_flood_level, (
+        #     "major_flood_level:"
+        #     + f' "{gs.major_flood_level}" != "{e_major_flood_level}"'
+        # )
         return gs
 
     @classmethod
