@@ -58,14 +58,20 @@ class RiverWaterLevelDataTable(
             elif line.startswith("TIME:"):
                 time_str = next_line
 
+        if time_str == 'Station':
+            time_str = '6:30AM'
+
         if date_str is None or time_str is None:
             raise ValueError(f"Could not find date/time in PDF: {pdf_path}")
 
         date_time_str = f"{date_str} {time_str}"
         date_time_str = date_time_str.replace(".M", "M")
         date_time_str = date_time_str.replace("Noon", "PM")
-        ut = TimeFormat("%d-%b-%Y %I:%M%p").parse(date_time_str).ut
-        return ut
+        try:
+            ut = TimeFormat("%d-%b-%Y %I:%M%p").parse(date_time_str).ut
+            return ut
+        except Exception as e:
+            raise ValueError(f"Could not parse date/time {date_str=}, {time_str=} from PDF: {pdf_path}") from e
 
     @classmethod
     def from_pdf(cls, pdf_path: str) -> "RiverWaterLevelDataTable":
